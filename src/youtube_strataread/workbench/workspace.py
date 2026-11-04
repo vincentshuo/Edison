@@ -130,6 +130,7 @@ class LocalWorkspace:
             'timing_status': candidate.timing_status, 'completion_status': candidate.completion_status,
             'actual_start_at': candidate.actual_start_at, 'actual_end_at': candidate.actual_end_at,
             'scheduled_start_at': candidate.scheduled_start_at, 'timing_checked_at': candidate.timing_checked_at,
+            'asr_eligible_at': now,
         }
         state = self._admission(facts, now)
         with sqlite3.connect(self.database_path) as connection:
@@ -214,7 +215,7 @@ class LocalWorkspace:
             row = connection.execute(
                 """
                 SELECT video_id, channel_id, channel_title, title, url, published_at,
-                       manuscript_version, shorts_status
+                       manuscript_version, shorts_status, asr_eligible_at
                 FROM candidates c WHERE (preparation_state IN ('queued', 'rate_limited') OR
                     (preparation_state = 'awaiting_classification' AND shorts_retry_at <= ?) OR
                     (preparation_state = 'waiting_retry' AND COALESCE(retry_at, 0) <= ?))
@@ -594,24 +595,53 @@ class LocalWorkspace:
                 (duration_seconds, video_id),
             )
 
-    def store_transcript(self, video_id: str, *, language: str, srt_text: str) -> str:
+    def store_transcript(self, video_id: str, *, language: str, srt_text: str,
+                         source: str = "native", provider: str | None = None,
+                         attempt_id: str | None = None) -> str:
         asset_dir = self._asset_directory(video_id)
         asset_dir.mkdir(parents=True, exist_ok=True)
         path = asset_dir / "transcript.srt"
         path.write_text(srt_text, encoding="utf-8")
         with sqlite3.connect(self.database_path) as connection:
+            digest = hashlib.sha256(srt_text.encode("utf-8")).hexdigest()
+            connection.execute(
+                """INSERT OR IGNORE INTO transcript_versions
+                   (video_id, digest, language, path, content, source, provider, attempt_id, created_at)
+                   VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)""",
+                (video_id, digest, language, str(path), srt_text, source, provider, attempt_id, time.time()),
+            )
             connection.execute(
                 """
-                INSERT INTO transcripts (video_id, language, path, content, created_at)
-                VALUES (?, ?, ?, ?, ?)
+                INSERT INTO transcripts (video_id, language, path, content, source, provider, attempt_id, created_at)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?)
                 ON CONFLICT(video_id) DO UPDATE SET
                   language=excluded.language, path=excluded.path, content=excluded.content,
+                  source=excluded.source, provider=excluded.provider, attempt_id=excluded.attempt_id,
                   created_at=excluded.created_at
                 """,
-                (video_id, language, str(path), srt_text, time.time()),
+                (video_id, language, str(path), srt_text, source, provider, attempt_id, time.time()),
             )
             self._activity_event(connection, video_id, "transcript_ready")
         return str(path)
+
+    def record_asr_attempt(self, video_id: str, *, provider: str, config_digest: str) -> str:
+        attempt_id = hashlib.sha256(f"{video_id}:{provider}:{config_digest}:{time.time_ns()}".encode()).hexdigest()[:32]
+        with sqlite3.connect(self.database_path) as connection:
+            connection.execute(
+                "INSERT INTO asr_attempts (attempt_id, video_id, provider, config_digest, status, started_at) VALUES (?, ?, ?, ?, 'running', ?)",
+                (attempt_id, video_id, provider, config_digest, time.time()),
+            )
+        return attempt_id
+
+    def finish_asr_attempt(self, attempt_id: str, *, status: str, task_id: str | None = None,
+                           usage_seconds: float | None = None, cost: float | None = None,
+                           error: str | None = None) -> None:
+        with sqlite3.connect(self.database_path) as connection:
+            connection.execute(
+                """UPDATE asr_attempts SET status=?, task_id=?, usage_seconds=?, cost=?, error=?, finished_at=?
+                   WHERE attempt_id=?""",
+                (status, task_id, usage_seconds, cost, error, time.time(), attempt_id),
+            )
 
     def stage_timings(self, video_id: str) -> dict[str, float | None]:
         """Durable per-stage times for acceptance of delivery latency.
@@ -901,10 +931,11 @@ class LocalWorkspace:
     def retained_transcript(self, video_id: str) -> dict[str, str] | None:
         with sqlite3.connect(self.database_path) as connection:
             row = connection.execute(
-                "SELECT language, path, content FROM transcripts WHERE video_id = ?", (video_id,)
+                "SELECT language, path, content, source, provider, attempt_id FROM transcripts WHERE video_id = ?", (video_id,)
             ).fetchone()
-        if row and self._usable_transcript(video_id, *row):
-            return {"language": row[0], "content": row[2]}
+        if row and self._usable_transcript(video_id, *row[:3]):
+            return {"language": row[0], "content": row[2], "source": row[3],
+                    "provider": row[4], "attempt_id": row[5]}
         return None
 
     def delete_asset(self, video_id: str) -> None:
@@ -1195,7 +1226,21 @@ class LocalWorkspace:
                 );
                 CREATE TABLE IF NOT EXISTS transcripts (
                     video_id TEXT PRIMARY KEY REFERENCES candidates(video_id) ON DELETE CASCADE,
-                    language TEXT NOT NULL, path TEXT NOT NULL, content TEXT NOT NULL, created_at REAL NOT NULL
+                    language TEXT NOT NULL, path TEXT NOT NULL, content TEXT NOT NULL,
+                    source TEXT NOT NULL DEFAULT 'native', provider TEXT, attempt_id TEXT,
+                    created_at REAL NOT NULL
+                );
+                CREATE TABLE IF NOT EXISTS transcript_versions (
+                    video_id TEXT NOT NULL REFERENCES candidates(video_id) ON DELETE CASCADE,
+                    digest TEXT NOT NULL, language TEXT NOT NULL, path TEXT NOT NULL, content TEXT NOT NULL,
+                    source TEXT NOT NULL, provider TEXT, attempt_id TEXT, created_at REAL NOT NULL,
+                    PRIMARY KEY (video_id, digest)
+                );
+                CREATE TABLE IF NOT EXISTS asr_attempts (
+                    attempt_id TEXT PRIMARY KEY, video_id TEXT NOT NULL REFERENCES candidates(video_id) ON DELETE CASCADE,
+                    provider TEXT NOT NULL, config_digest TEXT NOT NULL, status TEXT NOT NULL,
+                    task_id TEXT, usage_seconds REAL, cost REAL, error TEXT,
+                    started_at REAL NOT NULL, finished_at REAL
                 );
                 CREATE TABLE IF NOT EXISTS manuscripts (
                     video_id TEXT NOT NULL REFERENCES candidates(video_id) ON DELETE CASCADE,
@@ -1217,6 +1262,14 @@ class LocalWorkspace:
                 """
             )
             existing = {row[1] for row in connection.execute("PRAGMA table_info(candidates)")}
+            transcript_columns = {row[1] for row in connection.execute("PRAGMA table_info(transcripts)")}
+            for name, definition in {
+                "source": "TEXT NOT NULL DEFAULT 'native'",
+                "provider": "TEXT",
+                "attempt_id": "TEXT",
+            }.items():
+                if name not in transcript_columns:
+                    connection.execute(f"ALTER TABLE transcripts ADD COLUMN {name} {definition}")
             for name, definition in {
                 "duration_seconds": "REAL",
                 "preparation_stage": "TEXT",
@@ -1246,6 +1299,7 @@ class LocalWorkspace:
                 "source_observed_until": "REAL",
                 "request_kind": "TEXT NOT NULL DEFAULT 'automatic'",
                 "summary": "TEXT CHECK(summary IS NULL OR length(summary) BETWEEN 1 AND 120)",
+                "asr_eligible_at": "REAL",
             }.items():
                 if name not in existing:
                     connection.execute(f"ALTER TABLE candidates ADD COLUMN {name} {definition}")

@@ -134,7 +134,7 @@ class YouTubeWorkbench:
         )
         self.preparation = PreparationService(
             workspace=self.workspace,
-            captions=YtDlpCaptions(),
+            captions=YtDlpCaptions(speech_only=True),
             manuscripts=HostManuscripts(manager, self.workspace),
         )
         self.library = LibraryService(workspace=self.workspace, preparation=self.preparation)

@@ -218,7 +218,7 @@ def main() -> int:
         workspace=workspace, source=YouTubeUploadsAPI(workspace=workspace, connection=connection)
     )
     preparation = PreparationService(
-        workspace=workspace, captions=YtDlpCaptions(), manuscripts=ConfiguredManuscripts()
+        workspace=workspace, captions=YtDlpCaptions(speech_only=True), manuscripts=ConfiguredManuscripts()
     )
     library = LibraryService(workspace=workspace, preparation=preparation)
     stop_batch = threading.Event()

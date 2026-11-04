@@ -48,6 +48,10 @@ class SubtitleResult:
     duration_seconds: float | None = None
 
 
+class CaptionsUnavailable(YouTubeError):
+    """The video was inspected successfully but has no speech captions."""
+
+
 def validate_url(url: str) -> None:
     if not any(p.match(url) for p in _URL_PATTERNS):
         raise YouTubeError(
@@ -161,7 +165,7 @@ def download_subtitles(
     lang, is_auto = _pick_language(subs, auto, preferred_lang)
     if lang is None:
         if speech_only:
-            raise YouTubeError("暂无可用字幕，未处理")
+            raise CaptionsUnavailable("暂无可用字幕，未处理")
         raise YouTubeError(
             "no subtitles (official, auto-generated, or live_chat fallback) were available for this video"
         )

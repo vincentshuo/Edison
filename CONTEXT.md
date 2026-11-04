@@ -56,7 +56,18 @@ minimalism (the focus module) has been removed. items (object memory) is retaine
 - **Knowledge asset**: A record owned by the person within their Edison instance, derived from a selected YouTube video, containing the source identity, timed transcript, deep-reading manuscript, generation record and reading state.
 - **Acquisition**: Bringing a selected YouTube video's metadata and transcript into the library of the person's Edison instance.
 - **Enrichment**: Optional AI-assisted transformations of a knowledge asset, such as cleaning, translating, structuring, summarizing, or indexing. Enrichment never replaces the source transcript.
-- **Deep-reading manuscript**: The primary user-facing enrichment of a selected knowledge asset: a coherent, layered document designed for sustained reading and thought, rather than a raw transcript or a summary card. It faithfully removes spoken redundancy, translates and structures the source without adding facts or opinions. It is presented in Simplified Chinese by default, translating non-Chinese sources automatically.
+## Transcript vocabulary
+
+- **Timed transcript（带时间轴字幕）**: An ordered source transcript made of time-bounded cues, where each cue has a stable ordinal, integer start and end times in milliseconds, provider text and any separately derived normalized text. It is source material, not a manuscript.
+- **Transcript version（字幕版本）**: An immutable acquisition result for one video's timed transcript, identified by the video identity, source kind, language, provider configuration version and content digest. Identical reacquisitions reuse the version; changed content or source configuration creates a new version.
+- **Transcript cue（字幕片段）**: One ordered, time-bounded unit inside a transcript version. Its provider text and timing remain unchanged after retention; normalization is a separate derived representation.
+- **Selected transcript version（选定字幕版本）**: The transcript version currently used as a knowledge asset's source. Edison selects deterministically by `native > auto > asr_generated`, with language and completeness eligibility checked before precedence. Changing the selected version does not rewrite existing translations or manuscripts.
+- **ASR generated transcript（ASR 生成字幕）**: A supplementary transcript version derived from an identity-matched YouTube audio source through a named ASR provider and configuration. It is eligible for downstream work only after completion and basic coverage/integrity checks; partial output remains tied to its attempt and is not a usable transcript.
+- **ASR provider（ASR Provider）**: The speech-recognition service that converts an identity-matched YouTube audio source into an `asr_generated` transcript. It is independent of the translation model/provider; changing the ASR provider does not change the Gemini translation configuration or invalidate an existing translation by itself.
+- **Translation provider（翻译 Provider）**: The model service used to translate an accepted transcript. It is a separate capability from ASR acquisition and has its own configuration, retries and generation identity.
+- **Transcript source trace（字幕来源追踪）**: The durable relation from a translation or manuscript block to the transcript version and one or more cue ordinals/time ranges used to produce it. Edison records an unknown mapping when reliable alignment is unavailable rather than guessing from text similarity.
+
+- **Deep-reading manuscript**: A reading document derived from a complete translation, intended to preserve its meaning and argument order. It is retained separately from the unchanged complete translation, which remains independently available even if composition fails. See ADR 0019 for the accepted boundary.
 - **Source trace**: The preserved link between a deep-reading manuscript and its original video and timed transcript, allowing the reader to verify a passage on demand.
 - **Manuscript version**: An immutable deep-reading manuscript produced for one knowledge asset. A person may manually create a later version while retaining earlier versions for comparison and rollback.
 - **Generation record**: The retained account of how a manuscript was produced, distinct from its source materials and current manuscript output.
@@ -71,13 +82,15 @@ minimalism (the focus module) has been removed. items (object memory) is retaine
 - **YouTube cutover hold（YouTube 切换暂停）**: A temporary maintenance barrier against new YouTube work and competing connection changes while the instance changes its acquisition path. It preserves the person's Auto Update choice and accepted manual requests. _Avoid_: User cancellation, turning Auto Update off, proof that active work has finished.
 - **Edison code rollback（Edison 程序回退）**: Returning the instance to a compatible earlier program while retaining its latest knowledge assets, reading records and user permissions; acquisition may remain stopped. It does not restore old credentials or rewind the workspace to an earlier snapshot. _Avoid_: Whole-library restore, automatic return to the old acquisition path.
 - **Capability-specific interruption（按能力中断）**: An interruption that prevents only work depending on the unavailable capability; independent discovery, translation or reading can continue. Restored availability does not override task eligibility, cancellation or the person's execution permissions. _Avoid_: Entire workspace outage, automatic restoration of cancelled work.
+- **ASR transcription attempt（ASR 转写尝试）**: One bounded attempt to derive a supplementary timed transcript from one identity-matched YouTube audio source under a named ASR provider and configuration. It may be retried or superseded, but it never replaces an existing platform transcript. _Avoid_: Provider request log, translation attempt, manuscript version.
+- **ASR capability interruption（ASR 能力中断）**: A preparation condition in which Edison cannot currently obtain a supplementary transcript because the ASR capability, its quota or its execution resources are unavailable. It preserves the source identity and task intent for later recovery; it is distinct from cancellation, permanent failure and an absent YouTube caption.
 - **Workspace**: The browser-facing environment of the person's Edison instance in which a person monitors subscriptions, prepares manuscript batches, chooses a reading queue, and reads or annotates knowledge assets.
 - **Migration boundary**: The smallest self-contained YouTube capability that can move from Vegapunk into this product without importing unrelated research-agent behavior.
-- **Preparation state**: The operational state of a discovered update: discovered, queued, awaiting classification, acquiring, generating, ready, unavailable, failed, cancelled or excluded as Shorts. Uncertain and excluded videos remain visible in preparation progress; no manuscript is fabricated without a source transcript.
+- **Preparation state**: The operational state of a discovered update: discovered, queued, awaiting classification, acquiring, generating, ready, unavailable, failed, cancelled or excluded as Shorts. ASR work remains part of acquiring/generating until a supplementary timed transcript is durably accepted; an ASR capability interruption is unavailable work that may recover, while cancellation remains the person's persistent withdrawal. Uncertain and excluded videos remain visible in preparation progress; no manuscript is fabricated without a source transcript.
 - **Preparation cancellation（取消处理）**: A person's persistent withdrawal of a video from work that has not started. Its existing materials remain preserved, and automatic updates do not return it to the preparation queue. _Avoid_: Deletion, pause, failure.
 - **Preparation restoration（恢复处理）**: A person's explicit return of a cancelled video to the preparation queue, subject to existing pause and channel-exclusion rules. Restoration does not promise immediate execution. _Avoid_: Automatic retry, regeneration.
 - **Deletion**: An explicit terminal action that permanently removes the entire video asset from the Edison instance, including every manuscript version, transcript and source record.
-- **Markdown handoff**: The workbench does not embed a document reader. Each prepared manuscript is stored as Markdown and can be copied as raw Markdown, viewed in the browser, or downloaded to the reading device.
+- **Markdown handoff**: The first-release delivery of complete translations and reading manuscripts through copy and download, for reading outside the workbench. It does not require an embedded document reader.
 - **Behavioral port**: A clean reimplementation of a verified upstream capability that preserves its externally meaningful protocol behavior, failure semantics, test cases and required attribution without importing its host architecture.
 - **Preparation progress（处理进度）**: The operational view of YouTube manuscript preparation, covering queued, active, paused, completed, cancelled, unavailable and failed work. It is distinct from the reading library, which organizes prepared documents for reading. _Avoid_: Activity center, Quiet pulse activity center.
 - **Automatic update pause（自动更新暂停）**: The off state of Auto Update, stopping further subscription scans and automatic task starts while current work finishes. Accepted manual requests retain their independent execution permission. _Avoid_: Global stop, cancellation, loss of completion eligibility.
@@ -93,16 +106,16 @@ A rendering of source speech in another language that preserves its meaning, sta
 _Avoid_: Summary, expansion
 
 **Translation prompt**:
-The user's editable instructions for producing or reviewing a translation. These express translation requirements, distinct from selecting the model that carries them out.
+The instructions used by the translation workflow to produce, review and revise a translation. They are distinct from selecting the model and from instructions for manuscript composition; the accepted upstream-preservation boundary is recorded in ADR 0019.
 _Avoid_: Model configuration
 
 **Complete translation**:
-The full rendering of the source speech in the target language, retained as the reference against which a reading manuscript can be checked. It preserves the source's argument and sequence rather than reducing it to a summary.
+The full translation delivered by the translation workflow, retained unchanged as an independently readable asset. A derived reading manuscript cannot overwrite or replace it; completion does not certify that the translation has no semantic errors.
 _Avoid_: Summary, reading manuscript
 
 **Manuscript composition**:
-The limited editorial transformation of a complete translation into a reading document: removing spoken filler and adding hierarchical headings while retaining meaning and argument order.
-_Avoid_: Summarization, free rewriting
+The preparation of a separate reading manuscript from an already retained complete translation, adding headings, a table of contents and paragraphs and lightly editing punctuation, verbal fillers and spoken sentence structure. It preserves meaning, tone, stance, uncertainty, viewpoints, examples, numbers, qualifications, existing speaker attribution and argument order; its success or failure does not change the retained translation.
+_Avoid_: Summarization, translation regeneration, replacement of the complete translation
 
 ## Curriculum language
 

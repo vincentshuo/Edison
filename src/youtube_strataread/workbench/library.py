@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import hashlib
 import inspect
 import threading
 from collections.abc import Callable
@@ -12,7 +13,17 @@ from urllib.parse import parse_qs, urlsplit
 from youtube_strataread.ai.base import get_provider
 from youtube_strataread.ai.prompts import load_prompt
 from youtube_strataread.config import resolve_provider_config
-from youtube_strataread.downloader import cues_to_lines, download_subtitles, load_cues
+from youtube_strataread.downloader import (
+    CaptionsUnavailable,
+    cues_to_lines,
+    download_subtitles,
+    load_cues,
+)
+from youtube_strataread.downloader.asr import (
+    ASRError,
+    AudioTranscriptionProvider,
+    VolcengineASRProvider,
+)
 from youtube_strataread.downloader.request_policy import (
     YouTubeError,
     YouTubeRequestPolicy,
@@ -90,6 +101,7 @@ class PreparationService:
     workspace: LocalWorkspace
     captions: CaptionAcquirer
     manuscripts: ManuscriptGenerator
+    asr: AudioTranscriptionProvider | None = None
     shorts: ShortsClassifier = field(default_factory=YouTubeShortsClassifier)
     model_failure_classifier: Callable[[Exception, float], Failure] = classify_model
     transcript_normalizer: Callable[[str, str], str] | None = None
@@ -102,6 +114,10 @@ class PreparationService:
             self.captions.on_metadata = self.workspace.record_video_duration
         if isinstance(self.shorts, YouTubeShortsClassifier):
             self.shorts.requests = self.workspace.youtube_requests
+        if self.asr is None and isinstance(self.captions, YtDlpCaptions):
+            # The launch boundary has one ASR Provider. It remains injectable so
+            # tests and deployments can use a controlled adapter.
+            self.asr = VolcengineASRProvider()
 
     def stop(self) -> None:
         """Prevent new claims while allowing an already claimed asset to finish."""
@@ -188,22 +204,87 @@ class PreparationService:
                             raise PreparationDeferred()
                         if not self.workspace.commence_preparation(video_id):
                             raise PreparationDeferred()
-                    subtitles = self.captions.acquire(str(asset['url']), before_subtitles=before_subtitles)
+                    try:
+                        subtitles = self.captions.acquire(str(asset['url']), before_subtitles=before_subtitles)
+                    except CaptionsUnavailable:
+                        subtitles = None
                 else:
                     if self.workspace.youtube_requests.cooling_down() or self.workspace.youtube_requests.stopped.is_set():
                         self.workspace.youtube_requests.before_request()
                     if not self.workspace.commence_preparation(video_id):
                         return True
-                    subtitles = self.captions.acquire(str(asset['url']))
-                if subtitles.video_id != video_id:
-                    raise YouTubeError('Subtitle identity does not match the requested video')
-                self.workspace.record_video_duration(video_id, subtitles.duration_seconds)
-                srt_text = subtitles.srt_text
-                source_language = subtitles.language
-                self.workspace.store_transcript(
-                    video_id, language=subtitles.language, srt_text=srt_text
-                )
-                self.workspace.youtube_requests.caption_succeeded()
+                    try:
+                        subtitles = self.captions.acquire(str(asset['url']))
+                    except CaptionsUnavailable:
+                        subtitles = None
+
+                if subtitles is None:
+                    if self.asr is None:
+                        raise CaptionsUnavailable("暂无可用字幕，未处理")
+                    if asset.get("asr_eligible_at") is None:
+                        self.workspace.set_preparation_state(
+                            video_id, "unavailable", "历史任务未纳入首发 ASR 范围"
+                        )
+                        return True
+                    if not self.workspace.commence_preparation(video_id):
+                        return True
+                    self.workspace.set_preparation_state(video_id, "generating")
+                    attempt_id = self.workspace.record_asr_attempt(
+                        video_id, provider="volcengine", config_digest=hashlib.sha256(b"doubao-voice-recognition-2.0").hexdigest()
+                    )
+                    try:
+                        asr_result = self.asr.transcribe(
+                            video_id=video_id,
+                            video_url=str(asset["url"]),
+                            duration_seconds=timing.get("duration_seconds"),
+                            language_hint=None,
+                        )
+                    except ASRError as error:
+                        self.workspace.finish_asr_attempt(attempt_id, status="failed", error=str(error))
+                        if error.kind == "transient":
+                            self.workspace.defer_retry(
+                                video_id, Failure("transient", "ASR 能力暂时不可用：" + str(error), error.retry_after)
+                            )
+                        elif error.kind == "interruption":
+                            self.workspace.set_preparation_state(video_id, "unavailable", "ASR 能力中断：" + str(error))
+                        else:
+                            self.workspace.set_preparation_state(video_id, "failed", "ASR 转写失败：" + str(error))
+                        return True
+                    asr_subtitles = SubtitleResult(
+                        video_id=asr_result.video_id,
+                        title=str(asset.get("title") or video_id),
+                        language=asr_result.language,
+                        is_auto=True,
+                        srt_text=asr_result.srt_text,
+                        duration_seconds=asr_result.duration_seconds,
+                    )
+                    if asr_subtitles.video_id != video_id:
+                        self.workspace.finish_asr_attempt(attempt_id, status="failed", error="identity mismatch")
+                        raise YouTubeError("ASR transcript identity does not match the requested video")
+                    self.workspace.finish_asr_attempt(
+                        attempt_id, status="ready", task_id=asr_result.task_id,
+                        usage_seconds=asr_result.usage_seconds, cost=asr_result.cost,
+                    )
+                    self.workspace.store_transcript(
+                        video_id, language=asr_subtitles.language, srt_text=asr_subtitles.srt_text,
+                        source="asr_generated", provider=asr_result.provider,
+                        attempt_id=asr_result.task_id,
+                    )
+                    srt_text = asr_subtitles.srt_text
+                    source_language = asr_subtitles.language
+                    self.workspace.record_video_duration(video_id, asr_subtitles.duration_seconds)
+                    self.workspace.youtube_requests.caption_succeeded()
+                else:
+                    if subtitles.video_id != video_id:
+                        raise YouTubeError('Subtitle identity does not match the requested video')
+                    self.workspace.record_video_duration(video_id, subtitles.duration_seconds)
+                    srt_text = subtitles.srt_text
+                    source_language = subtitles.language
+                    self.workspace.store_transcript(
+                        video_id, language=subtitles.language, srt_text=srt_text,
+                        source="auto" if subtitles.is_auto else "native",
+                    )
+                    self.workspace.youtube_requests.caption_succeeded()
             transcript = (
                 self.transcript_normalizer(srt_text, source_language)
                 if self.transcript_normalizer else "\n".join(cues_to_lines(load_cues(srt_text)))
