@@ -1,10 +1,7 @@
 /* Course workspace: navigation stays still; reading owns the available space. */
-.course-archive { flex: 1; min-width: 0; min-height: 0; display: flex; flex-direction: column; padding: 30px 36px 18px; color: var(--ink); background: var(--canvas); overflow: hidden; container-type: inline-size; container-name: course-archive; }
+.course-archive { flex: 1; min-width: 0; min-height: 0; display: flex; flex-direction: column; padding: 32px 32px 18px; color: var(--ink); background: var(--canvas); overflow: hidden; container-type: inline-size; container-name: course-archive; }
 .course-archive-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 24px; margin-bottom: 20px; }
-.course-archive-eyebrow { margin: 0 0 10px; font-size: 12px; color: var(--muted); }
-.course-archive-eyebrow span { color: var(--faint); }
-.app.nav-collapsed .course-archive-eyebrow { padding-left: 28px; }
-.course-archive h1 { font-size: 25px; line-height: 1.4; font-weight: 600; letter-spacing: -.025em; margin: 0; }
+.course-archive-header h2 { font-size: 25px; line-height: 1.4; font-weight: 600; letter-spacing: -.025em; margin: 0; }
 .course-archive-description { font-size: 13px; line-height: 1.7; color: var(--muted); margin: 7px 0 0; }
 .course-archive-separator { margin: 0 8px; color: var(--muted); }
 .course-archive-actions { display: flex; gap: 8px; flex-shrink: 0; flex-wrap: wrap; }
@@ -108,7 +105,7 @@
   .course-archive-statusbar { align-items: flex-start; }
   .course-archive-description { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 0; }
 }
-@media (max-width: 700px) { .course-archive { padding: 22px 18px 14px; } .course-archive h1 { font-size: 22px; } }
+@media (max-width: 700px) { .course-archive { padding: 22px 18px 14px; } .course-archive-header h2 { font-size: 22px; } }
 .course-archive-reader-scroll { overflow: auto; min-height: 0; flex: 1; }
 .course-archive-source { display: flex; flex-wrap: wrap; gap: 14px; font-size: 12px; color: var(--muted); max-width: 820px; margin: 0 auto; padding: 0 0 22px; border-bottom: 1px solid var(--line); }
 .course-archive-source a { color: var(--accent); }

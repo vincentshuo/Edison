@@ -119,9 +119,13 @@ _Avoid_: Summarization, translation regeneration, replacement of the complete tr
 
 ## Curriculum language
 
-**Curriculum（课程周览）**:
-The person's weekly view of university courses, combining their timetable, academic calendar, and class period times. Personal tasks and schedule editing are outside this module's scope.
+**Curriculum（课程模块）**:
+The person's university course workspace, containing the Timetable and Course archive. Personal tasks and schedule editing are outside this module's scope.
 _Avoid_: Task planner, schedule editor
+
+**Timetable（课表）**:
+The weekly view of scheduled university courses, combining the academic calendar and class period times. It is distinct from the Course archive of recorded classroom documents.
+_Avoid_: Course archive, schedule editor
 
 **Course occurrence（一次课程安排）**:
 A course scheduled on a particular date and time, with its assigned classroom and teacher. Separate occurrences of the same course may have different rooms or teachers.
@@ -130,10 +134,6 @@ _Avoid_: Course definition, personal task
 **Course-free interval（无课时段）**:
 A gap between known course commitments within a covered timetable period. It does not establish availability for other commitments.
 _Avoid_: Guaranteed availability, missing timetable
-
-**Course notification（课程通知）**:
-A system notification marking the scheduled start or end of one numbered class period. It belongs to the operating system's notification surface, distinct from messages inside Edison.
-_Avoid_: In-app toast, personal task reminder
 
 **Class period（课程节次）**:
 One numbered teaching interval in the university's daily timetable, with its own start and end time. A single course occurrence can contain several periods separated by breaks.

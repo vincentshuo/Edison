@@ -1,0 +1,8 @@
+.curriculum-module-header { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px 28px; margin-bottom: 28px; }
+.curriculum-module-header h1.editorial-heading { margin: 0; font-size: var(--fs-title); font-weight: 400; letter-spacing: -.025em; }
+.app.nav-collapsed .curriculum-module-header { padding-left: 28px; }
+.curriculum-view-navigation { display: flex; align-items: center; flex-wrap: wrap; gap: 8px 28px; margin-left: auto; }
+.curriculum-view-navigation button { min-height: 44px; padding: 6px 0; color: var(--muted); font-size: var(--fs-ui); background: none; border: 0; cursor: pointer; }
+.curriculum-view-navigation button:hover, .curriculum-view-navigation button[aria-current="page"] { color: var(--ink); }
+.curriculum-view-navigation button:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; border-radius: 2px; }
+@media (max-width: 600px) { .curriculum-module-header { gap: 8px 20px; margin-bottom: 20px; } .curriculum-view-navigation { gap: 20px; } }

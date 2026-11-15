@@ -1012,8 +1012,6 @@ checksum = "d0881ea181b1df73ff77ffaaf9c7544ecc11e82fba9b5f27b262a3c73a332555"
 name = "edison-desktop"
 version = "0.2.3"
 dependencies = [
- "cc",
- "chrono",
  "ocw-stt",
  "serde",
  "serde_json",

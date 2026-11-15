@@ -58,6 +58,7 @@ import { InboxItemCard, approvalItemFromParked } from "./components/InboxItemCar
 import { chooseFolder, isTauri, platformOS, startWindowDrag } from "./tauri";
 import { Icon } from "./components/Icon";
 import { YouTubeView } from "./components/YouTubeView";
+import { shanghaiToday } from "./components/curriculum/timetable";
 import { CurriculumView } from "./components/CurriculumView";
 import { CourseArchiveView } from "./components/curriculum/CourseArchiveView";
 const ReaderView = lazy(() => import("./components/reader/ReaderView"));
@@ -299,6 +300,7 @@ export function App() {
     if (!guard) open(); else void guard().then(ok => {if (ok) open();});
   };
   const [archiveDocument, setArchiveDocument] = useState<string | null>(() => new URLSearchParams(location.search).get("document"));
+  const [curriculumDate, setCurriculumDate] = useState(shanghaiToday);
   const openClassroomDocument = (id: string | null) => { setArchiveDocument(id); setSurface("curriculum-archive"); };
   useEffect(() => {
     const url = new URL(location.href);
@@ -1780,9 +1782,7 @@ export function App() {
           openPersona(id, "session");
         }}
         onOpenCurriculum={() => setSurface("curriculum")}
-        curriculumActive={surface === "curriculum"}
-        onOpenCourseArchive={() => openClassroomDocument(null)}
-        courseArchiveActive={surface === "curriculum-archive"}
+        curriculumActive={surface === "curriculum" || surface === "curriculum-archive"}
         onOpenReader={() => openReaderBook(null)}
         readerActive={surface === "reader"}
         onOpenYouTube={() => setSurface("youtube")}
@@ -1806,7 +1806,7 @@ export function App() {
       ) : surface === "youtube" ? (
         <YouTubeView onModelSettings={() => openSettings("models")} onTranslationSettings={() => openSettings("youtube-translation")} />
       ) : surface === "curriculum" ? (
-        <CurriculumView onOpenDocument={openClassroomDocument} />
+        <CurriculumView onOpenDocument={openClassroomDocument} onArchive={() => openClassroomDocument(null)} selectedDate={curriculumDate} setSelectedDate={setCurriculumDate} />
       ) : surface === "curriculum-archive" ? (
         <CourseArchiveView documentId={archiveDocument} onOpenDocument={openClassroomDocument} onTimetable={() => setSurface("curriculum")} />
       ) : surface === "scheduled" ? (

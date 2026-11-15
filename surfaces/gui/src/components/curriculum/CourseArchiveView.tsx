@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import { downloadClassroomDocument, getClassroomDocument, getCourseArchive, prepareClassroomDocument } from "../../api";
 import type { ClassroomDocument, CourseArchiveSnapshot, RecordedClass } from "../../api";
 import { Icon } from "../Icon";
+import { CurriculumHeader } from "./CurriculumHeader";
 import { ArchiveStatus } from "./ArchiveStatus";
 import "./archive.css";
 
@@ -68,14 +69,14 @@ export function CourseArchiveView({ documentId, onOpenDocument, onTimetable }: {
   const checkedAt = coverage.map(item => item.checked_at).filter((value): value is string => Boolean(value)).sort().slice(-1)[0];
   const through = checkedAt ? new Intl.DateTimeFormat("sv-SE", { timeZone: "Asia/Shanghai", year: "numeric", month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit", hourCycle: "h23" }).format(new Date(checkedAt)) : coverage.map(item => item.through).sort().slice(-1)[0] ?? "2026-10-10";
   return <main className="course-archive" aria-label={t("course_archive.title")}>
+    <CurriculumHeader view="archive" onTimetable={onTimetable} onArchive={() => onOpenDocument(null)} />
     <header className="course-archive-header">
       <div>
-        <p className="course-archive-eyebrow">Curriculum <span>/ {t("course_archive.title")}</span></p>
-        <h1>{doc ? doc.title : t("course_archive.title")}</h1>
+        <h2>{doc ? doc.title : t("course_archive.title")}</h2>
         <p className="course-archive-description" aria-live={documentId ? undefined : "polite"}>{documentId ? t("course_archive.reading_note") : snapshot ? <>{t("course_archive.readable_count", { count: ready })}<span className="course-archive-separator">·</span>{t("course_archive.waiting_count", { count: waiting.length })}{remaining > 0 && <><span className="course-archive-separator">·</span>{t("course_archive.remaining_count", { count: remaining })}</>}</> : t("course_archive.description")}</p>
       </div>
       <div className="course-archive-actions">
-        <button onClick={() => documentId ? onOpenDocument(null) : onTimetable()}><Icon name="chevronRight" className="curriculum-back" size={14} />{t(documentId ? "course_archive.back" : "course_archive.timetable")}</button>
+        {documentId && <button onClick={() => onOpenDocument(null)}><Icon name="chevronRight" className="curriculum-back" size={14} />{t("course_archive.back")}</button>}
         {doc && <button onClick={download}><Icon name="file" size={14} />{t("course_archive.download")}</button>}
       </div>
     </header>

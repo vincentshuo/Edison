@@ -9,6 +9,7 @@ test("shows edited transcripts, preserved versions and the independent Mac backu
     recordings: [{ ...record, documents: [{ ...note, perspective: "transcript" }], history: [{ ...note, id: "old-notes" }] }],
     coverage: {}, automation: { enabled: true, errors: {} }, backup: { state: "pending" },
   } }));
+  await page.getByTestId("nav-curriculum").click();
   await page.getByTestId("nav-course-archive").click();
   await expect(page.getByRole("status")).toContainText("Mac 待补齐");
   await page.getByRole("button", { name: /2026-10-09第6-7节.*字幕整理稿/ }).click();
@@ -18,6 +19,7 @@ test("shows edited transcripts, preserved versions and the independent Mac backu
 
 test("distinguishes an expired Edison login from a broken archive", async ({ page }) => {
   await page.route("**/v1/curriculum/archive", route => route.fulfill({ status: 401 }));
+  await page.getByTestId("nav-curriculum").click();
   await page.getByTestId("nav-course-archive").click();
   await expect(page.getByRole("alert")).toContainText("登录已失效");
   await expect(page.getByRole("link", { name: "登录 Edison" })).toHaveAttribute("href", "/login");
@@ -35,6 +37,7 @@ test("groups repeated platform failures in both the alert and status details", a
     },
     backup: { state: "synced" },
   } }));
+  await page.getByTestId("nav-curriculum").click();
   await page.getByTestId("nav-course-archive").click();
   const alert = page.getByRole("alert");
   await expect(alert.getByText(denied, { exact: true })).toHaveCount(1);
@@ -56,6 +59,7 @@ test("keeps an expired-login prompt stable and stops automatic requests until si
       coverage: {}, automation: { enabled: true },
     } }) : route.fulfill({ status: 401 });
   });
+  await page.getByTestId("nav-curriculum").click();
   await page.getByTestId("nav-course-archive").click();
   await expect(page.getByText("自动检查已启用", { exact: true }).first()).toBeVisible();
   expired = true;
@@ -82,6 +86,7 @@ test.beforeEach(async ({ page }) => {
 test("reads course groups, downloads notes, and restores the reading link on reload", async ({ page }) => {
   const sources: string[] = [];
   page.on("request", r => { if (/transcript|\/sources\//.test(r.url())) sources.push(r.url()); });
+  await page.getByTestId("nav-curriculum").click();
   await page.getByTestId("nav-course-archive").click();
   const view = page.getByRole("main", { name: "课程档案", exact: true });
   await expect(view).toContainText("1 节可阅读");
@@ -111,6 +116,7 @@ test("details link only this lecture, while its lab explains the absent platform
 });
 test("supports narrow layout and handles an archive service failure", async ({ page }) => {
   await page.setViewportSize({ width: 720, height: 850 });
+  await page.getByTestId("nav-curriculum").click();
   await page.getByTestId("nav-course-archive").click();
   await page.getByLabel("课程", { exact: true }).selectOption("design");
   await expect(page.getByRole("heading", { name: "三维造型与工业设计" })).toBeVisible();
@@ -143,6 +149,7 @@ test("keeps indented equations inside lists and the following lesson readable", 
 
 这段讲解必须保持普通正文。`;
   await page.route("**/v1/curriculum/documents/notes-design", route => route.fulfill({ json: { ...note, recording_id: record.id, markdown: lesson } }));
+  await page.getByTestId("nav-curriculum").click();
   await page.getByTestId("nav-course-archive").click();
   await page.getByRole("button", { name: /2026-10-09第6-7节/ }).click();
   await expect(page.locator("article .katex-error")).toHaveCount(0);
@@ -157,6 +164,7 @@ test("keeps course navigation separate from the global missing-caption queue", a
     courses: [{ key: "design", name: record.name }, { key: "math", name: "工程数学" }, { key: "empty", name: "尚无课次" }],
     recordings: [record, missing], coverage: {},
   } }));
+  await page.getByTestId("nav-curriculum").click();
   await page.getByTestId("nav-course-archive").click();
   const nav = page.getByRole("navigation", { name: "按课程浏览" });
   await expect(nav).toBeVisible();
@@ -185,6 +193,7 @@ test("discloses independent timestamps and exposes conflicts without opening det
     automation: { enabled: true, checked_at: "2026-10-13T01:15:24Z" },
     backup: { state, checked_at: "2026-10-13T01:14:50Z", conflicts: state === "conflict" ? ["edited.md"] : [] },
   } }));
+  await page.getByTestId("nav-curriculum").click();
   await page.getByTestId("nav-course-archive").click();
   const details = page.locator(".course-archive-status-disclosure");
   await expect(details).not.toHaveAttribute("open");
@@ -216,6 +225,7 @@ test("fits the workspace and disclosure at phone width with reduced motion", asy
     courses: [{ key: "design", name: record.name }], recordings: [record], coverage: {},
     automation: { enabled: true }, backup: { state: "synced" },
   } }));
+  await page.getByTestId("nav-curriculum").click();
   await page.getByTestId("nav-course-archive").click();
   await page.keyboard.press("ControlOrMeta+b");
   await expect(page.locator(".app")).toHaveClass(/nav-collapsed/);
@@ -229,4 +239,30 @@ test("fits the workspace and disclosure at phone width with reduced motion", asy
   expect(box!.x + box!.width).toBeLessThanOrEqual(390);
   expect(await page.locator(".course-archive").evaluate(el => el.scrollWidth <= el.clientWidth)).toBe(true);
   await page.screenshot({ path: "test-results/course-workspace-phone.png" });
+});
+
+
+test("switches course views while preserving the week and document deep links", async ({ page }) => {
+  await page.getByTestId("nav-curriculum").click();
+  await page.getByLabel("跳转日期").fill("2026-10-09");
+  await expect(page.locator(".curriculum-notification-control")).toHaveCount(0);
+  await expect(page.locator(".curriculum-eyebrow, .curriculum-subtitle, .curriculum-semester")).toHaveCount(0);
+  await page.getByTestId("nav-course-archive").click();
+  await expect(page.getByTestId("nav-curriculum")).toHaveAttribute("aria-current", "page");
+  await page.getByRole("button", { name: /2026-10-09第6-7节/ }).click();
+  await expect(page.getByRole("article")).toBeVisible();
+  await expect(page).toHaveURL(/document=notes-design/);
+  await page.getByTestId("nav-course-archive").click();
+  await expect(page.getByRole("article")).toHaveCount(0);
+  await expect(page).not.toHaveURL(/document=/);
+  await page.getByTestId("curriculum-timetable").click();
+  await expect(page.getByLabel("跳转日期")).toHaveValue("2026-10-09");
+  await page.screenshot({ path: "test-results/curriculum-navigation-desktop.png" });
+  await page.setViewportSize({ width: 390, height: 850 });
+  await page.keyboard.press("ControlOrMeta+b");
+  await expect(page.getByTestId("nav-course-archive")).toBeVisible();
+  await page.mouse.move(380, 800);
+  await expect(page.locator(".app")).not.toHaveClass(/nav-peek/);
+  await expect(page.locator(".sidebar")).not.toBeInViewport();
+  await page.screenshot({ path: "test-results/curriculum-navigation-phone.png" });
 });
