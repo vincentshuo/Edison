@@ -1,4 +1,4 @@
-.curriculum { flex: 1; min-width: 0; display: flex; flex-direction: column; overflow: hidden; padding: 32px 32px 16px; color: var(--ink); background: var(--canvas); }
+.curriculum { flex: 1; min-width: 0; display: flex; flex-direction: column; overflow: hidden; padding: 0 32px 16px; color: var(--ink); background: var(--canvas); }
 .curriculum h1 { margin: 0; font-size: var(--fs-title); letter-spacing: -.025em; }
 .curriculum-toolbar { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 14px; margin-bottom: 14px; }
 .curriculum-week-title { display: flex; flex-wrap: wrap; align-items: baseline; gap: 12px; }
@@ -50,8 +50,8 @@
 .curriculum-details-periods li > small { margin: 8px 0; padding: 6px 0; border-block: 1px dashed var(--line); font-size: var(--fs-label); }
 .curriculum-free { position: absolute; top: 42px; left: 0; right: 0; text-align: center; font-size: var(--fs-mono); color: var(--faint); }
 .curriculum-footer { padding-top: 12px; font-size: var(--fs-label); color: var(--faint); }
-@media (max-width: 900px) { .curriculum { padding: 24px 18px 12px; } }
-@media (max-width: 600px) { .curriculum { padding: 18px 12px 10px; } .curriculum-semester { display: none; } .curriculum-controls { flex-wrap: wrap; } }
+@media (max-width: 900px) { .curriculum { padding: 0 18px 12px; } }
+@media (max-width: 600px) { .curriculum { padding: 0 12px 10px; } .curriculum-semester { display: none; } .curriculum-controls { flex-wrap: wrap; } }
 
 .curriculum-day-label { display: flex; align-items: center; justify-content: center; gap: 8px; min-height: 30px; }
 .curriculum-day-events { min-height: 16px; font-size: var(--fs-label); color: var(--muted); text-align: center; }

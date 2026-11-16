@@ -118,7 +118,7 @@ test("course details expose the correct teacher and class periods, then restore 
 test("shows individual start and end times and a real break inside one continuous course", async ({ page }) => {
   await page.getByRole("button", { name: "Curriculum", exact: true }).click();
   const view = page.getByRole("main", { name: "Curriculum" });
-  await expect(view.getByRole("heading", { name: "Curriculum", exact: true })).toHaveCSS("font-style", "italic");
+  await expect(view.getByRole("heading", { name: "Curriculum", exact: true })).toHaveCSS("font-weight", "700");
   const axis = view.getByLabel("逐节上下课时间", { exact: true });
   await expect(axis).toContainText("上课08:00第 1 节下课08:45");
   await expect(axis).toContainText("上课08:50第 2 节下课09:35");
@@ -208,4 +208,27 @@ test.describe("school timezone", () => {
     await page.getByRole("button", { name: "This week", exact: true }).click();
     await expect(page.getByLabel("Jump to date")).toHaveValue("2026-09-21");
   });
+});
+
+test("module navigation meets the top edge with readable headers at both widths", async ({ page }) => {
+  await page.emulateMedia({ reducedMotion: "reduce" });
+  await page.getByRole("button", { name: "Curriculum", exact: true }).click();
+  for (const width of [1440, 390]) {
+    await page.setViewportSize({ width, height: 900 });
+    if (width === 390) {
+      await page.mouse.move(380, 500);
+      await page.keyboard.press("ControlOrMeta+b");
+      await expect(page.locator(".sidebar")).not.toBeInViewport();
+    }
+    const nav = page.locator('.curriculum-view-navigation');
+    const bounds = await nav.boundingBox();
+    expect(bounds!.y).toBe(0);
+    expect(bounds!.x).toBeGreaterThanOrEqual(0);
+    expect(bounds!.x + bounds!.width).toBeLessThanOrEqual(width);
+    const active = nav.locator('[aria-current="page"]');
+    await expect(active).toHaveCSS('font-weight', '700');
+    expect(await active.evaluate(el => parseFloat(getComputedStyle(el).fontSize))).toBeGreaterThanOrEqual(22);
+    expect(await active.evaluate(el => getComputedStyle(el, '::before').opacity)).toBe('1');
+    await page.screenshot({ path: `/tmp/edison-header-${width}.png` });
+  }
 });

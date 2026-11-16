@@ -214,7 +214,7 @@ test("discloses independent timestamps and exposes conflicts without opening det
   await details.locator("summary").press("Enter");
   await expect(details).toHaveAttribute("open", "");
   await expect(details).toHaveAttribute("data-motion", "keyboard");
-  await page.getByRole("heading", { name: "课程档案", exact: true }).click();
+  await page.getByRole("heading", { name: "Curriculum", exact: true }).click();
   await expect(details).not.toHaveAttribute("open");
 });
 
