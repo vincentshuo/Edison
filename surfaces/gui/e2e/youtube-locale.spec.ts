@@ -30,7 +30,15 @@ test('YouTube follows the app language and keeps notifications outside the page'
   await page.getByRole('button', { name: 'Progress', exact: true }).click();
   const progress = page.getByRole('region', { name: 'Progress', exact: true });
   await expect(progress.getByRole('heading', { name: 'Waiting for subscription updates' })).toBeVisible();
+  await expect(progress.locator('.discovery-waiting-dots')).toHaveCount(1);
+  await expect(progress.locator('.discovery-waiting-dots i').first()).toHaveCSS('animation-name', 'discovery-waiting-dot');
   await expect(page.getByRole('button', { name: 'Progress', exact: true })).toHaveCSS('font-style', 'italic');
+  await page.setViewportSize({ width: 1440, height: 850 });
+  const tools = page.locator('.yp-tools');
+  const nav = page.locator('.yp-page-nav');
+  expect((await tools.boundingBox())!.x).toBeLessThan((await nav.boundingBox())!.x);
+  await expect(page.locator('.yp-page-nav button[aria-current="page"]')).toHaveCSS('font-style', 'italic');
+  expect(await page.locator('.yp-page-nav button[aria-current="page"]').evaluate(el => getComputedStyle(el, '::before').opacity)).toBe('1');
   expect(await page.locator('.yp-main').innerText()).not.toMatch(/[\u4e00-\u9fff]/);
   await page.screenshot({ path: '../../reports/ui-refinement/youtube-en.png' });
   await expect(page.locator('.notice-card')).toHaveText('Subscriptions could not refresh. Retrying later.');

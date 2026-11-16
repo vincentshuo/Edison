@@ -108,6 +108,7 @@ export function ProgressPage({ actionsTarget, activity, receivedAt, disconnected
   const active = !!current;
   const cooldownUntil = activity?.youtube_requests?.cooldown_until || 0;
   const cooling = cooldownUntil * 1000 > now;
+  const showWaitingDots = !active && !stale && !!activity?.model_ready && !activity?.drain_paused && !cooling;
   const stage = current?.preparation_stage || current?.preparation_state;
   const title = stale ? yt("正在重新连接") : !activity?.model_ready ? yt("等待模型设置")
     : active ? labels[stage || ""] || yt("正在处理") : activity?.drain_paused ? yt("更新已暂停")
@@ -135,7 +136,7 @@ export function ProgressPage({ actionsTarget, activity, receivedAt, disconnected
     </div>
     <DiscoveryStatus discovery={activity?.discovery} paused={!!activity?.drain_paused} />
     <div className="discovery-stage-strip-layout-ma">
-      <LaunchHero live={live && active} offline={stale || (!!activity?.runtime && !live)} observedStage={title}
+      <LaunchHero live={live && active} offline={stale || (!!activity?.runtime && !live)} observedStage={title} showWaitingDots={showWaitingDots}
         signalCopy={current ? `${current.title} · ${videoMetadataText(current)}` : ""}
         milestones={milestones} metrics={[
           { label: yt("待处理"), value: activity?.queued ?? "—", note: yt("尚未开始，可以取消") },

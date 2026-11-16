@@ -33,8 +33,10 @@
 }
 .yp-tools {
   display: flex;
+  order: 1;
   align-items: center;
   gap: 10px;
+  margin-right: auto;
 }
 .yp-btn,
 .yp-iconbtn {

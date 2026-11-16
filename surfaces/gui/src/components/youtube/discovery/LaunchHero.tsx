@@ -2,8 +2,9 @@ import { useTranslation } from "react-i18next";
 import { yt } from "../text";
 // Adapted directly from Vegapunk PrototypeLaunchHero. See docs/upstream/vegapunk-discovery.
 export type Milestone = { id: string; label: string; summary?: string; state: "done" | "active" | "pending" };
-export function LaunchHero({ live, offline, observedStage, signalCopy, milestones, metrics }: {
+export function LaunchHero({ live, offline, observedStage, signalCopy, showWaitingDots, milestones, metrics }: {
   live: boolean; offline: boolean; observedStage: string; signalCopy: string;
+  showWaitingDots?: boolean;
   milestones: Milestone[]; metrics: {label: string; value: string | number; note: string}[];
 }) {
   useTranslation();
@@ -13,7 +14,7 @@ export function LaunchHero({ live, offline, observedStage, signalCopy, milestone
         <div className="discovery-beacon-signal-head">
           <div className="discovery-beacon-orb" aria-hidden="true"><span /></div>
           <div className="min-w-0">
-            <h2 className="discovery-launch-title discovery-beacon-title">{observedStage}</h2>
+            <h2 className="discovery-launch-title discovery-beacon-title">{observedStage}{showWaitingDots && <span className="discovery-waiting-dots" aria-hidden="true"><i>.</i><i>.</i><i>.</i></span>}</h2>
             {signalCopy && <p className="discovery-beacon-copy">{signalCopy}</p>}
           </div>
         </div>

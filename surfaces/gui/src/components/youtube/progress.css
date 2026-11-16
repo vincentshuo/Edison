@@ -1,6 +1,13 @@
-.yp-page-nav { display: flex; gap: 24px; align-items: center; flex-shrink: 0; }
-.yp-page-nav button { padding: 10px 0; color: var(--muted); border-bottom: 2px solid transparent; }
-.yp-page-nav button[aria-current] { color: var(--ink); border-color: var(--ink); }
+.yp-page-nav { display: flex; order: 2; align-self: stretch; gap: 32px; align-items: center; flex-shrink: 0; margin-left: auto; }
+.yp-page-nav button { position: relative; min-height: 76px; padding: 18px 0 20px; color: var(--muted); border: 0; }
+.yp-page-nav button::before { content: ""; position: absolute; top: 0; left: -6px; right: -6px; height: 6px; border-radius: 0 0 50% 50% / 0 0 100% 100%; background: #ff5a1f; opacity: 0; }
+.yp-page-nav button[aria-current="page"] { color: var(--ink); }
+.yp-page-nav button[aria-current="page"]::before { opacity: 1; }
+.discovery-waiting-dots { display: inline-flex; min-width: 1.05em; margin-left: .08em; }
+.discovery-waiting-dots i { font-style: normal; opacity: .25; animation: discovery-waiting-dot 1.2s linear infinite; }
+.discovery-waiting-dots i:nth-child(2) { animation-delay: .2s; }
+.discovery-waiting-dots i:nth-child(3) { animation-delay: .4s; }
+@keyframes discovery-waiting-dot { 0%, 25% { opacity: .25; } 40%, 70% { opacity: 1; } 85%, 100% { opacity: .25; } }
 .yp-progress { --ma-content: transparent; --ok: var(--accent); --warn-ink: var(--muted); max-width: 1160px; margin: 0 auto; }
 .yp-progress-heading { display: flex; justify-content: flex-end; margin: 0 0 14px; }
 .yp-progress-note { color: var(--muted); font-size: 12px; line-height: 1.7; }
@@ -48,6 +55,7 @@
 .yp-progress .discovery-runtime-event-copy span { white-space: normal; }
 .yp-progress .discovery-runtime-event-copy strong { overflow-wrap: anywhere; }
 .yp-progress button:focus-visible, .yp-page-nav button:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+@media (prefers-reduced-motion: reduce) { .discovery-waiting-dots i { animation: none; opacity: .7; } }
 @media (max-width: 1100px) {
   .yp-progress .is-idle .discovery-beacon-metrics { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .yp-header { flex-wrap: wrap; gap: 8px; }
@@ -67,7 +75,7 @@
 .yp-console-output { height: 300px; overflow: auto; margin: 14px 0 0; padding: 18px; background: var(--panel); border: 1px solid var(--line); border-radius: 8px; color: var(--ink); white-space: pre-wrap; overflow-wrap: anywhere; font: 12px/1.85 ui-monospace, SFMono-Regular, Menlo, monospace; tab-size: 2; }
 .yp-console-output code { font: inherit; }
 .yp-console-output:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
-@media (max-width: 640px) { .yp-page-nav { gap: 16px; flex-wrap: wrap; flex-shrink: 1; } }
+@media (max-width: 640px) { .yp-page-nav { gap: 20px; flex-wrap: wrap; flex-shrink: 1; } .yp-page-nav button { min-height: 64px; padding: 18px 0 16px; } }
 
 .yp-progress .discovery-beacon-signal { --beacon-orb-size: 66px; }
 .yp-progress .discovery-beacon-signal-head { gap: 20px; align-items: center; }
