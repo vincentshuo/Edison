@@ -374,7 +374,7 @@ export function YouTubeView({
       <NoticeStack messages={[message, progressMessage, panel ? "" : panelMessage, activity?.discovery_error || ""].map(value => value ? yt(value) : "")} />
       <header className="yp-head">
         <div className="yp-header">
-            <nav className="yp-page-nav" aria-label={yt("YouTube 页面")}>
+          <nav className="yp-page-nav" aria-label={yt("YouTube 页面")}>
             <button aria-current={page === "progress" ? "page" : undefined} onClick={() => setPage("progress")}>{yt("处理进度")}</button>
             <button aria-current={page === "documents" ? "page" : undefined} onClick={() => setPage("documents")}>{yt("阅读文档")}</button>
             <button aria-current={page === "activity" ? "page" : undefined} onClick={() => setPage("activity")}>{yt("事件时间线")}</button>
