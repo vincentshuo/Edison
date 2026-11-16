@@ -398,7 +398,8 @@ export function YouTubeView({
               {yt("生成规则")}</button>
           </div>
         </div>
-        {page === "documents" && <>
+      </header>
+      {page === "documents" && <div className="yp-documents-bar">
         <div className="yp-subline">
           <span>
             {
@@ -503,8 +504,7 @@ export function YouTubeView({
             </label>
           </div>
         )}
-        </>}
-      </header>
+      </div>}
       <div className="yp-content">
         {page === "progress" ? (
           <ProgressPage actionsTarget={progressActions} activity={activity} receivedAt={activityReceivedAt} disconnected={activityError}

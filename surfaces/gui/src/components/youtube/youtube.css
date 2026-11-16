@@ -9,13 +9,15 @@
   z-index: 4;
   background: var(--glass-strong);
   backdrop-filter: blur(18px);
-  padding: 30px 36px 0;
+  min-height: 76px;
+  padding: 0 36px;
 }
 .yp-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 20px;
+  min-height: 76px;
 }
 .yp-header h1 {
   font-size: var(--fs-title);
@@ -816,14 +818,16 @@
 .yp-documents {
   display: grid;
   grid-template-columns: minmax(0, 1.6fr) minmax(300px, 1fr);
-  grid-template-rows: auto minmax(0, 1fr);
+  grid-template-rows: 76px auto minmax(0, 1fr);
   overflow: hidden;
   padding-bottom: 0;
 }
-.yp-documents > .yp-head { grid-column: 1 / -1; padding: 18px 28px 0; border-bottom: 1px solid var(--line); }
-.yp-documents .yp-subline { margin: 8px 0 12px; }
+.yp-documents > .yp-head { grid-column: 1 / -1; grid-row: 1; padding: 0 28px; border-bottom: 1px solid var(--line); }
+.yp-documents-bar { grid-column: 1 / -1; grid-row: 2; min-width: 0; padding: 0 28px; border-bottom: 1px solid var(--line); }
+.yp-documents-bar .yp-subline { margin: 8px 0 12px; }
 .yp-documents .yp-filterbar { border: 0; padding-bottom: 12px; }
-.yp-documents > .yp-content { overflow: auto; min-height: 0; padding: 8px 14px 28px; background: var(--panel); }
+.yp-documents > .yp-content { grid-column: 1; grid-row: 3; overflow: auto; min-height: 0; padding: 8px 14px 28px; background: var(--panel); }
+.yp-documents > .yp-inspector { grid-column: 2; grid-row: 3; }
 .yp-documents .yp-row { position: relative; align-items: center; gap: 20px; min-height: 116px; padding: 20px 110px 20px 18px; border: 0; border-radius: 6px; }
 .yp-documents .yp-row::after { content: ""; position: absolute; bottom: 0; left: 102px; right: 18px; height: 1px; background: var(--line); }
 .yp-documents .yp-row[aria-pressed="true"] { background: var(--paper); }
@@ -856,8 +860,9 @@
 .yp-document[aria-pressed="true"] { border-color: #78b5ed; background: var(--paper); }
 @media (max-width: 1100px) {
   .yp-documents { grid-template-columns: minmax(0, 1fr); }
-  .yp-documents > .yp-head { padding: 16px 20px 0; }
-  .yp-documents .yp-inspector { grid-column: 1; grid-row: 2; border-left: 0; }
+  .yp-documents > .yp-head { padding: 0 20px; }
+  .yp-documents-bar { padding: 0 20px; }
+  .yp-documents .yp-inspector { grid-column: 1; grid-row: 3; border-left: 0; }
   .yp-documents .yp-inspector:has(.yp-inspector-placeholder) { display: none; }
   .yp-documents:has(.yp-inspector-footer) > .yp-content { display: none; }
 }

@@ -9,10 +9,10 @@ export function LaunchHero({ live, offline, observedStage, signalCopy, showWaiti
 }) {
   useTranslation();
   return (
-    <section className={`discovery-prototype-panel discovery-hero-panel discovery-beacon-hero ${!live ? "is-standby" : ""} ${!milestones.length ? "is-idle" : ""} ${offline ? "is-error" : ""}`} aria-label={yt("当前处理概览")}>
+    <section className={`discovery-prototype-panel discovery-hero-panel discovery-beacon-hero ${!live ? "is-standby" : ""} ${!milestones.length ? "is-idle" : ""} ${showWaitingDots ? "is-waiting" : ""} ${offline ? "is-error" : ""}`} aria-label={yt("当前处理概览")}>
       <div className="discovery-beacon-signal">
         <div className="discovery-beacon-signal-head">
-          <div className="discovery-beacon-orb" aria-hidden="true"><span /></div>
+          {!showWaitingDots && <div className="discovery-beacon-orb" aria-hidden="true"><span /></div>}
           <div className="min-w-0">
             <h2 className="discovery-launch-title discovery-beacon-title">{observedStage}{showWaitingDots && <span className="discovery-waiting-dots" aria-hidden="true"><i>.</i><i>.</i><i>.</i></span>}</h2>
             {signalCopy && <p className="discovery-beacon-copy">{signalCopy}</p>}

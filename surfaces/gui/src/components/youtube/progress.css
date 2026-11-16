@@ -24,6 +24,10 @@
 .yp-progress .discovery-beacon-hero.is-idle { grid-template-columns: minmax(0, 1fr); }
 .yp-progress .is-idle .discovery-beacon-signal { min-height: 0; padding: 20px 24px; border-right: 0; }
 .yp-progress .is-idle .discovery-beacon-signal::before { display: none; }
+.yp-progress .discovery-beacon-hero.is-waiting .discovery-beacon-orb { display: none; }
+.yp-progress .discovery-beacon-hero.is-waiting .discovery-beacon-signal::before { display: none; }
+.yp-progress .discovery-beacon-hero.is-waiting .discovery-beacon-signal-head { display: block; }
+.yp-progress .discovery-beacon-hero.is-waiting .discovery-beacon-title { margin-top: 0; }
 .yp-progress .is-idle .discovery-beacon-metrics { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 .yp-progress .discovery-beacon-hero.is-standby .discovery-beacon-orb span,
 .yp-progress .discovery-beacon-hero.is-standby .discovery-beacon-orb::before,
