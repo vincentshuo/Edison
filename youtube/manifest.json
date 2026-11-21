@@ -53,6 +53,15 @@
       "name": "AI Engineer",
       "documents": [
         {
+          "id": "Channel/AI Engineer/engineer-your-coding-agents-zach-lloyd.html",
+          "path": "Channel/AI Engineer/engineer-your-coding-agents-zach-lloyd.html",
+          "title": "软件工程正在变成工厂工程 — Zach Lloyd（Warp）精读报告",
+          "sha256": "abf8af2945edb601a4e45254c352f23266654a46a934e39be466e037a4a79675",
+          "modified": "2026-11-21T22:13:32",
+          "date": "2026.11.21",
+          "channel": "AI Engineer"
+        },
+        {
           "id": "Channel/AI Engineer/Zach Bruggeman - How to build an agent that builds the culture.html",
           "path": "Channel/AI Engineer/Zach Bruggeman - How to build an agent that builds the culture.html",
           "title": "造一个会造文化的智能体 — Zach Bruggeman（Ramp）精读报告",
@@ -397,9 +406,33 @@
       ]
     },
     {
+      "id": "Bloomberg Podcasts",
+      "name": "Bloomberg Podcasts",
+      "documents": [
+        {
+          "id": "Channel/Bloomberg Podcasts/Anthropic 上市次日跌 12%，AI 交易走到尽头了吗 — Bloomberg Money 精读报告.html",
+          "path": "Channel/Bloomberg Podcasts/Anthropic 上市次日跌 12%，AI 交易走到尽头了吗 — Bloomberg Money 精读报告.html",
+          "title": "Anthropic 上市次日跌 12%，AI 交易走到尽头了吗 — Bloomberg Money 精读报告",
+          "sha256": "a53e27e2b53aca415aea4a0b5c7e6eb07940ac1c7ae1bc2ec41cf5bccfb7e7a1",
+          "modified": "2026-11-21T22:13:35",
+          "date": "2026.11.21",
+          "channel": "Bloomberg Podcasts"
+        }
+      ]
+    },
+    {
       "id": "Chris Williamson",
       "name": "Chris Williamson",
       "documents": [
+        {
+          "id": "Channel/Chris Williamson/Why The Media Tried To Destroy James Blunt.html",
+          "path": "Channel/Chris Williamson/Why The Media Tried To Destroy James Blunt.html",
+          "title": "被媒体“送进坟墓”之后 — James Blunt 精读报告",
+          "sha256": "1ed9214a8d01f580112c40055b9a50c6d31b10a568c868f55b5dbc02bad2637a",
+          "modified": "2026-11-21T22:13:27",
+          "date": "2026.11.21",
+          "channel": "Chris Williamson"
+        },
         {
           "id": "Channel/Chris Williamson/What We Get Wrong About Angry Young Men - Ashley Walters.html",
           "path": "Channel/Chris Williamson/What We Get Wrong About Angry Young Men - Ashley Walters.html",
