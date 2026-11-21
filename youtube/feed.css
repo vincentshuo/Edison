@@ -2,7 +2,7 @@
 :root[data-theme=dark] { color-scheme:dark; --paper:#17191c; --ink:#edf0f3; --muted:#aeb6be; --line:#363b42; --accent:#9bbcff; }
 * {box-sizing:border-box}
 body {margin:0;background:var(--paper);color:var(--ink);font:15px/1.55 Inter,-apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif;}
-main {padding:0 32px 48px}
+main {padding:0 16px 48px}
 header,nav,.tools,.actions {display:flex;align-items:center}
 header {justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:8px}
 h1,nav button,.title {font-family:Palatino,Georgia,"Songti SC",serif}
