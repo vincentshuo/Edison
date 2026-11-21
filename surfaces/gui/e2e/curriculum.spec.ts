@@ -209,3 +209,26 @@ test.describe("school timezone", () => {
     await expect(page.getByLabel("Jump to date")).toHaveValue("2026-09-21");
   });
 });
+
+test("module navigation meets the top edge with readable headers at both widths", async ({ page }) => {
+  await page.emulateMedia({ reducedMotion: "reduce" });
+  await page.getByRole("button", { name: "Curriculum", exact: true }).click();
+  for (const width of [1440, 390]) {
+    await page.setViewportSize({ width, height: 900 });
+    if (width === 390) {
+      await page.mouse.move(380, 500);
+      await page.keyboard.press("ControlOrMeta+b");
+      await expect(page.locator(".sidebar")).not.toBeInViewport();
+    }
+    const nav = page.locator('.curriculum-view-navigation');
+    const bounds = await nav.boundingBox();
+    expect(bounds!.y).toBe(0);
+    expect(bounds!.x).toBeGreaterThanOrEqual(0);
+    expect(bounds!.x + bounds!.width).toBeLessThanOrEqual(width);
+    const active = nav.locator('[aria-current="page"]');
+    await expect(active).toHaveCSS('font-style', 'italic');
+    expect(await active.evaluate(el => parseFloat(getComputedStyle(el).fontSize))).toBeGreaterThanOrEqual(22);
+    expect(await active.evaluate(el => getComputedStyle(el, '::before').opacity)).toBe('1');
+    await page.screenshot({ path: `/tmp/edison-header-${width}.png` });
+  }
+});

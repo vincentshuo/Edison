@@ -2,11 +2,9 @@
 
 Edison 将 YouTube 阅读资料库与课程周览整合在同一工作区。
 
-minimalism 专注模块已移除；items 物品模块仅保留在本机忽略目录 `.local/items/`，不进入远程仓库或 Web 部署。
-
-- 侧边栏 **YouTube**：订阅导入、字幕获取、中文 Markdown、阅读队列、版本与来源追溯。
-- **设置 → 模型**：聊天与 YouTube 共用模型配置；YouTube 不需要第二份模型 API Key。
-- YouTube 登录由系统钥匙串保存，进入订阅页与后台定时同步账号订阅；旧 Vault 连接可一次迁移。正式构建的 Google 登录配置见 [连接说明](docs/architecture/youtube-connection.md)。模型凭据遵循 Openworker 原有存储机制。
+- 侧边栏 **YouTube** 阅读按频道整理的 HTML 报告，支持未读、已读和精选。
+- 新报告放入 `surfaces/gui/public/youtube/Channel/<频道>/`。运行 `scripts/daily_signal/install_watcher.sh` 安装本机监听器，文件稳定 60 秒后自动重建索引、提交并通过 SSH 推送到 Edison，再更新[公开报告库](https://vincentshuo.github.io/Edison/youtube/)。
+- 索引与监听器移植自 [Daily Signal 78453f1](https://github.com/vincentshuo/daily-signal/tree/78453f125129c99be12c1b956dae64a88a1b2701)。报告原样发布，阅读与精选状态保存在当前浏览器。
 
 ## 下载
 
@@ -23,7 +21,7 @@ npm ci
 npm run tauri dev
 ```
 
-macOS 客户端入口是 `surfaces/gui`。原有 `desktop` 是旧独立客户端，保留供迁移参考，不再作为 Edison 的入口。现有 YouTube 资料库继续保留在原有用户数据目录，可用 `YOUTUBE_WORKBENCH_WORKSPACE` 指定其他目录。
+macOS 客户端入口是 `surfaces/gui`。
 
 ## 本地应用包
 
@@ -42,5 +40,3 @@ uv run pytest
 npm --prefix surfaces/gui test
 npm --prefix surfaces/gui run build
 ```
-
-Openworker 上游来源、许可证与原始说明保存在 [docs/upstream/openworker](docs/upstream/openworker)。原 StrataRead 使用说明见 [docs/legacy-strataread-README.md](docs/legacy-strataread-README.md)。

@@ -9,5 +9,5 @@ The server is addressed by raw IP with no domain. TLS uses Let's Encrypt short-l
 ## Consequences
 
 - Google does not accept a raw IP as an OAuth redirect, so the first YouTube authorization happens on a trusted device and is handed to the server once. The server then refreshes it itself.
-- Desktop-only capabilities are dropped rather than emulated: local dictation (use the device's own voice input), visible browser automation and local models. Course notifications move to browser push.
+- Desktop-only capabilities are dropped rather than emulated: local dictation (use the device's own voice input), visible browser automation and local models. The original plan was to move course notifications to browser push. On 2026-11-16, the user chose to retire Edison’s own course notification capability instead; no browser-push replacement is part of the current scope.
 - The host has 2.5 GB of memory, so continuous YouTube preparation takes priority over optional heavy components.

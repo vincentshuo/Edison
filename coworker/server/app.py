@@ -182,8 +182,6 @@ def create_app(manager: SessionManager) -> FastAPI:
 
             traceback.print_exc()
         yield
-        if getattr(_app.state, "youtube", None) is not None:
-            _app.state.youtube.close()
         await manager.aclose()  # stop gateway + close MCP connections on shutdown
 
     app = FastAPI(title="coworker", version="0.0.0", lifespan=lifespan)
@@ -250,12 +248,8 @@ def create_app(manager: SessionManager) -> FastAPI:
         allow_headers=["*"],
     )
     app.state.manager = manager
-    from .youtube import attach_youtube
-    attach_youtube(app, manager)
     from .curriculum import attach_curriculum
     attach_curriculum(app, manager)
-    from .reader import attach_reader
-    attach_reader(app, manager)
 
     @app.get("/v1/health")
     def health(request: Request) -> dict[str, Any]:

@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import { Icon } from "./Icon";
 import { addDays, curriculumWeek, MAX_DATE, MIN_DATE, minutes, PERIODS, shanghaiToday, validDate } from "./curriculum/timetable";
 import type { Occurrence } from "./curriculum/timetable";
-import { NotificationControl } from "./curriculum/NotificationControl";
+import { CurriculumHeader } from "./curriculum/CurriculumHeader";
 import { CourseDetails } from "./curriculum/CourseDetails";
 import "./curriculum/curriculum.css";
 
@@ -11,10 +11,14 @@ const GRID_START = 8 * 60;
 const GRID_END = 21 * 60;
 const position = (time: string) => `${(minutes(time) - GRID_START) / (GRID_END - GRID_START) * 100}%`;
 
-export function CurriculumView({ onOpenDocument }: { onOpenDocument?: (id: string) => void }) {
+export function CurriculumView({ onOpenDocument, onArchive, selectedDate, setSelectedDate }: {
+  onOpenDocument?: (id: string) => void;
+  onArchive: () => void;
+  selectedDate: string;
+  setSelectedDate: React.Dispatch<React.SetStateAction<string>>;
+}) {
   const { t, i18n } = useTranslation();
   const [today, setToday] = useState(shanghaiToday);
-  const [selectedDate, setSelectedDate] = useState(shanghaiToday);
   const [selectedCourse, setSelectedCourse] = useState<Occurrence | null>(null);
   const schedule = curriculumWeek(selectedDate);
   const hasTimetable = schedule.days.some(day => day.covered);
@@ -40,17 +44,7 @@ export function CurriculumView({ onOpenDocument }: { onOpenDocument?: (id: strin
 
   return (
     <main className="curriculum" aria-label="Curriculum">
-      <header className="curriculum-header">
-        <div>
-          <p className="curriculum-eyebrow">{t("curriculum.university")} <span>2026 — 2027</span></p>
-          <h1 className="editorial-heading">Curriculum</h1>
-          <p className="curriculum-subtitle">{t("curriculum.subtitle")}</p>
-        </div>
-        <div className="curriculum-header-actions">
-          <NotificationControl />
-          <span className="curriculum-semester">{t(`curriculum.${schedule.semester ?? "outside_term"}`)}</span>
-        </div>
-      </header>
+      <CurriculumHeader view="timetable" onTimetable={() => {}} onArchive={onArchive} />
       <section className="curriculum-toolbar" aria-label={t("curriculum.navigation")}>
         <div className="curriculum-week-title" aria-live="polite">
           <h2>{schedule.week ? t("curriculum.week", { week: schedule.week }) : t("curriculum.week_view")}</h2>
