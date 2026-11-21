@@ -49,3 +49,6 @@ main {min-width:0;min-height:0;overflow:auto}
  #channel-toggle {display:block;font-size:12px}
  .channel-heading,#channel-toggle[aria-expanded=false] ~ #channels {display:none}
 }
+
+body.embedded {grid-template-columns:minmax(0,1fr);grid-template-rows:minmax(0,1fr)}
+.embedded > aside {display:none}

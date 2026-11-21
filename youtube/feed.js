@@ -112,6 +112,18 @@ function addChannel(id, name, count) {
   };
   channels.append(button);
 }
+const embedded = new URLSearchParams(location.search).has("embedded") && window.parent !== window;
+if (embedded) {
+  document.body.classList.add("embedded");
+  const selectFromSidebar = () => {
+    selectedChannel = decodeURIComponent(location.hash.slice(1));
+    document.querySelector("#channel-name").textContent = selectedChannel || "全部频道";
+    document.querySelector("main").scrollTop = 0;
+    render();
+  };
+  window.addEventListener("hashchange", selectFromSidebar);
+  selectFromSidebar();
+}
 function applyTheme(theme) {
   document.documentElement.dataset.theme = theme === "dark" ? "dark" : "light";
 }
