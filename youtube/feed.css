@@ -32,3 +32,20 @@ button[aria-pressed=true] {color:var(--accent)}
 @media(max-width:600px){header{margin-bottom:18px}h1{font-size:23px}nav button{min-height:62px;font-size:16px}.tools{gap:6px}}
 
 @media(max-width:700px){main{padding:0 16px 40px}#documents{grid-template-columns:minmax(0,1fr)}#documents li{grid-template-columns:22px minmax(0,1fr) 66px auto;gap:8px;padding-inline:2px}}
+
+body {display:grid;grid-template-columns:clamp(148px,15vw,196px) minmax(0,1fr);height:100dvh;overflow:hidden}
+aside {min-height:0;overflow-y:auto;border-right:1px solid var(--line);padding:12px 8px;scrollbar-width:thin}
+main {min-width:0;min-height:0;overflow:auto}
+.channel-heading {padding:4px 7px 8px;color:var(--muted);font-size:11px}
+.channel {display:flex;align-items:center;justify-content:space-between;gap:8px;width:100%;min-height:28px;padding:3px 7px;text-align:left;font-size:12px;border-radius:4px}
+.channel span {overflow-wrap:anywhere}
+.channel small {font-variant-numeric:tabular-nums;color:var(--muted)}
+.channel:hover,.channel[aria-pressed=true] {background:color-mix(in srgb,var(--ink) 7%,transparent);color:var(--ink)}
+.channel[aria-pressed=true] {font-weight:600}
+#channel-toggle {display:none}
+@media(max-width:700px){
+ body {grid-template-columns:minmax(0,1fr);grid-template-rows:auto minmax(0,1fr)}
+ aside {border-right:0;border-bottom:1px solid var(--line);padding:2px 12px;max-height:40dvh}
+ #channel-toggle {display:block;font-size:12px}
+ .channel-heading,#channel-toggle[aria-expanded=false] ~ #channels {display:none}
+}

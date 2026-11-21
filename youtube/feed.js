@@ -6,6 +6,7 @@ const publicRoot = new URL("https://vincentshuo.github.io/Edison/youtube/");
 let reportRoot = new URL(".", location.href);
 let reports = [];
 let filter = "all";
+let selectedChannel = "";
 
 function loadSet(name) {
   try {
@@ -76,7 +77,7 @@ function row(doc, index) {
   return item;
 }
 function render() {
-  const group = reports.filter(doc => !channels.value || doc.channel === channels.value);
+  const group = reports.filter(doc => !selectedChannel || doc.channel === selectedChannel);
   const visible = group.filter(doc => filter === "all" || stateOf(doc.id) === filter);
   list.replaceChildren(...visible.map(row));
   document.querySelector("#count").textContent = visible.length + " 份报告";
@@ -91,7 +92,26 @@ function render() {
 for (const button of document.querySelectorAll("[data-filter]")) {
   button.onclick = () => { filter = button.dataset.filter; render(); };
 }
-channels.onchange = render;
+const channelToggle = document.querySelector("#channel-toggle");
+channelToggle.onclick = () => {
+  channelToggle.setAttribute("aria-expanded", String(channelToggle.getAttribute("aria-expanded") !== "true"));
+};
+function addChannel(id, name, count) {
+  const button = element("button", "", "channel");
+  button.append(element("span", name), element("small", String(count)));
+  button.setAttribute("aria-pressed", String(id === selectedChannel));
+  button.onclick = () => {
+    selectedChannel = id;
+    channels.querySelector('[aria-pressed="true"]')?.setAttribute("aria-pressed", "false");
+    button.setAttribute("aria-pressed", "true");
+    document.querySelector("#channel-name").textContent = name;
+    channelToggle.setAttribute("aria-expanded", "false");
+    if (channelToggle.offsetWidth) channelToggle.focus();
+    document.querySelector("main").scrollTop = 0;
+    render();
+  };
+  channels.append(button);
+}
 function applyTheme(theme) {
   document.documentElement.dataset.theme = theme === "dark" ? "dark" : "light";
 }
@@ -117,8 +137,9 @@ async function loadReports() {
   return loadManifest(reportRoot);
 }
 loadReports().then(manifest => {
-  for (const channel of manifest.channels) channels.add(new Option(channel.name, channel.id));
   reports = manifest.channels.flatMap(channel => channel.documents)
     .sort((a,b) => b.modified.localeCompare(a.modified) || b.path.localeCompare(a.path));
+  addChannel("", "全部频道", reports.length);
+  for (const channel of manifest.channels) addChannel(channel.id, channel.name, channel.documents.length);
   render();
 }).catch(() => { message.textContent = "报告目录加载失败，请刷新重试。"; });

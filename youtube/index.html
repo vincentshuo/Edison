@@ -2,10 +2,13 @@
 <html lang="zh-CN"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>YouTube · Edison</title><link rel="stylesheet" href="feed.css"><script defer src="feed.js"></script>
-</head><body><main>
+</head><body><aside aria-label="频道目录">
+<button id="channel-toggle" aria-controls="channels" aria-expanded="false">频道目录 ▾</button>
+<div class="channel-heading">频道</div><div id="channels"></div>
+</aside><main>
 <header><h1>YouTube</h1><nav aria-label="阅读状态">
 <button data-filter="all" aria-current="page">全部</button><button data-filter="unread">未读</button><button data-filter="read">已读</button><button data-filter="featured">精选</button>
 </nav></header>
-<section class="tools"><label>频道 <select id="channels"><option value="">全部频道</option></select></label><output id="count"></output><button id="mark-all" hidden>全部标为已读</button></section>
+<section class="tools"><span id="channel-name">全部频道</span><output id="count"></output><button id="mark-all" hidden>全部标为已读</button></section>
 <ul id="documents"></ul><p id="message" role="status">正在读取报告…</p>
 </main></body></html>
