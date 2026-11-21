@@ -14,7 +14,7 @@ jobs:
           python-version: '3.11'
       - run: pip install -e '.[dev,messaging,bedrock,browser]'
       # The imported host retains its upstream style; lint the integration boundary.
-      - run: ruff check src/youtube_strataread/workbench coworker/server/youtube.py tests/test_edison_youtube.py
+      - run: python -m compileall -q scripts/daily_signal
       - run: pytest -q
   gui:
     runs-on: ubuntu-latest

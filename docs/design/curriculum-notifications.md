@@ -1,3 +1,5 @@
+> Retired on 2026-11-16: Edison’s own course notification feature and native service were removed. This document records the historical design, not an active capability. The OpenWorker upstream notification capabilities are unaffected. Provenance: the imported OpenWorker baseline `5bc10d928e0b64aae74313349a3b17bd19643ae2` has no course notification service; Edison added it in `5e5dcc3d3f21279a27d35b02daf47c0b3db22877`.
+
 # Curriculum system notifications
 
 Status: implemented; automated and native service validation passed. Packaged-window interaction validation remains limited by macOS Accessibility access.

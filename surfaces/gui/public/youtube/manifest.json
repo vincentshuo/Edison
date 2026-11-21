@@ -1,0 +1,2698 @@
+{
+  "channels": [
+    {
+      "id": "a16z",
+      "name": "a16z",
+      "documents": [
+        {
+          "id": "Channel/a16z/DHH - Why AI Has DHH Working 16-Hour Days.html",
+          "path": "Channel/a16z/DHH - Why AI Has DHH Working 16-Hour Days.html",
+          "title": "AI 时代的十六小时工作日 — DHH 精读报告",
+          "sha256": "b5812afac365cc6a21e9d1140cd04c78d5453f327a3cc04595893d92d6638683",
+          "modified": "2026-11-21T11:59:19",
+          "date": "2026.11.21",
+          "channel": "a16z"
+        },
+        {
+          "id": "Channel/a16z/Nick Bostrom - Why Nick Bostrom Thinks Superintelligence Could End Aging.html",
+          "path": "Channel/a16z/Nick Bostrom - Why Nick Bostrom Thinks Superintelligence Could End Aging.html",
+          "title": "超级智能为什么可能终结衰老 — Nick Bostrom 精读报告",
+          "sha256": "48d08de09f6d66d2bbc8ecbc1adf075f93292035d26f72b4d4d49ce13423085e",
+          "modified": "2026-11-20T13:55:36",
+          "date": "2026.11.20",
+          "channel": "a16z"
+        },
+        {
+          "id": "Channel/a16z/Ken Liu - What It Takes to Build an AI That Actually Knows You.html",
+          "path": "Channel/a16z/Ken Liu - What It Takes to Build an AI That Actually Knows You.html",
+          "title": "造一台真正认识你的 AI — Ken Liu 精读报告",
+          "sha256": "760598698316a7b60f04f9723962c4d06aee5313d82fbd685f1f98643d2d28c7",
+          "modified": "2026-11-19T21:14:08",
+          "date": "2026.11.19",
+          "channel": "a16z"
+        }
+      ]
+    },
+    {
+      "id": "Aalto University",
+      "name": "Aalto University",
+      "documents": [
+        {
+          "id": "Channel/Aalto University/Samu Taulu - Electromagnetism in Brain Imaging: Finding the Needle in the Haystack.html",
+          "path": "Channel/Aalto University/Samu Taulu - Electromagnetism in Brain Imaging: Finding the Needle in the Haystack.html",
+          "title": "脑中寻针：电磁学探听大脑 — Samu Taulu（Aalto 大学）精读报告",
+          "sha256": "b75f794d2aa57232b9e848da4a19ce014c1076cebb8a2e9fcfb37b6fa44811ac",
+          "modified": "2026-11-18T21:08:20",
+          "date": "2026.11.18",
+          "channel": "Aalto University"
+        }
+      ]
+    },
+    {
+      "id": "AI Engineer",
+      "name": "AI Engineer",
+      "documents": [
+        {
+          "id": "Channel/AI Engineer/engineer-your-coding-agents-zach-lloyd.html",
+          "path": "Channel/AI Engineer/engineer-your-coding-agents-zach-lloyd.html",
+          "title": "软件工程正在变成工厂工程 — Zach Lloyd（Warp）精读报告",
+          "sha256": "abf8af2945edb601a4e45254c352f23266654a46a934e39be466e037a4a79675",
+          "modified": "2026-11-21T22:13:32",
+          "date": "2026.11.21",
+          "channel": "AI Engineer"
+        },
+        {
+          "id": "Channel/AI Engineer/Zach Bruggeman - How to build an agent that builds the culture.html",
+          "path": "Channel/AI Engineer/Zach Bruggeman - How to build an agent that builds the culture.html",
+          "title": "造一个会造文化的智能体 — Zach Bruggeman（Ramp）精读报告",
+          "sha256": "150db30937380b501eb9f3e83c32ba2d787480940ac78433f183d39833a291e7",
+          "modified": "2026-11-21T12:50:14",
+          "date": "2026.11.21",
+          "channel": "AI Engineer"
+        },
+        {
+          "id": "Channel/AI Engineer/40x-more-merged-prs-walden-yan-cognition.html",
+          "path": "Channel/AI Engineer/40x-more-merged-prs-walden-yan-cognition.html",
+          "title": "一年 40 倍：Cognition 的软件工厂 — Walden Yan 精读报告",
+          "sha256": "7cd82403636271e26e294a82f2c5cde19796b14c41139c411d9b6131e57aa433",
+          "modified": "2026-11-20T23:50:11",
+          "date": "2026.11.20",
+          "channel": "AI Engineer"
+        },
+        {
+          "id": "Channel/AI Engineer/fabian-hedin-lovable.html",
+          "path": "Channel/AI Engineer/fabian-hedin-lovable.html",
+          "title": "把智能放出来 — Fabian Hedin（Lovable）精读报告",
+          "sha256": "edbfdba3acb1c377602988c49bdf327b3690f0c023050592d6793ed2e5ff9c4a",
+          "modified": "2026-11-20T12:13:31",
+          "date": "2026.11.20",
+          "channel": "AI Engineer"
+        },
+        {
+          "id": "Channel/AI Engineer/thariq-shihipar-bitter-lesson.html",
+          "path": "Channel/AI Engineer/thariq-shihipar-bitter-lesson.html",
+          "title": "苦涩教训的甜蜜一面 — Thariq Shihipar 精读报告",
+          "sha256": "b154225df4b96aa50a22752d203e6f901d84a1701975bd3b1a6be6a7e8a1b15d",
+          "modified": "2026-11-20T10:36:38",
+          "date": "2026.11.20",
+          "channel": "AI Engineer"
+        },
+        {
+          "id": "Channel/AI Engineer/gemini-4-post-training-melvin-johnson.html",
+          "path": "Channel/AI Engineer/gemini-4-post-training-melvin-johnson.html",
+          "title": "通过测试不等于解决问题 — Melvin Johnson（Google DeepMind）精读报告",
+          "sha256": "b5be7f561a3e58ea6e9d1d6ed542bb4129f19b108c2054dcd475faeb109e9cfa",
+          "modified": "2026-11-19T21:14:47",
+          "date": "2026.11.19",
+          "channel": "AI Engineer"
+        },
+        {
+          "id": "Channel/AI Engineer/Jemima Abu - Teach Your AI Agent to Build Products Everyone Can Use.html",
+          "path": "Channel/AI Engineer/Jemima Abu - Teach Your AI Agent to Build Products Everyone Can Use.html",
+          "title": "教 Agent 建人人能用的产品 — Jemima Abu（CAIS）精读报告",
+          "sha256": "fd86b27354aacd9c1d4b71f1918c12d563612665c7816c2e1b0773a38396f948",
+          "modified": "2026-11-18T10:38:14",
+          "date": "2026.11.18",
+          "channel": "AI Engineer"
+        },
+        {
+          "id": "Channel/AI Engineer/Keiji Kanazawa - I Let Agents Refactor My Codebase for 3 Weeks. Then I Read the Code..html",
+          "path": "Channel/AI Engineer/Keiji Kanazawa - I Let Agents Refactor My Codebase for 3 Weeks. Then I Read the Code..html",
+          "title": "我让 Agent 重构了三周代码，然后读了它 — Keiji Kanazawa（Microsoft）精读报告",
+          "sha256": "e985da2fdc55fc9b193ce2a71af0bdf91a4077cf32cfaafd39074fb8f52a2be2",
+          "modified": "2026-11-17T19:24:47",
+          "date": "2026.11.17",
+          "channel": "AI Engineer"
+        },
+        {
+          "id": "Channel/AI Engineer/Matthew Jewkes - Engineering Agency out of the Happy Path.html",
+          "path": "Channel/AI Engineer/Matthew Jewkes - Engineering Agency out of the Happy Path.html",
+          "title": "把主动性从顺境里拿掉 — Matthew Jewkes（Standard Cybernetics）精读报告",
+          "sha256": "62a5a5f29b16289e2fb26afd7aee84ac8609777ddd52e54b439e14534b2cf3bb",
+          "modified": "2026-11-17T19:17:25",
+          "date": "2026.11.17",
+          "channel": "AI Engineer"
+        },
+        {
+          "id": "Channel/AI Engineer/Preetam Dwivedi & Manjari Akella - AI Writes Code Faster Than Uber Can Merge It.html",
+          "path": "Channel/AI Engineer/Preetam Dwivedi & Manjari Akella - AI Writes Code Faster Than Uber Can Merge It.html",
+          "title": "AI 写代码比 Uber 合并快 — Preetam Dwivedi & Manjari Akella（Uber）精读报告",
+          "sha256": "2dc053721e62401900b1a675fbe1750c75475cec95482dbf19e71cc0d73b6efa",
+          "modified": "2026-11-17T19:07:40",
+          "date": "2026.11.17",
+          "channel": "AI Engineer"
+        },
+        {
+          "id": "Channel/AI Engineer/Tom Moor - What Your Coding Agent Can't See in the Code.html",
+          "path": "Channel/AI Engineer/Tom Moor - What Your Coding Agent Can't See in the Code.html",
+          "title": "代码看不见的上下文 — Tom Moor（Linear）精读报告",
+          "sha256": "d5fecd28d6bda2c580efed146d9154448d9155140f0d8571169d0595897b2886",
+          "modified": "2026-11-17T19:01:15",
+          "date": "2026.11.17",
+          "channel": "AI Engineer"
+        },
+        {
+          "id": "Channel/AI Engineer/Ashwin Paranjape - Can AI Agents Beat Wall Street at Predicting Earnings?.html",
+          "path": "Channel/AI Engineer/Ashwin Paranjape - Can AI Agents Beat Wall Street at Predicting Earnings?.html",
+          "title": "Agent 能在财报预测上打败华尔街吗 — Ashwin Paranjape（Samaya AI）精读报告",
+          "sha256": "19e161b60ee4c6ecae8c604d7b2ed846033c0e350e9fb4c4c4559761f347b581",
+          "modified": "2026-11-17T18:55:24",
+          "date": "2026.11.17",
+          "channel": "AI Engineer"
+        },
+        {
+          "id": "Channel/AI Engineer/Richard Feldman - Stop Doing Agent Archaeology on Your Team's Code.html",
+          "path": "Channel/AI Engineer/Richard Feldman - Stop Doing Agent Archaeology on Your Team's Code.html",
+          "title": "别再做 Agent 考古了 — Richard Feldman（Delta）精读报告",
+          "sha256": "741fde9d89b3e5d7d857dfe0dff23cdaac82c70ac61c0d9befbdaa9f196049c9",
+          "modified": "2026-11-17T18:42:49",
+          "date": "2026.11.17",
+          "channel": "AI Engineer"
+        },
+        {
+          "id": "Channel/AI Engineer/Zach Lloyd - How to Build a Software Factory That Improves Itself.html",
+          "path": "Channel/AI Engineer/Zach Lloyd - How to Build a Software Factory That Improves Itself.html",
+          "title": "造一座会自我改进的软件工厂 — Zach Lloyd（Warp）精读报告",
+          "sha256": "9f23fef5d882e2e6e73079c0085273eb3adac8fe19d5a0a3c3484b0d175c30be",
+          "modified": "2026-11-17T18:32:42",
+          "date": "2026.11.17",
+          "channel": "AI Engineer"
+        },
+        {
+          "id": "Channel/AI Engineer/Hassan El Mghari & Omar El Mghari - Right Answer, Wrong Reasons: AI Forecasts Costco.html",
+          "path": "Channel/AI Engineer/Hassan El Mghari & Omar El Mghari - Right Answer, Wrong Reasons: AI Forecasts Costco.html",
+          "title": "答案对了，理由错了 — Hassan El Mghari & Omar El Mghari（Together AI）精读报告",
+          "sha256": "4aae56997596a7ad5949ddefd57da2faebd2b6cd2935c2c5e9155a7223e46888",
+          "modified": "2026-11-17T18:32:04",
+          "date": "2026.11.17",
+          "channel": "AI Engineer"
+        },
+        {
+          "id": "Channel/AI Engineer/Jason Mancuso - Training Your Own Agent Models With RL Is Now Practical.html",
+          "path": "Channel/AI Engineer/Jason Mancuso - Training Your Own Agent Models With RL Is Now Practical.html",
+          "title": "拥有自己的 Agent 与 RL：微调正在从手艺变成工程 — Jason Mancuso（Modal）精读报告",
+          "sha256": "52a05737588657298a738b9a2c740d459de275ea351fa1ecac99f20a02d74c64",
+          "modified": "2026-11-17T18:32:00",
+          "date": "2026.11.17",
+          "channel": "AI Engineer"
+        },
+        {
+          "id": "Channel/AI Engineer/Pratyusha Duvvuri - Why No One Agrees on What Their AI Tokens Cost.html",
+          "path": "Channel/AI Engineer/Pratyusha Duvvuri - Why No One Agrees on What Their AI Tokens Cost.html",
+          "title": "没人说得清 AI token 到底花了多少钱 — Pratyusha Duvvuri（Cisco）精读报告",
+          "sha256": "b7346af694d176f6c9baa0035f165281f01ec7029dab5bec3b120b8a21fb3059",
+          "modified": "2026-11-17T18:31:56",
+          "date": "2026.11.17",
+          "channel": "AI Engineer"
+        },
+        {
+          "id": "Channel/AI Engineer/Mislav Ivanda - The One Thing Every AI Agent Framework Agrees On.html",
+          "path": "Channel/AI Engineer/Mislav Ivanda - The One Thing Every AI Agent Framework Agrees On.html",
+          "title": "先选边界，再选框架：框架们唯一达成一致的事 — Mislav Ivanda（Daytona）精读报告",
+          "sha256": "a85b0799bef646e4c3897b1ed308595ba32e1c7c99364d533ddac3d9696ff67b",
+          "modified": "2026-11-17T18:31:52",
+          "date": "2026.11.17",
+          "channel": "AI Engineer"
+        },
+        {
+          "id": "Channel/AI Engineer/Maty Bohacek - Will AI Agents Pretend to Be Human to Get Past a Check?.html",
+          "path": "Channel/AI Engineer/Maty Bohacek - Will AI Agents Pretend to Be Human to Get Past a Check?.html",
+          "title": "最后一道关：Agent 正在学会冒充人类 — Maty Bohacek（Stanford）精读报告",
+          "sha256": "2a0643a1cfe01736472741c99a25c43456b5ac6ef333b7543b20ff9563cc6699",
+          "modified": "2026-11-17T18:31:48",
+          "date": "2026.11.17",
+          "channel": "AI Engineer"
+        },
+        {
+          "id": "Channel/AI Engineer/Ryan Carson - How One Founder Manages 20 AI Coding Agents at Once.html",
+          "path": "Channel/AI Engineer/Ryan Carson - How One Founder Manages 20 AI Coding Agents at Once.html",
+          "title": "一个创始人如何同时管理 20 个 AI 编程 Agent — Ryan Carson（Untangle）精读报告",
+          "sha256": "ab6d58455452dac0220c6ee5292193fe5cb7a50c361dfd7d151d8d42108f0a8a",
+          "modified": "2026-11-17T18:31:44",
+          "date": "2026.11.17",
+          "channel": "AI Engineer"
+        },
+        {
+          "id": "Channel/AI Engineer/Harshul Jain & Parv Khatri - Your Self-Hosted LLM Needs to Say No.html",
+          "path": "Channel/AI Engineer/Harshul Jain & Parv Khatri - Your Self-Hosted LLM Needs to Say No.html",
+          "title": "你的自托管 LLM，得先学会说不 — Harshul Jain & Parv Khatri 精读报告",
+          "sha256": "37ed7063d2f8d28411e8858c18740992fae9947efa0b81cd266092cfc9b09416",
+          "modified": "2026-11-17T17:21:44",
+          "date": "2026.11.17",
+          "channel": "AI Engineer"
+        },
+        {
+          "id": "Channel/AI Engineer/Francesco Galletta & Felippe Felisola Caso - Stop Chatting With Spreadsheets.html",
+          "path": "Channel/AI Engineer/Francesco Galletta & Felippe Felisola Caso - Stop Chatting With Spreadsheets.html",
+          "title": "别再跟电子表格聊天：造一个能托付金钱的 Agent 脚手架 — Francesco Galletta & Felippe Felisola Caso（Monzo）精读报告",
+          "sha256": "b70b97683bc8764dd7c1fd5f90bae6771b58823790d976b8cd87a2a0e0f5336b",
+          "modified": "2026-11-17T17:13:19",
+          "date": "2026.11.17",
+          "channel": "AI Engineer"
+        },
+        {
+          "id": "Channel/AI Engineer/Saloni Gandhi & Ziwei Guo - An Agent That Fixes Its Own Mistakes.html",
+          "path": "Channel/AI Engineer/Saloni Gandhi & Ziwei Guo - An Agent That Fixes Its Own Mistakes.html",
+          "title": "让 Agent 自己修自己的错 — Saloni Gandhi & Ziwei Guo（LinkedIn）精读报告",
+          "sha256": "7d7c5d168a7da86892b93ea4724aa7c5e1a1e624b34b8bc8b2a3d7b61d1eaf0e",
+          "modified": "2026-11-17T17:01:44",
+          "date": "2026.11.17",
+          "channel": "AI Engineer"
+        },
+        {
+          "id": "Channel/AI Engineer/Chetas Joshi - 60% of Our Data PRs Now Merge With No Human Review.html",
+          "path": "Channel/AI Engineer/Chetas Joshi - 60% of Our Data PRs Now Merge With No Human Review.html",
+          "title": "谁来评审机器人：六成数据 PR 无人评审合入 — Chetas Joshi（Robinhood）精读报告",
+          "sha256": "ef8c4ac5c2965a811290447781249cb48c6fc34fd95e577bf81536799da373eb",
+          "modified": "2026-11-17T16:57:54",
+          "date": "2026.11.17",
+          "channel": "AI Engineer"
+        },
+        {
+          "id": "Channel/AI Engineer/Joey Wang - The Agents Were Fine. Everything Around Them Broke.html",
+          "path": "Channel/AI Engineer/Joey Wang - The Agents Were Fine. Everything Around Them Broke.html",
+          "title": "Agent 没坏，坏的是它周围的一切 — Joey Wang（Harvey）精读报告",
+          "sha256": "112f98b51f6f1967511bf0ac6351da6f3a0032335dbbd63e4001c69406714ebf",
+          "modified": "2026-11-17T16:53:22",
+          "date": "2026.11.17",
+          "channel": "AI Engineer"
+        }
+      ]
+    },
+    {
+      "id": "Alex Kantrowitz",
+      "name": "Alex Kantrowitz",
+      "documents": [
+        {
+          "id": "Channel/Alex Kantrowitz/时间与价值脱钩：为什么 Anthropic 的 IPO 会成功 — Aaron Levie 精读报告.html",
+          "path": "Channel/Alex Kantrowitz/时间与价值脱钩：为什么 Anthropic 的 IPO 会成功 — Aaron Levie 精读报告.html",
+          "title": "时间与价值脱钩：为什么 Anthropic 的 IPO 会成功 — Aaron Levie 精读报告",
+          "sha256": "a8a64c5331bd321d6694155404a27ae1562e0001b913cef4929dbcea3edf3d97",
+          "modified": "2026-11-20T20:23:00",
+          "date": "2026.11.20",
+          "channel": "Alex Kantrowitz"
+        }
+      ]
+    },
+    {
+      "id": "All-In",
+      "name": "All-In",
+      "documents": [
+        {
+          "id": "Channel/All-In/anthropic-ipo-nvidia-crisis.html",
+          "path": "Channel/All-In/anthropic-ipo-nvidia-crisis.html",
+          "title": "Anthropic 上市、英伟达危机与开源整肃 — All-In Podcast 精读报告",
+          "sha256": "00af2e7788e36a9419b4fa32eb41509c8bca3695948db2dec76a5081cb357e4d",
+          "modified": "2026-11-21T14:40:00",
+          "date": "2026.11.21",
+          "channel": "All-In"
+        },
+        {
+          "id": "Channel/All-In/All-In - CoreWeave Crash, AI Trade Cracks, Anthropic IPO Red Flags, Bill Gates Doomer.html",
+          "path": "Channel/All-In/All-In - CoreWeave Crash, AI Trade Cracks, Anthropic IPO Red Flags, Bill Gates Doomer.html",
+          "title": "CoreWeave 暴跌：AI 交易的第一次压力测试 — All-In Podcast 精读报告",
+          "sha256": "a6f084b079ac81ed783a2f2aa191f37e746b72bd0b7def9f4ffe5dffee456aaa",
+          "modified": "2026-11-18T00:11:28",
+          "date": "2026.11.18",
+          "channel": "All-In"
+        },
+        {
+          "id": "Channel/All-In/All-In - Dylan Field Is AI Replacing Designers, Design is the New Code & Democratizing Creativity.html",
+          "path": "Channel/All-In/All-In - Dylan Field Is AI Replacing Designers, Design is the New Code & Democratizing Creativity.html",
+          "title": "设计就是新的代码：迪伦·菲尔德谈 Figma 与 AI 时代的创造力 — 精读报告",
+          "sha256": "3992005e74012172c1b91614968b7de075502e76812e83f9bc33e11daf516e67",
+          "modified": "2026-11-17T23:56:01",
+          "date": "2026.11.17",
+          "channel": "All-In"
+        },
+        {
+          "id": "Channel/All-In/All-In - Arvind Krishna & Nikesh Arora Quantum Threat, Open vs Frontier AI, AI Cyber Warfare & SaaS Collapse.html",
+          "path": "Channel/All-In/All-In - Arvind Krishna & Nikesh Arora Quantum Threat, Open vs Frontier AI, AI Cyber Warfare & SaaS Collapse.html",
+          "title": "量子威胁、开源与纵向整合：两位 CEO 谈 AI 战争 — All-In Podcast 精读报告",
+          "sha256": "5259e4b320b18bab2a190f7e72aee498e40ca30ef6bce387171e171d01747933",
+          "modified": "2026-11-17T23:48:30",
+          "date": "2026.11.17",
+          "channel": "All-In"
+        },
+        {
+          "id": "Channel/All-In/All-In - AI Cyber Panic, Ken Griffin's Bubble Warning, The Fall of France.html",
+          "path": "Channel/All-In/All-In - AI Cyber Panic, Ken Griffin's Bubble Warning, The Fall of France.html",
+          "title": "泡沫、漏洞与骚乱：AI 网络恐慌与法国的陷落 — All-In Podcast 精读报告",
+          "sha256": "928aee1363b5f5bce11e3566cae913af982eec00b1e4785626af43b86a8bb5a1",
+          "modified": "2026-11-17T23:34:06",
+          "date": "2026.11.17",
+          "channel": "All-In"
+        },
+        {
+          "id": "Channel/All-In/All-In - WHOOP CEO, Will Ahmed 50B Hours of Health Data, a 4 Million Member Data Moat, & the FDA Fight.html",
+          "path": "Channel/All-In/All-In - WHOOP CEO, Will Ahmed 50B Hours of Health Data, a 4 Million Member Data Moat, & the FDA Fight.html",
+          "title": "每天戴 23.6 小时：没有屏幕的手环如何攒下 500 亿小时健康数据 — All-In Podcast 精读报告",
+          "sha256": "0c3e8435d3980e4c88c3e5d332d13d391aa86eb1a02cbb91b1527d914c6a465c",
+          "modified": "2026-11-17T23:34:00",
+          "date": "2026.11.17",
+          "channel": "All-In"
+        },
+        {
+          "id": "Channel/All-In/All-In - Anthropic S-1 Shocker, Greatest Business Ever Google's $500B Wipeout, Midterm Predictions.html",
+          "path": "Channel/All-In/All-In - Anthropic S-1 Shocker, Greatest Business Ever Google's $500B Wipeout, Midterm Predictions.html",
+          "title": "史上最大 IPO？招股书里的 Anthropic 与蒸发 5000 亿美元的谷歌 — All-In Podcast 精读报告",
+          "sha256": "aa59ec22c5675578100da5618f686bca2356644bc7905adfda661e54fd268876",
+          "modified": "2026-11-17T23:33:54",
+          "date": "2026.11.17",
+          "channel": "All-In"
+        },
+        {
+          "id": "Channel/All-In/All-In - Midterm Blood Bath, $4T AI Sell Off, Data Center Freeze, What's Next for Trump.html",
+          "path": "Channel/All-In/All-In - Midterm Blood Bath, $4T AI Sell Off, Data Center Freeze, What's Next for Trump.html",
+          "title": "中期选举惨败、4万亿美元AI抛售与数据中心冻结 — All-In Podcast 精读报告",
+          "sha256": "1263cfa6a6ba767736abeda34bf6d37002c27ab44537f77f95116a611c6c1018",
+          "modified": "2026-11-17T22:15:48",
+          "date": "2026.11.17",
+          "channel": "All-In"
+        },
+        {
+          "id": "Channel/All-In/All-In - Freedom vs. Safety Axon CEO Rick Smith on the Future of Policing.html",
+          "path": "Channel/All-In/All-In - Freedom vs. Safety Axon CEO Rick Smith on the Future of Policing.html",
+          "title": "自由还是安全：从泰瑟枪到公共安全操作系统 — All-In Podcast 精读报告",
+          "sha256": "d4699dd34189171037233a3c772580f0fc2c6d210a1aecf264737060e915726d",
+          "modified": "2026-11-17T21:57:37",
+          "date": "2026.11.17",
+          "channel": "All-In"
+        },
+        {
+          "id": "Channel/All-In/All-In - Jensen OUT as Nvidia CEO \"Spy\" Scandal, Export Restrictions, Market Impact.html",
+          "path": "Channel/All-In/All-In - Jensen OUT as Nvidia CEO \"Spy\" Scandal, Export Restrictions, Market Impact.html",
+          "title": "黄仁勋出局：一场“间谍丑闻”与英伟达的权力真空 — All-In Podcast 精读报告",
+          "sha256": "5a032693054d04a5e8260301d415ff79a6462d01c8bdacbc76a7c99719e326b6",
+          "modified": "2026-11-17T21:48:29",
+          "date": "2026.11.17",
+          "channel": "All-In"
+        }
+      ]
+    },
+    {
+      "id": "Axios",
+      "name": "Axios",
+      "documents": [
+        {
+          "id": "Channel/Axios/选票反数据中心之后，承诺如何兑现 — Maria Curi 精读报告.html",
+          "path": "Channel/Axios/选票反数据中心之后，承诺如何兑现 — Maria Curi 精读报告.html",
+          "title": "选票反数据中心之后，承诺如何兑现 — Maria Curi 精读报告",
+          "sha256": "da0db7eb8a3c370b1a59bb2adc192761a93cea7e9b5ed35b9cdf21f71c52321e",
+          "modified": "2026-11-19T21:17:24",
+          "date": "2026.11.19",
+          "channel": "Axios"
+        }
+      ]
+    },
+    {
+      "id": "Bloomberg Podcasts",
+      "name": "Bloomberg Podcasts",
+      "documents": [
+        {
+          "id": "Channel/Bloomberg Podcasts/Anthropic 上市次日跌 12%，AI 交易走到尽头了吗 — Bloomberg Money 精读报告.html",
+          "path": "Channel/Bloomberg Podcasts/Anthropic 上市次日跌 12%，AI 交易走到尽头了吗 — Bloomberg Money 精读报告.html",
+          "title": "Anthropic 上市次日跌 12%，AI 交易走到尽头了吗 — Bloomberg Money 精读报告",
+          "sha256": "a53e27e2b53aca415aea4a0b5c7e6eb07940ac1c7ae1bc2ec41cf5bccfb7e7a1",
+          "modified": "2026-11-21T22:13:35",
+          "date": "2026.11.21",
+          "channel": "Bloomberg Podcasts"
+        }
+      ]
+    },
+    {
+      "id": "Chris Williamson",
+      "name": "Chris Williamson",
+      "documents": [
+        {
+          "id": "Channel/Chris Williamson/Why The Media Tried To Destroy James Blunt.html",
+          "path": "Channel/Chris Williamson/Why The Media Tried To Destroy James Blunt.html",
+          "title": "被媒体“送进坟墓”之后 — James Blunt 精读报告",
+          "sha256": "1ed9214a8d01f580112c40055b9a50c6d31b10a568c868f55b5dbc02bad2637a",
+          "modified": "2026-11-21T22:13:27",
+          "date": "2026.11.21",
+          "channel": "Chris Williamson"
+        },
+        {
+          "id": "Channel/Chris Williamson/What We Get Wrong About Angry Young Men - Ashley Walters.html",
+          "path": "Channel/Chris Williamson/What We Get Wrong About Angry Young Men - Ashley Walters.html",
+          "title": "愤怒的年轻男人，我们到底误会了什么 — Ashley Walters 精读报告",
+          "sha256": "b105b470e3b31d2171880411fef5d47dd7f187745ce2d3148bc3f22e6dde244f",
+          "modified": "2026-11-20T23:50:16",
+          "date": "2026.11.20",
+          "channel": "Chris Williamson"
+        },
+        {
+          "id": "Channel/Chris Williamson/What Religion Looked Like 150,000 Years Ago - Alex O’Connor.html",
+          "path": "Channel/Chris Williamson/What Religion Looked Like 150,000 Years Ago - Alex O’Connor.html",
+          "title": "十五万年前，人类就已经在找神了吗 — Alex O’Connor 精读报告",
+          "sha256": "6653541fdf2c7ce46dd0cc83cd64481f6292151251c93ed636dcd5626f070658",
+          "modified": "2026-11-20T23:50:13",
+          "date": "2026.11.20",
+          "channel": "Chris Williamson"
+        }
+      ]
+    },
+    {
+      "id": "Closer To Truth",
+      "name": "Closer To Truth",
+      "documents": [
+        {
+          "id": "Channel/Closer To Truth/道德感是怎样进化出来的 — Nathan Lents 精读报告.html",
+          "path": "Channel/Closer To Truth/道德感是怎样进化出来的 — Nathan Lents 精读报告.html",
+          "title": "道德感是怎样进化出来的 — Nathan Lents 精读报告",
+          "sha256": "3959ff454656452d69920d94e9a279f8a52e7f49d9d2baa321b5e9a1bc11a475",
+          "modified": "2026-11-21T14:49:44",
+          "date": "2026.11.21",
+          "channel": "Closer To Truth"
+        },
+        {
+          "id": "Channel/Closer To Truth/巧合能科学地研究吗 — Jeffrey Mishlove 精读报告.html",
+          "path": "Channel/Closer To Truth/巧合能科学地研究吗 — Jeffrey Mishlove 精读报告.html",
+          "title": "巧合能科学地研究吗 — Jeffrey Mishlove 精读报告",
+          "sha256": "9666abeca20950bc975b42a27c70502185ff6ca2c410775401843b799d5bcfc5",
+          "modified": "2026-11-21T14:19:36",
+          "date": "2026.11.21",
+          "channel": "Closer To Truth"
+        },
+        {
+          "id": "Channel/Closer To Truth/先定义，再实验：艺术如何加深理解 — Christopher Brewer 精读报告.html",
+          "path": "Channel/Closer To Truth/先定义，再实验：艺术如何加深理解 — Christopher Brewer 精读报告.html",
+          "title": "先定义，再实验：艺术如何加深理解 — Christopher Brewer 精读报告",
+          "sha256": "f1fbcb3b91a3dc3e55c0900a1eb2e4d5297285c9d3b7715d08828403aaec0c15",
+          "modified": "2026-11-20T20:22:52",
+          "date": "2026.11.20",
+          "channel": "Closer To Truth"
+        },
+        {
+          "id": "Channel/Closer To Truth/善业救不了人：苦难的根在无明 — Swami Sarvapriyananda 精读报告.html",
+          "path": "Channel/Closer To Truth/善业救不了人：苦难的根在无明 — Swami Sarvapriyananda 精读报告.html",
+          "title": "善业救不了人：苦难的根在无明 — Swami Sarvapriyananda 精读报告",
+          "sha256": "7904229d14c0660ddb0fdb0ba44a7b5ac311c1012cb00b5df87466047f2f2b86",
+          "modified": "2026-11-20T20:22:41",
+          "date": "2026.11.20",
+          "channel": "Closer To Truth"
+        },
+        {
+          "id": "Channel/Closer To Truth/三论证，三处裂缝 — Michael Tooley 精读报告.html",
+          "path": "Channel/Closer To Truth/三论证，三处裂缝 — Michael Tooley 精读报告.html",
+          "title": "三论证，三处裂缝 — Michael Tooley 精读报告",
+          "sha256": "6bce98ce21ae5b98df11502696484f9530546d97be11d747ee4112bc7d604043",
+          "modified": "2026-11-19T21:16:45",
+          "date": "2026.11.19",
+          "channel": "Closer To Truth"
+        },
+        {
+          "id": "Channel/Closer To Truth/时间没有切口 — Victoria Trumbull 精读报告.html",
+          "path": "Channel/Closer To Truth/时间没有切口 — Victoria Trumbull 精读报告.html",
+          "title": "时间没有切口 — Victoria Trumbull 精读报告",
+          "sha256": "fed73331a113a13d1718dde3b7abb536cb5ff5ec79b7e27460add58cb1006373",
+          "modified": "2026-11-19T21:15:03",
+          "date": "2026.11.19",
+          "channel": "Closer To Truth"
+        }
+      ]
+    },
+    {
+      "id": "CrashCourse",
+      "name": "CrashCourse",
+      "documents": [
+        {
+          "id": "Channel/CrashCourse/The Geology of Mars - Crash Course Geology #25.html",
+          "path": "Channel/CrashCourse/The Geology of Mars - Crash Course Geology #25.html",
+          "title": "一块火星岩石，离发现生命最近 — Sage Magee（CrashCourse）精读报告",
+          "sha256": "a71b0d69b68ba30b223841049a64ce72112c8ec7fa223cdaaf2b288d792b9734",
+          "modified": "2026-11-20T14:48:47",
+          "date": "2026.11.20",
+          "channel": "CrashCourse"
+        }
+      ]
+    },
+    {
+      "id": "Fashion Neurosis",
+      "name": "Fashion Neurosis",
+      "documents": [
+        {
+          "id": "Channel/Fashion Neurosis/Petra Collins - Petra Collins on Horror Movies, Sheer Clothing, and Capturing Femininity.html",
+          "path": "Channel/Fashion Neurosis/Petra Collins - Petra Collins on Horror Movies, Sheer Clothing, and Capturing Femininity.html",
+          "title": "恐怖片、薄纱与捕捉女性气质 — Petra Collins 精读报告",
+          "sha256": "b658355538e298de84a737c5791ae506589c59f6e0ba992d5092f7d43ca00246",
+          "modified": "2026-11-18T21:41:16",
+          "date": "2026.11.18",
+          "channel": "Fashion Neurosis"
+        },
+        {
+          "id": "Channel/Fashion Neurosis/Grace Coddington - Grace Coddington on Blondes, Nudity, and Anna Wintour.html",
+          "path": "Channel/Fashion Neurosis/Grace Coddington - Grace Coddington on Blondes, Nudity, and Anna Wintour.html",
+          "title": "金发、裸体与安娜·温图尔 — Grace Coddington 精读报告",
+          "sha256": "593cf3b1b95bcc3608cd9c0ae1c13bdb76ecb7d3b0d55f166221ace26cf2e2f0",
+          "modified": "2026-11-17T21:39:50",
+          "date": "2026.11.17",
+          "channel": "Fashion Neurosis"
+        },
+        {
+          "id": "Channel/Fashion Neurosis/Nathaniel Mary Quinn - Nathaniel Mary Quinn on Abandonment, Loving his Wife, and Painting the Rolling Stones.html",
+          "path": "Channel/Fashion Neurosis/Nathaniel Mary Quinn - Nathaniel Mary Quinn on Abandonment, Loving his Wife, and Painting the Rolling Stones.html",
+          "title": "遗弃、爱与滚石 — Nathaniel Mary Quinn 精读报告",
+          "sha256": "cc867bbd62435b50f58a28d6c2738d6c231ce1ff44e59ab2c81fcdeb71fcab63",
+          "modified": "2026-11-17T21:35:44",
+          "date": "2026.11.17",
+          "channel": "Fashion Neurosis"
+        },
+        {
+          "id": "Channel/Fashion Neurosis/Celia Paul - Celia Paul on Art and Love, Self Discipline, and Francis Bacon.html",
+          "path": "Channel/Fashion Neurosis/Celia Paul - Celia Paul on Art and Love, Self Discipline, and Francis Bacon.html",
+          "title": "艺术、爱与自律 — Celia Paul 精读报告",
+          "sha256": "d858b7f7538a1d6d09ab1307f5a131f9bc6dd077331e5704ca5cf3933aa9337c",
+          "modified": "2026-11-17T21:35:09",
+          "date": "2026.11.17",
+          "channel": "Fashion Neurosis"
+        },
+        {
+          "id": "Channel/Fashion Neurosis/Simone Rocha - Simone Rocha on the Power of Women Designers, Chloë Sevigny, Art and Fashion.html",
+          "path": "Channel/Fashion Neurosis/Simone Rocha - Simone Rocha on the Power of Women Designers, Chloë Sevigny, Art and Fashion.html",
+          "title": "女人设计女装的力量 — Simone Rocha 精读报告",
+          "sha256": "1206f4e957f477bd7af0c0e66ed0a8da615be52841d68549a17bed067d5ef124",
+          "modified": "2026-11-17T21:34:01",
+          "date": "2026.11.17",
+          "channel": "Fashion Neurosis"
+        }
+      ]
+    },
+    {
+      "id": "Founders",
+      "name": "Founders",
+      "documents": [
+        {
+          "id": "Channel/Founders/Brian Armstrong - Why Now Is The Golden Age of Building.html",
+          "path": "Channel/Founders/Brian Armstrong - Why Now Is The Golden Age of Building.html",
+          "title": "现在正是建造的黄金时代 — Brian Armstrong 精读报告",
+          "sha256": "6328a79b576d267fb9556b18fe08f6e37734b88a454a80c7d9a5d0c11b145577",
+          "modified": "2026-11-19T21:16:18",
+          "date": "2026.11.19",
+          "channel": "Founders"
+        }
+      ]
+    },
+    {
+      "id": "GitHub",
+      "name": "GitHub",
+      "documents": [
+        {
+          "id": "Channel/GitHub/Maria Victoria Gromysch - Building domain-specific AI agents for hardware reliability at NVIDIA.html",
+          "path": "Channel/GitHub/Maria Victoria Gromysch - Building domain-specific AI agents for hardware reliability at NVIDIA.html",
+          "title": "良率交给智能体 — Maria Victoria Gromysch 精读报告",
+          "sha256": "d1d191b84af653f7fc641ce7b2438f74e307e77f572a5bde63c841161b79973e",
+          "modified": "2026-11-21T12:34:11",
+          "date": "2026.11.21",
+          "channel": "GitHub"
+        },
+        {
+          "id": "Channel/GitHub/Code is the easy part - building Home Assistant in the open.html",
+          "path": "Channel/GitHub/Code is the easy part - building Home Assistant in the open.html",
+          "title": "代码是最容易的部分 — Franck Nijhof 精读报告",
+          "sha256": "11ad275858ad1faef9ac3ea670d6dfb5181aefc7ae698e4d8aa09c0d1dc06e55",
+          "modified": "2026-11-20T23:50:23",
+          "date": "2026.11.20",
+          "channel": "GitHub"
+        },
+        {
+          "id": "Channel/GitHub/Julia Kasper - How We Optimize GitHub Copilot for Every New Model.html",
+          "path": "Channel/GitHub/Julia Kasper - How We Optimize GitHub Copilot for Every New Model.html",
+          "title": "框架即产品 — Julia Kasper 精读报告",
+          "sha256": "9f77595b5454ef0c259901d8601ec288fbf161f94e912bcd7a5b70b4299bd1ae",
+          "modified": "2026-11-20T23:50:21",
+          "date": "2026.11.20",
+          "channel": "GitHub"
+        }
+      ]
+    },
+    {
+      "id": "Grant Cardone",
+      "name": "Grant Cardone",
+      "documents": [
+        {
+          "id": "Channel/Grant Cardone/first-million-keep-you-small.html",
+          "path": "Channel/Grant Cardone/first-million-keep-you-small.html",
+          "title": "第一个一百万会让你变小 — Grant Cardone 精读报告",
+          "sha256": "62fdc6c852d9496b0be25110b2cea5e477e2337a64a46caa1a09a3108b9196a7",
+          "modified": "2026-11-20T23:50:26",
+          "date": "2026.11.20",
+          "channel": "Grant Cardone"
+        }
+      ]
+    },
+    {
+      "id": "Joe Rogan",
+      "name": "Joe Rogan",
+      "documents": [
+        {
+          "id": "Channel/Joe Rogan/Mike Baker - Joe Rogan Experience #2584.html",
+          "path": "Channel/Joe Rogan/Mike Baker - Joe Rogan Experience #2584.html",
+          "title": "间谍、芯片与没有终局的战争 — Mike Baker 精读报告",
+          "sha256": "416b348cc522b0cc44f46772953fe0cb71efa82a36dfb5c8b057afac7e53f271",
+          "modified": "2026-11-21T12:21:55",
+          "date": "2026.11.21",
+          "channel": "Joe Rogan"
+        },
+        {
+          "id": "Channel/Joe Rogan/Bob Gymlan - Joe Rogan Experience #2583.html",
+          "path": "Channel/Joe Rogan/Bob Gymlan - Joe Rogan Experience #2583.html",
+          "title": "失踪的科学家，与正在孵化的数字生命 — Bob Gymlan 精读报告",
+          "sha256": "678e2d8611a1c4efa79a7fe6b3893a8c0564429fbd6f6050b70654940b9419ef",
+          "modified": "2026-11-20T14:41:22",
+          "date": "2026.11.20",
+          "channel": "Joe Rogan"
+        },
+        {
+          "id": "Channel/Joe Rogan/Greg Anderson - Joe Rogan Experience #2582.html",
+          "path": "Channel/Joe Rogan/Greg Anderson - Joe Rogan Experience #2582.html",
+          "title": "没人会来救你 — Greg Anderson 精读报告",
+          "sha256": "04c25f50a05cb1cbde0a76deefcdaa7c71b54ebad7f76d885052ea0bb87c2b0c",
+          "modified": "2026-11-19T21:15:24",
+          "date": "2026.11.19",
+          "channel": "Joe Rogan"
+        }
+      ]
+    },
+    {
+      "id": "Masters of Scale",
+      "name": "Masters of Scale",
+      "documents": [
+        {
+          "id": "Channel/Masters of Scale/Danny Meyer - What Every Business Can Learn From Restaurants.html",
+          "path": "Channel/Masters of Scale/Danny Meyer - What Every Business Can Learn From Restaurants.html",
+          "title": "餐厅教给每家企业的事 — Danny Meyer（Union Square Hospitality Group）精读报告",
+          "sha256": "ead4bc2e08954501aa7b5e9d003bacde0283c5d41a4dbac7220afa92946a94c9",
+          "modified": "2026-11-21T11:18:00",
+          "date": "2026.11.21",
+          "channel": "Masters of Scale"
+        },
+        {
+          "id": "Channel/Masters of Scale/Josh Tyrangiel - The AI That Matters Isn't the AI You Hear About.html",
+          "path": "Channel/Masters of Scale/Josh Tyrangiel - The AI That Matters Isn't the AI You Hear About.html",
+          "title": "重要的 AI 不在头条里 — Josh Tyrangiel（The Atlantic）精读报告",
+          "sha256": "916d834119799736ba0e2e52f5be81a3c62f6e17f5706386aa028b6a6a7eabcb",
+          "modified": "2026-11-20T13:32:53",
+          "date": "2026.11.20",
+          "channel": "Masters of Scale"
+        },
+        {
+          "id": "Channel/Masters of Scale/Amjad Masad - From Near-Collapse to 9 Billion, Replit.html",
+          "path": "Channel/Masters of Scale/Amjad Masad - From Near-Collapse to 9 Billion, Replit.html",
+          "title": "从崩溃边缘到 90 亿美元 — Amjad Masad（Replit）精读报告",
+          "sha256": "a2c611bbc0b67404d6ba7b7ab6f846a27d28e65b94e4e3b0c7d38b7f8729e750",
+          "modified": "2026-11-19T21:16:13",
+          "date": "2026.11.19",
+          "channel": "Masters of Scale"
+        }
+      ]
+    },
+    {
+      "id": "Matt Pocock",
+      "name": "Matt Pocock",
+      "documents": [
+        {
+          "id": "Channel/Matt Pocock/Matt Pocock - Watch me ship a 21,000-line feature with mattpocock-skills.html",
+          "path": "Channel/Matt Pocock/Matt Pocock - Watch me ship a 21,000-line feature with mattpocock-skills.html",
+          "title": "两万行代码，一次对齐 — Matt Pocock 精读报告",
+          "sha256": "daad8b031a79d8d27d9ea7ce27ee87e1d98e3b24e546d8dc48428f18e971e965",
+          "modified": "2026-11-19T21:14:19",
+          "date": "2026.11.19",
+          "channel": "Matt Pocock"
+        }
+      ]
+    },
+    {
+      "id": "Mel Robbins",
+      "name": "Mel Robbins",
+      "documents": [
+        {
+          "id": "Channel/Mel Robbins/说话清楚的 9 个习惯 — Vinh Giang 精读报告.html",
+          "path": "Channel/Mel Robbins/说话清楚的 9 个习惯 — Vinh Giang 精读报告.html",
+          "title": "说话清楚的 9 个习惯 — Vinh Giang 精读报告",
+          "sha256": "4e28b4bd4fc84203674f0353c7a2813e0ca3e13e72b31374ef116d24f80a2eb8",
+          "modified": "2026-11-19T21:17:31",
+          "date": "2026.11.19",
+          "channel": "Mel Robbins"
+        }
+      ]
+    },
+    {
+      "id": "New Scientist",
+      "name": "New Scientist",
+      "documents": [
+        {
+          "id": "Channel/New Scientist/This El Niño Could Be The Strongest In 1,000 Years.html",
+          "path": "Channel/New Scientist/This El Niño Could Be The Strongest In 1,000 Years.html",
+          "title": "千年最强的厄尔尼诺？ — New Scientist 精读报告",
+          "sha256": "5a3a979b440b33dec232a753a9b3666f825f56db660a1710c4633e06523b0206",
+          "modified": "2026-11-19T21:14:27",
+          "date": "2026.11.19",
+          "channel": "New Scientist"
+        }
+      ]
+    },
+    {
+      "id": "No Priors: AI, Machine Learning, Tech, & Startups",
+      "name": "No Priors: AI, Machine Learning, Tech, & Startups",
+      "documents": [
+        {
+          "id": "Channel/No Priors: AI, Machine Learning, Tech, & Startups/超级智能走不出数据中心 — Bob McGrew 精读报告.html",
+          "path": "Channel/No Priors: AI, Machine Learning, Tech, & Startups/超级智能走不出数据中心 — Bob McGrew 精读报告.html",
+          "title": "超级智能走不出数据中心 — Bob McGrew 精读报告",
+          "sha256": "7f38d40041ed04dca57be94b9ce338600f8358900f3255eaad1a7c170cfae6c6",
+          "modified": "2026-11-19T21:22:32",
+          "date": "2026.11.19",
+          "channel": "No Priors: AI, Machine Learning, Tech, & Startups"
+        }
+      ]
+    },
+    {
+      "id": "Nomad Capitalist",
+      "name": "Nomad Capitalist",
+      "documents": [
+        {
+          "id": "Channel/Nomad Capitalist/Nomad Capitalist - EU Caribbean Citizenship.html",
+          "path": "Channel/Nomad Capitalist/Nomad Capitalist - EU Caribbean Citizenship.html",
+          "title": "欧盟下了最后通牒：加勒比护照要么关门，要么丢掉申根免签 — Andrew Henderson（Nomad Capitalist）精读报告",
+          "sha256": "218d8c76f4764bb7631e30f617da5087d37a6df89a2513ea9eed59d04e25110f",
+          "modified": "2026-11-20T20:22:31",
+          "date": "2026.11.20",
+          "channel": "Nomad Capitalist"
+        }
+      ]
+    },
+    {
+      "id": "Peter Diamandis",
+      "name": "Peter Diamandis",
+      "documents": [
+        {
+          "id": "Channel/Peter Diamandis/Peter Diamandis - Anthropic 7200 万美元人均、FAA 停飞与星舰被接住 EP313.html",
+          "path": "Channel/Peter Diamandis/Peter Diamandis - Anthropic 7200 万美元人均、FAA 停飞与星舰被接住 EP313.html",
+          "title": "人均 7200 万美元、停飞四小时与星舰被接住 — Peter Diamandis（EP #313）精读报告",
+          "sha256": "75d2abb2d4b752150bcb2773bb21d0b3963e5b370eead371822c1c5d24cfaab1",
+          "modified": "2026-11-20T15:01:04",
+          "date": "2026.11.20",
+          "channel": "Peter Diamandis"
+        }
+      ]
+    },
+    {
+      "id": "Presidio Bitcoin",
+      "name": "Presidio Bitcoin",
+      "documents": [
+        {
+          "id": "Channel/Presidio Bitcoin/google-glass-is-back.html",
+          "path": "Channel/Presidio Bitcoin/google-glass-is-back.html",
+          "title": "除了 AI，什么都没变 — Google Glass 精读报告",
+          "sha256": "9cdbdf2ccdbd48ad35210674033d4a9801b7f462c8ad388466ff9d776bba1fae",
+          "modified": "2026-11-20T12:22:59",
+          "date": "2026.11.20",
+          "channel": "Presidio Bitcoin"
+        },
+        {
+          "id": "Channel/Presidio Bitcoin/anthropic-vs-elon-musk-ai-race.html",
+          "path": "Channel/Presidio Bitcoin/anthropic-vs-elon-musk-ai-race.html",
+          "title": "电力才是真正的护城河 — Anthropic vs Elon Musk 精读报告",
+          "sha256": "28c3de025e67355da1ee6a990091130705a4aae098fe34074fc741ebf8312255",
+          "modified": "2026-11-19T21:14:58",
+          "date": "2026.11.19",
+          "channel": "Presidio Bitcoin"
+        }
+      ]
+    },
+    {
+      "id": "Reid Hoffman",
+      "name": "Reid Hoffman",
+      "documents": [
+        {
+          "id": "Channel/Reid Hoffman/Reid Hoffman - Live at Masters of Scale: AI Pacing and Data Centers.html",
+          "path": "Channel/Reid Hoffman/Reid Hoffman - Live at Masters of Scale: AI Pacing and Data Centers.html",
+          "title": "掌舵，而不是刹车 — Reid Hoffman 精读报告",
+          "sha256": "88e24a93be190c521c22bf976cecb2ad51cf91fd773c03d77e775cbe052f55d0",
+          "modified": "2026-11-18T21:41:23",
+          "date": "2026.11.18",
+          "channel": "Reid Hoffman"
+        }
+      ]
+    },
+    {
+      "id": "Shaun Murphy Snooker",
+      "name": "Shaun Murphy Snooker",
+      "documents": [
+        {
+          "id": "Channel/Shaun Murphy Snooker/break-off-tips.html",
+          "path": "Channel/Shaun Murphy Snooker/break-off-tips.html",
+          "title": "《开球贴士：一分十二秒，两条规矩，一杆打错》 — Shaun Murphy 精读报告",
+          "sha256": "ec4844612d87f11ebe28f8ef9a4a52829bf769483647c286e67671e70c475739",
+          "modified": "2026-11-20T12:51:27",
+          "date": "2026.11.20",
+          "channel": "Shaun Murphy Snooker"
+        },
+        {
+          "id": "Channel/Shaun Murphy Snooker/whats-in-the-bag.html",
+          "path": "Channel/Shaun Murphy Snooker/whats-in-the-bag.html",
+          "title": "《包里有什么：三十七秒，一号木、二号铁与推杆》 — Shaun Murphy 精读报告",
+          "sha256": "b415c4edd2af7c0f7caf15bc57afa6b0172cea9c95f1ed5dce22ad062474d636",
+          "modified": "2026-11-20T12:34:30",
+          "date": "2026.11.20",
+          "channel": "Shaun Murphy Snooker"
+        },
+        {
+          "id": "Channel/Shaun Murphy Snooker/long-potting.html",
+          "path": "Channel/Shaun Murphy Snooker/long-potting.html",
+          "title": "《长台进攻：四十二秒，决定了就百分之百》 — Shaun Murphy 精读报告",
+          "sha256": "8dcae6d8ceabc7b6046fef7cdaf898a06c791aef4216a48a48ed40fac717a405",
+          "modified": "2026-11-20T12:27:19",
+          "date": "2026.11.20",
+          "channel": "Shaun Murphy Snooker"
+        },
+        {
+          "id": "Channel/Shaun Murphy Snooker/my-cue.html",
+          "path": "Channel/Shaun Murphy Snooker/my-cue.html",
+          "title": "《我的球杆：四十六秒，照原样复刻的那根杆》 — Shaun Murphy 精读报告",
+          "sha256": "e14abbcebc4b7f0b813b39198a0fc029b56c192a39698c9d2eca9477d16e8204",
+          "modified": "2026-11-20T12:13:50",
+          "date": "2026.11.20",
+          "channel": "Shaun Murphy Snooker"
+        },
+        {
+          "id": "Channel/Shaun Murphy Snooker/how-to-split-the-reds.html",
+          "path": "Channel/Shaun Murphy Snooker/how-to-split-the-reds.html",
+          "title": "《劈开红球堆：一分零九秒，母球穿堆而过》 — Shaun Murphy 精读报告",
+          "sha256": "4001b15f3bdf4a5ba3f9d203dd72db2234cbd338f83a48f928b0e7529277ff9d",
+          "modified": "2026-11-20T12:02:25",
+          "date": "2026.11.20",
+          "channel": "Shaun Murphy Snooker"
+        },
+        {
+          "id": "Channel/Shaun Murphy Snooker/break-off-part-2.html",
+          "path": "Channel/Shaun Murphy Snooker/break-off-part-2.html",
+          "title": "《开球（下）：一分二十一秒，这一杆能赢也能输》 — Shaun Murphy 精读报告",
+          "sha256": "8445ad6dd8816b8a89b22a0ebeb55a7abe98a68e6cfbfaebcd80da107d9a1d4e",
+          "modified": "2026-11-20T12:02:23",
+          "date": "2026.11.20",
+          "channel": "Shaun Murphy Snooker"
+        },
+        {
+          "id": "Channel/Shaun Murphy Snooker/how-to-control-the-cueball.html",
+          "path": "Channel/Shaun Murphy Snooker/how-to-control-the-cueball.html",
+          "title": "《控制母球：一分三十二秒，从杆头到目标球》 — Shaun Murphy 精读报告",
+          "sha256": "cf53450ea8fefbc294a93986e52fec63eafb6755c009d67aa63f12bc961c785d",
+          "modified": "2026-11-20T11:15:04",
+          "date": "2026.11.20",
+          "channel": "Shaun Murphy Snooker"
+        },
+        {
+          "id": "Channel/Shaun Murphy Snooker/pre-shot-routine.html",
+          "path": "Channel/Shaun Murphy Snooker/pre-shot-routine.html",
+          "title": "《击球前程序：一分三十五秒，从袋口倒推回去》 — Shaun Murphy 精读报告",
+          "sha256": "4779f8a1f951e124ecdb3adaf2ccf4302bd02841d4437b4c8e14a97ac5e7ca2f",
+          "modified": "2026-11-20T11:03:49",
+          "date": "2026.11.20",
+          "channel": "Shaun Murphy Snooker"
+        },
+        {
+          "id": "Channel/Shaun Murphy Snooker/slow-mo-cue-ball-arc.html",
+          "path": "Channel/Shaun Murphy Snooker/slow-mo-cue-ball-arc.html",
+          "title": "《慢镜头弧线：四十九秒，母球走出一道大弧线》 — Shaun Murphy 精读报告",
+          "sha256": "90fd0233cffbb652cc426069880b87711d7ebe4b0102c28cb2476f1e39757578",
+          "modified": "2026-11-20T10:47:11",
+          "date": "2026.11.20",
+          "channel": "Shaun Murphy Snooker"
+        },
+        {
+          "id": "Channel/Shaun Murphy Snooker/the-embassy.html",
+          "path": "Channel/Shaun Murphy Snooker/the-embassy.html",
+          "title": "《大使馆：两分零一秒，十年前的那个夜晚》 — Shaun Murphy 精读报告",
+          "sha256": "b3529b75fdaf65928dda17bd1b7b112fa7b53bd207048abd656aa168171d3e19",
+          "modified": "2026-11-20T10:25:08",
+          "date": "2026.11.20",
+          "channel": "Shaun Murphy Snooker"
+        },
+        {
+          "id": "Channel/Shaun Murphy Snooker/how-to-play-the-swerve-shot.html",
+          "path": "Channel/Shaun Murphy Snooker/how-to-play-the-swerve-shot.html",
+          "title": "《弧线球：一分零一秒，两招让母球绕过蓝球》 — Shaun Murphy 精读报告",
+          "sha256": "1a37b0251f48a372551aa28b8e70d863b2b8f96c62307eb7d07b717a0bf1cebb",
+          "modified": "2026-11-20T10:08:09",
+          "date": "2026.11.20",
+          "channel": "Shaun Murphy Snooker"
+        },
+        {
+          "id": "Channel/Shaun Murphy Snooker/off-season-chat.html",
+          "path": "Channel/Shaun Murphy Snooker/off-season-chat.html",
+          "title": "《休赛期闲聊：五分零五秒，世锦赛决赛输球之后的一个夏天》 — Shaun Murphy 精读报告",
+          "sha256": "ab719118333fb2d9e8b723c8aeedee4cc448be10972b181e6c008c4af419a706",
+          "modified": "2026-11-20T10:08:07",
+          "date": "2026.11.20",
+          "channel": "Shaun Murphy Snooker"
+        },
+        {
+          "id": "Channel/Shaun Murphy Snooker/where-it-all-began-the-line-up.html",
+          "path": "Channel/Shaun Murphy Snooker/where-it-all-began-the-line-up.html",
+          "title": "《一切从这里开始：两分三十一秒，十五颗红球排成一线》 — Shaun Murphy 精读报告",
+          "sha256": "b0c2f1dbb5ac4dbfa28e62632b02fbebf88878e2a9d2fc2e1a445a502bee8006",
+          "modified": "2026-11-20T10:08:04",
+          "date": "2026.11.20",
+          "channel": "Shaun Murphy Snooker"
+        },
+        {
+          "id": "Channel/Shaun Murphy Snooker/the-basics-bridge-grip-and-stance.html",
+          "path": "Channel/Shaun Murphy Snooker/the-basics-bridge-grip-and-stance.html",
+          "title": "《基本功：四分二十二秒，架杆、握杆、站位三件事》 — Shaun Murphy 精读报告",
+          "sha256": "3852d2007249e09f737acef51e7918bef391fdb74b66ea50025872a70dbc16eb",
+          "modified": "2026-11-20T10:07:57",
+          "date": "2026.11.20",
+          "channel": "Shaun Murphy Snooker"
+        },
+        {
+          "id": "Channel/Shaun Murphy Snooker/rest-play.html",
+          "path": "Channel/Shaun Murphy Snooker/rest-play.html",
+          "title": "《架杆：三分三十六秒，五招把难球打简单》 — Shaun Murphy 精读报告",
+          "sha256": "ef2aa15db858d61f1b370bb812d0ebafa7686b1f2e1f73518d589157cd8e727f",
+          "modified": "2026-11-20T09:17:08",
+          "date": "2026.11.20",
+          "channel": "Shaun Murphy Snooker"
+        },
+        {
+          "id": "Channel/Shaun Murphy Snooker/the-deep-screw.html",
+          "path": "Channel/Shaun Murphy Snooker/the-deep-screw.html",
+          "title": "《深拉杆：二分五十一秒，一杆把母球拉回整张台》 — Shaun Murphy 精读报告",
+          "sha256": "111b6c733749f7f48601ce991a602207d9286ef65b9f429128a156ccf8ec3597",
+          "modified": "2026-11-20T09:04:14",
+          "date": "2026.11.20",
+          "channel": "Shaun Murphy Snooker"
+        },
+        {
+          "id": "Channel/Shaun Murphy Snooker/welcome-back.html",
+          "path": "Channel/Shaun Murphy Snooker/welcome-back.html",
+          "title": "《欢迎回来：一分五十六秒，没有搞笑短视频，只有斯诺克本身》 — Shaun Murphy 精读报告",
+          "sha256": "1d2a95aad6f221eff12190d428205a55f327f0c93e86187389686bcd0e1bc5e5",
+          "modified": "2026-11-20T08:54:58",
+          "date": "2026.11.20",
+          "channel": "Shaun Murphy Snooker"
+        },
+        {
+          "id": "Channel/Shaun Murphy Snooker/in-and-out-of-baulk-when-on-the-wrong-side-of-the-blue.html",
+          "path": "Channel/Shaun Murphy Snooker/in-and-out-of-baulk-when-on-the-wrong-side-of-the-blue.html",
+          "title": "《蓝球错侧：三分五十七秒，三杆进出底库区》 — Shaun Murphy 精读报告",
+          "sha256": "8b59872e3a4d49f1a77aed8cb9da9b0be2c28044e30ff203a61d9e935493b45a",
+          "modified": "2026-11-20T08:43:34",
+          "date": "2026.11.20",
+          "channel": "Shaun Murphy Snooker"
+        },
+        {
+          "id": "Channel/Shaun Murphy Snooker/potting-terminology-explained.html",
+          "path": "Channel/Shaun Murphy Snooker/potting-terminology-explained.html",
+          "title": "《四个击球点：六分二十六秒，满球、七五球、半球、四分之一球一次讲清》 — Shaun Murphy 精读报告",
+          "sha256": "c6ee1f0f27cda1ddae9ee1b19a20280aefef3bc88c442552a7fb53cd029c1029",
+          "modified": "2026-11-20T08:30:28",
+          "date": "2026.11.20",
+          "channel": "Shaun Murphy Snooker"
+        },
+        {
+          "id": "Channel/Shaun Murphy Snooker/Shaun Murphy Snooker - The One Four Seven Podcast.html",
+          "path": "Channel/Shaun Murphy Snooker/Shaun Murphy Snooker - The One Four Seven Podcast.html",
+          "title": "久别归来：八杆满分与遛狗的规矩 — Shaun Murphy 精读报告",
+          "sha256": "93c2d8531d226b3c7efc7a35ee4fc362fa8b16247791ca8659d16a0262e1bd7d",
+          "modified": "2026-11-19T21:33:58",
+          "date": "2026.11.19",
+          "channel": "Shaun Murphy Snooker"
+        },
+        {
+          "id": "Channel/Shaun Murphy Snooker/a-quick-t-routine.html",
+          "path": "Channel/Shaun Murphy Snooker/a-quick-t-routine.html",
+          "title": "《T 字练习：七十四秒，十四颗红球，一路打到黑球》 — Shaun Murphy 精读报告",
+          "sha256": "d58ce70abf8a4030d3b931d71c273b7708c76b0e20652b94e5fc14c5c29abadd",
+          "modified": "2026-11-19T21:33:54",
+          "date": "2026.11.19",
+          "channel": "Shaun Murphy Snooker"
+        },
+        {
+          "id": "Channel/Shaun Murphy Snooker/walking-you-through-a-full-frame.html",
+          "path": "Channel/Shaun Murphy Snooker/walking-you-through-a-full-frame.html",
+          "title": "《完整一局：三十九分钟，自己跟自己打，最后一杆差一分破百》 — Shaun Murphy 精读报告",
+          "sha256": "c55bfe19132a100368ac5a7f9e6a24d5df77bea7da3d8d369fa64288d1663131",
+          "modified": "2026-11-19T21:33:50",
+          "date": "2026.11.19",
+          "channel": "Shaun Murphy Snooker"
+        },
+        {
+          "id": "Channel/Shaun Murphy Snooker/running-side-vs-check-side.html",
+          "path": "Channel/Shaun Murphy Snooker/running-side-vs-check-side.html",
+          "title": "《顺塞与逆塞：十七分钟，破一个流传三十多年的迷思》 — Shaun Murphy 精读报告",
+          "sha256": "91a0613495cac8f7e6cc719c8df8e20342e8791a15d653f134a46b8b14a0e83d",
+          "modified": "2026-11-19T21:33:46",
+          "date": "2026.11.19",
+          "channel": "Shaun Murphy Snooker"
+        },
+        {
+          "id": "Channel/Shaun Murphy Snooker/aiming-with-side-spin-cue-ball-deflection.html",
+          "path": "Channel/Shaun Murphy Snooker/aiming-with-side-spin-cue-ball-deflection.html",
+          "title": "《母球偏转：十七分钟，边塞一上，瞄准点就得改》 — Shaun Murphy 精读报告",
+          "sha256": "9ee799ce2ba264214847fb43d8defb367e546553661310abe31a04ad61462e5b",
+          "modified": "2026-11-19T21:33:43",
+          "date": "2026.11.19",
+          "channel": "Shaun Murphy Snooker"
+        },
+        {
+          "id": "Channel/Shaun Murphy Snooker/finding-the-middle-of-the-cue-ball.html",
+          "path": "Channel/Shaun Murphy Snooker/finding-the-middle-of-the-cue-ball.html",
+          "title": "《找母球的中心：二十二分钟，四套练习，只为打中那唯一的一点》 — Shaun Murphy 精读报告",
+          "sha256": "180664fd4993536c9801e1757c2cd20f95270eaf5ec334f1cc079d13b8949c85",
+          "modified": "2026-11-19T21:33:38",
+          "date": "2026.11.19",
+          "channel": "Shaun Murphy Snooker"
+        },
+        {
+          "id": "Channel/Shaun Murphy Snooker/in-the-frame-ep1.html",
+          "path": "Channel/Shaun Murphy Snooker/in-the-frame-ep1.html",
+          "title": "《〈In The Frame〉第 1 期：A 四十分没能一杆赢下，B 四十八分反超，A 残局清台六十七比四十八赢下首局》 — Shaun Murphy 精读报告",
+          "sha256": "bb754d08267db22dc415d65924ad62182eb0ebd9b58b4cdda8d28afe1ce21dab",
+          "modified": "2026-11-19T21:33:34",
+          "date": "2026.11.19",
+          "channel": "Shaun Murphy Snooker"
+        },
+        {
+          "id": "Channel/Shaun Murphy Snooker/a-dummies-guide-to-sighting.html",
+          "path": "Channel/Shaun Murphy Snooker/a-dummies-guide-to-sighting.html",
+          "title": "《瞄准入门：先看袋口，再找红球上的击球点》 — Shaun Murphy 精读报告",
+          "sha256": "933cfbb8c3be5e7f9e6beaada86c6ada5401ea76c33a79c9023a4bd8275a891c",
+          "modified": "2026-11-19T21:33:29",
+          "date": "2026.11.19",
+          "channel": "Shaun Murphy Snooker"
+        },
+        {
+          "id": "Channel/Shaun Murphy Snooker/in-the-frame-ep2.html",
+          "path": "Channel/Shaun Murphy Snooker/in-the-frame-ep2.html",
+          "title": "《〈In The Frame〉第 2 期：首杆 58 分没能一杆赢下，A 两回合 123 比 6 拿下这一局》 — Shaun Murphy 精读报告",
+          "sha256": "0c72e363b3d074c4a8612fed16a9454b7653414c77734f4d9b89bf187c02877c",
+          "modified": "2026-11-19T21:33:24",
+          "date": "2026.11.19",
+          "channel": "Shaun Murphy Snooker"
+        },
+        {
+          "id": "Channel/Shaun Murphy Snooker/splitting-the-pack-from-the-blue.html",
+          "path": "Channel/Shaun Murphy Snooker/splitting-the-pack-from-the-blue.html",
+          "title": "《从蓝球分开红球堆：运气至少占一半，但蓝球必须先进》 — Shaun Murphy 精读报告",
+          "sha256": "6ef9f987b3ef8f5b297c7d2932b13d84dd5a4ea0d00a5db6d29ba85b404e5ea0",
+          "modified": "2026-11-19T21:33:21",
+          "date": "2026.11.19",
+          "channel": "Shaun Murphy Snooker"
+        },
+        {
+          "id": "Channel/Shaun Murphy Snooker/in-the-frame-ep3.html",
+          "path": "Channel/Shaun Murphy Snooker/in-the-frame-ep3.html",
+          "title": "《〈In The Frame〉第 3 期：A 只得 9 分，B 一杆 91 分赢下这一局》 — Shaun Murphy 精读报告",
+          "sha256": "bdd7217dbc1b263e2c176ce38cf28e15d327eae87e7b5172b13866bf8b9c94ff",
+          "modified": "2026-11-19T21:33:17",
+          "date": "2026.11.19",
+          "channel": "Shaun Murphy Snooker"
+        },
+        {
+          "id": "Channel/Shaun Murphy Snooker/the-stance.html",
+          "path": "Channel/Shaun Murphy Snooker/the-stance.html",
+          "title": "《站位教学：右脚先动，重心压在左膝上》 — Shaun Murphy 精读报告",
+          "sha256": "fe91047ee3eec532c5666a1b59aff4f8be85ccb5c54c030623456abb7dbde12f",
+          "modified": "2026-11-19T21:33:13",
+          "date": "2026.11.19",
+          "channel": "Shaun Murphy Snooker"
+        },
+        {
+          "id": "Channel/Shaun Murphy Snooker/in-the-frame-ep4.html",
+          "path": "Channel/Shaun Murphy Snooker/in-the-frame-ep4.html",
+          "title": "《〈In The Frame〉第 4 期：147 梦碎于 40 分，A 清台赢下这一局》 — Shaun Murphy 精读报告",
+          "sha256": "90bbdabc3a1b191379bdc916a18437b6daa00b85a84bb7c4e2de4817dc5709f4",
+          "modified": "2026-11-19T21:33:10",
+          "date": "2026.11.19",
+          "channel": "Shaun Murphy Snooker"
+        },
+        {
+          "id": "Channel/Shaun Murphy Snooker/the-grip.html",
+          "path": "Channel/Shaun Murphy Snooker/the-grip.html",
+          "title": "《握杆教学：把球杆放桌上，拿起来，就这么简单》 — Shaun Murphy 精读报告",
+          "sha256": "85355484247143f3b907a20dd187ee20e7633ea6c4ed7a9193ae68c4ea271e4b",
+          "modified": "2026-11-19T21:33:07",
+          "date": "2026.11.19",
+          "channel": "Shaun Murphy Snooker"
+        },
+        {
+          "id": "Channel/Shaun Murphy Snooker/in-the-frame-ep5.html",
+          "path": "Channel/Shaun Murphy Snooker/in-the-frame-ep5.html",
+          "title": "《〈In The Frame〉第 5 期：A 追 147 止于 33 分，B 反清台赢下这一局》 — Shaun Murphy 精读报告",
+          "sha256": "19cce537788622c2f5dcb41c05da539631db24a2e8b5e7eecc511b6446d66a5a",
+          "modified": "2026-11-19T21:33:02",
+          "date": "2026.11.19",
+          "channel": "Shaun Murphy Snooker"
+        },
+        {
+          "id": "Channel/Shaun Murphy Snooker/the-bridge.html",
+          "path": "Channel/Shaun Murphy Snooker/the-bridge.html",
+          "title": "《手架教学：指尖抠住台呢，V 形托住球杆》 — Shaun Murphy 精读报告",
+          "sha256": "a2aad477bca26153b6437d9c9f4a7b9d4daa743989868ca5c08c95882442c0e0",
+          "modified": "2026-11-19T21:32:57",
+          "date": "2026.11.19",
+          "channel": "Shaun Murphy Snooker"
+        },
+        {
+          "id": "Channel/Shaun Murphy Snooker/in-the-frame-ep6.html",
+          "path": "Channel/Shaun Murphy Snooker/in-the-frame-ep6.html",
+          "title": "《〈In The Frame〉第 6 期：两杆之后就选追 147，一杆破百》 — Shaun Murphy 精读报告",
+          "sha256": "a1ea472c02c27181e5988f236f696ab8b821f0b4b0115b1f6a7d479d8ac9ff04",
+          "modified": "2026-11-19T21:32:53",
+          "date": "2026.11.19",
+          "channel": "Shaun Murphy Snooker"
+        },
+        {
+          "id": "Channel/Shaun Murphy Snooker/cue-action.html",
+          "path": "Channel/Shaun Murphy Snooker/cue-action.html",
+          "title": "《出杆动作：拉得越慢，杆走得越直》 — Shaun Murphy 精读报告",
+          "sha256": "c35be7f4f4f5017984613cccdb99c561e963a64185648e0082a6a2b2327d44de",
+          "modified": "2026-11-19T21:32:49",
+          "date": "2026.11.19",
+          "channel": "Shaun Murphy Snooker"
+        },
+        {
+          "id": "Channel/Shaun Murphy Snooker/in-the-frame-ep7.html",
+          "path": "Channel/Shaun Murphy Snooker/in-the-frame-ep7.html",
+          "title": "《〈In The Frame〉第 7 期：一局 81 比 0，安全球先看一眼再打》 — Shaun Murphy 精读报告",
+          "sha256": "fc19a3dc23f053026456d076a93ad2588c555c6dd6a13b16e953fd397cb6bfd4",
+          "modified": "2026-11-19T21:32:45",
+          "date": "2026.11.19",
+          "channel": "Shaun Murphy Snooker"
+        },
+        {
+          "id": "Channel/Shaun Murphy Snooker/the-break-off.html",
+          "path": "Channel/Shaun Murphy Snooker/the-break-off.html",
+          "title": "《开球教学：最常打的一杆，也是最难的一杆》 — Shaun Murphy 精读报告",
+          "sha256": "943a18ca57424ce0bef95c70c66250909e5866b6f6043359f5236e4c585aab30",
+          "modified": "2026-11-19T21:32:41",
+          "date": "2026.11.19",
+          "channel": "Shaun Murphy Snooker"
+        },
+        {
+          "id": "Channel/Shaun Murphy Snooker/in-the-frame-ep8.html",
+          "path": "Channel/Shaun Murphy Snooker/in-the-frame-ep8.html",
+          "title": "《〈In The Frame〉第 8 期：一局硬仗，B 77 比 A 20》 — Shaun Murphy 精读报告",
+          "sha256": "553c588631ae831dde00b99af5e77bdab2b9c709d1a6c875400265e49773d4c8",
+          "modified": "2026-11-19T21:32:37",
+          "date": "2026.11.19",
+          "channel": "Shaun Murphy Snooker"
+        },
+        {
+          "id": "Channel/Shaun Murphy Snooker/the-rest.html",
+          "path": "Channel/Shaun Murphy Snooker/the-rest.html",
+          "title": "《架杆教学：越简单越好，短拉短送》 — Shaun Murphy 精读报告",
+          "sha256": "96ba574aa1dc964bfe08d64e155b0ac1ca6b551ddc4ba4af776820f4a5c95055",
+          "modified": "2026-11-19T11:00:12",
+          "date": "2026.11.19",
+          "channel": "Shaun Murphy Snooker"
+        },
+        {
+          "id": "Channel/Shaun Murphy Snooker/in-the-frame-ep9.html",
+          "path": "Channel/Shaun Murphy Snooker/in-the-frame-ep9.html",
+          "title": "《〈In The Frame〉第 9 期：新球房首局，雪球效应与一颗银行家红球》 — Shaun Murphy 精读报告",
+          "sha256": "1ec26493d0abcda63feca43f6ebb81ef3c10a6879d601a9619a11188b485bcd8",
+          "modified": "2026-11-19T10:39:19",
+          "date": "2026.11.19",
+          "channel": "Shaun Murphy Snooker"
+        },
+        {
+          "id": "Channel/Shaun Murphy Snooker/safety-play.html",
+          "path": "Channel/Shaun Murphy Snooker/safety-play.html",
+          "title": "《安全球教学：白球贴库，让对手无球可打》 — Shaun Murphy 精读报告",
+          "sha256": "195071e77a1850a3a23d0c52fe5890d1462fb5281be0ce5130b3104b31e71ff7",
+          "modified": "2026-11-19T10:11:02",
+          "date": "2026.11.19",
+          "channel": "Shaun Murphy Snooker"
+        },
+        {
+          "id": "Channel/Shaun Murphy Snooker/in-the-frame-ep10.html",
+          "path": "Channel/Shaun Murphy Snooker/in-the-frame-ep10.html",
+          "title": "《〈In The Frame〉第 10 期：一杆 120 分的反清台》 — Shaun Murphy 精读报告",
+          "sha256": "4a5ae08fa85803fcfe644f846ab15c60f75c94018a329d90d40cf6e1ad4855f6",
+          "modified": "2026-11-19T09:53:46",
+          "date": "2026.11.19",
+          "channel": "Shaun Murphy Snooker"
+        },
+        {
+          "id": "Channel/Shaun Murphy Snooker/the-x.html",
+          "path": "Channel/Shaun Murphy Snooker/the-x.html",
+          "title": "《X 字练习：一杆 147 的白球控制课》 — Shaun Murphy 精读报告",
+          "sha256": "d3daf8ec14ba879db1c8a0f74990058b141b98e11a3cc538393578493ab98620",
+          "modified": "2026-11-19T09:53:39",
+          "date": "2026.11.19",
+          "channel": "Shaun Murphy Snooker"
+        },
+        {
+          "id": "Channel/Shaun Murphy Snooker/in-the-frame-ep11.html",
+          "path": "Channel/Shaun Murphy Snooker/in-the-frame-ep11.html",
+          "title": "《In The Frame》第 11 期：超激进对超谨慎，一局见分晓 — Shaun Murphy 精读报告",
+          "sha256": "d24d37f1da7cb391b43e4fe8831e7d1900f390f53558dceab5e214487ba6ea51",
+          "modified": "2026-11-19T09:07:13",
+          "date": "2026.11.19",
+          "channel": "Shaun Murphy Snooker"
+        },
+        {
+          "id": "Channel/Shaun Murphy Snooker/the-one-four-seven-snooker-podcast-1.html",
+          "path": "Channel/Shaun Murphy Snooker/the-one-four-seven-snooker-podcast-1.html",
+          "title": "《播客第三季第一期：赵心童夺冠，菲尔的预言成真》 — Shaun Murphy 精读报告",
+          "sha256": "f9c16c4f39f663a7c5233bdc80aaac8c455379b850a6de55ca62b163550e5c4e",
+          "modified": "2026-11-19T08:35:58",
+          "date": "2026.11.19",
+          "channel": "Shaun Murphy Snooker"
+        },
+        {
+          "id": "Channel/Shaun Murphy Snooker/Shaun Murphy Snooker - The final in Helsinki!.html",
+          "path": "Channel/Shaun Murphy Snooker/Shaun Murphy Snooker - The final in Helsinki!.html",
+          "title": "《赫尔辛基决赛：威廉姆斯 59 比 39，肖恩输掉的一局》 — Shaun Murphy 精读报告",
+          "sha256": "d8f8e977c37765bb4f4acce18b9b7c5b1da94405d5cb347168c0197e8d4fc7d8",
+          "modified": "2026-11-19T08:01:09",
+          "date": "2026.11.19",
+          "channel": "Shaun Murphy Snooker"
+        },
+        {
+          "id": "Channel/Shaun Murphy Snooker/Shaun Murphy Snooker - Season Wrap Up - The One Four Seven Snooker Podcast.html",
+          "path": "Channel/Shaun Murphy Snooker/Shaun Murphy Snooker - Season Wrap Up - The One Four Seven Snooker Podcast.html",
+          "title": "《播客第三季收官：特鲁姆普的赛季，麦吉尔的圣诞祝福》 — Shaun Murphy 精读报告",
+          "sha256": "2ce8e953a597f57286b0995f26dd8f45bf13cefdc326ba840c2ba44bacf8bb37",
+          "modified": "2026-11-19T07:33:00",
+          "date": "2026.11.19",
+          "channel": "Shaun Murphy Snooker"
+        },
+        {
+          "id": "Channel/Shaun Murphy Snooker/Shaun Murphy Snooker - 5 mistakes ALL amateurs make.html",
+          "path": "Channel/Shaun Murphy Snooker/Shaun Murphy Snooker - 5 mistakes ALL amateurs make.html",
+          "title": "《业余球手常犯的五个错误：出杆别乱动，选杆别贪心》 — Shaun Murphy 精读报告",
+          "sha256": "2562adee1960d99fcc926bad50a560e7a72c902233020a2d23586c263e26eb50",
+          "modified": "2026-11-19T07:07:17",
+          "date": "2026.11.19",
+          "channel": "Shaun Murphy Snooker"
+        },
+        {
+          "id": "Channel/Shaun Murphy Snooker/Shaun Murphy Snooker - In The Frame - Episode 12.html",
+          "path": "Channel/Shaun Murphy Snooker/Shaun Murphy Snooker - In The Frame - Episode 12.html",
+          "title": "《In The Frame》第 12 期：追 147 的第一回，B 65 比 A 33 — Shaun Murphy 精读报告",
+          "sha256": "3da48212061e5ccd36b4f2ab1dd8759ea340f6365b3602a25fedfb6e11a420b6",
+          "modified": "2026-11-19T06:52:15",
+          "date": "2026.11.19",
+          "channel": "Shaun Murphy Snooker"
+        },
+        {
+          "id": "Channel/Shaun Murphy Snooker/Shaun Murphy Snooker - The Swan, The Spider and the Extended Spider.html",
+          "path": "Channel/Shaun Murphy Snooker/Shaun Murphy Snooker - The Swan, The Spider and the Extended Spider.html",
+          "title": "《天鹅、蜘蛛与加长蜘蛛：三件架杆的用法》 — Shaun Murphy 精读报告",
+          "sha256": "073d9f401a09633ebd716e5aae0e1245e9efce297f809234fd211298106fec94",
+          "modified": "2026-11-19T06:16:53",
+          "date": "2026.11.19",
+          "channel": "Shaun Murphy Snooker"
+        },
+        {
+          "id": "Channel/Shaun Murphy Snooker/Shaun Murphy Snooker - In The Frame - Episode 13.html",
+          "path": "Channel/Shaun Murphy Snooker/Shaun Murphy Snooker - In The Frame - Episode 13.html",
+          "title": "《In The Frame》第 13 期：一杆 81 分，147 告吹 — Shaun Murphy 精读报告",
+          "sha256": "d340b2a95d1f786db9153bf1c730f67b10b80d347df2a8832e0aa5ac45893257",
+          "modified": "2026-11-19T06:01:41",
+          "date": "2026.11.19",
+          "channel": "Shaun Murphy Snooker"
+        },
+        {
+          "id": "Channel/Shaun Murphy Snooker/Shaun Murphy Snooker - Splitting the pack from the black.html",
+          "path": "Channel/Shaun Murphy Snooker/Shaun Murphy Snooker - Splitting the pack from the black.html",
+          "title": "《从黑球撞开红球群：四种打法，最后一杆最绝》 — Shaun Murphy 精读报告",
+          "sha256": "5dc6b46ab3f63e50b9d59faa64ed30817e674e14cc6436618999b2f2e02cb37b",
+          "modified": "2026-11-19T05:21:53",
+          "date": "2026.11.19",
+          "channel": "Shaun Murphy Snooker"
+        },
+        {
+          "id": "Channel/Shaun Murphy Snooker/Shaun Murphy Snooker - In The Frame - Episode 14.html",
+          "path": "Channel/Shaun Murphy Snooker/Shaun Murphy Snooker - In The Frame - Episode 14.html",
+          "title": "《In The Frame》第 14 期：一人演两角，B 一杆 147 分 — Shaun Murphy 精读报告",
+          "sha256": "082c803dc91dea03247f915ee1633d8ff8a8c235346830391e9cd72489088e50",
+          "modified": "2026-11-19T05:02:52",
+          "date": "2026.11.19",
+          "channel": "Shaun Murphy Snooker"
+        },
+        {
+          "id": "Channel/Shaun Murphy Snooker/Shaun Murphy Snooker - The Perfect Colour Clearance.html",
+          "path": "Channel/Shaun Murphy Snooker/Shaun Murphy Snooker - The Perfect Colour Clearance.html",
+          "title": "《完美的清彩球：一杆 27 分，六颗彩球一次清光》 — Shaun Murphy 精读报告",
+          "sha256": "4aba2cd96f3afaee48da3ea6465646e543fc80442c34ee9ce90f4bd7c84f9417",
+          "modified": "2026-11-19T04:41:36",
+          "date": "2026.11.19",
+          "channel": "Shaun Murphy Snooker"
+        },
+        {
+          "id": "Channel/Shaun Murphy Snooker/Shaun Murphy Snooker - In The Frame - Episode 15.html",
+          "path": "Channel/Shaun Murphy Snooker/Shaun Murphy Snooker - In The Frame - Episode 15.html",
+          "title": "《In The Frame》第 15 期：追 147 未果，A 一杆 77 分反超 — Shaun Murphy 精读报告",
+          "sha256": "fae62bbb0465fdee800dc7f3b24bc256953587fa8def6f9396fb330d65f8100c",
+          "modified": "2026-11-19T04:28:21",
+          "date": "2026.11.19",
+          "channel": "Shaun Murphy Snooker"
+        },
+        {
+          "id": "Channel/Shaun Murphy Snooker/Shaun Murphy Snooker - Ask Me Anything....html",
+          "path": "Channel/Shaun Murphy Snooker/Shaun Murphy Snooker - Ask Me Anything....html",
+          "title": "《有问必答：客厅沙发上的十一个问题》 — Shaun Murphy 精读报告",
+          "sha256": "5a1506d7a5850543ca07cd6d9478c16630b57cf20f8d3df37b341f3602638cdd",
+          "modified": "2026-11-19T04:04:30",
+          "date": "2026.11.19",
+          "channel": "Shaun Murphy Snooker"
+        },
+        {
+          "id": "Channel/Shaun Murphy Snooker/Shaun Murphy Snooker - In The Frame - Episode 16.html",
+          "path": "Channel/Shaun Murphy Snooker/Shaun Murphy Snooker - In The Frame - Episode 16.html",
+          "title": "《In The Frame》第 16 期：追满分杆的一局，B 72 比 A 1 — Shaun Murphy 精读报告",
+          "sha256": "519ffe5d3018a76763615fd92d85ddd836703a12b9e58319e4ab9f796cc091a4",
+          "modified": "2026-11-19T03:47:06",
+          "date": "2026.11.19",
+          "channel": "Shaun Murphy Snooker"
+        },
+        {
+          "id": "Channel/Shaun Murphy Snooker/Shaun Murphy Snooker - The miss rule - explained!.html",
+          "path": "Channel/Shaun Murphy Snooker/Shaun Murphy Snooker - The miss rule - explained!.html",
+          "title": "《失误规则详解》：三次打不到，就输掉这一局 — Shaun Murphy 精读报告",
+          "sha256": "433e125e55d6bd6fb1fbdc04e5d0ee31b4b51b1b30df5e18be153a8592952930",
+          "modified": "2026-11-19T03:25:04",
+          "date": "2026.11.19",
+          "channel": "Shaun Murphy Snooker"
+        },
+        {
+          "id": "Channel/Shaun Murphy Snooker/Shaun Murphy Snooker - In The Frame - Episode 17.html",
+          "path": "Channel/Shaun Murphy Snooker/Shaun Murphy Snooker - In The Frame - Episode 17.html",
+          "title": "《In The Frame》第 17 期：一杆 81 分，终场 89 比 0 — Shaun Murphy 精读报告",
+          "sha256": "537b1e1ac3a8b89d7b177010507984be6534c55882cae8bc0436879de68ae177",
+          "modified": "2026-11-19T03:15:01",
+          "date": "2026.11.19",
+          "channel": "Shaun Murphy Snooker"
+        },
+        {
+          "id": "Channel/Shaun Murphy Snooker/Shaun Murphy Snooker - How to play from the cushion.html",
+          "path": "Channel/Shaun Murphy Snooker/Shaun Murphy Snooker - How to play from the cushion.html",
+          "title": "《如何打库边球》：白球贴库时的架杆、瞄点与出杆 — Shaun Murphy 精读报告",
+          "sha256": "3e0ec34760d79b5d4b86c26b29527ad2ae70d79043a1cd229cefd26a745ecb96",
+          "modified": "2026-11-19T02:42:54",
+          "date": "2026.11.19",
+          "channel": "Shaun Murphy Snooker"
+        },
+        {
+          "id": "Channel/Shaun Murphy Snooker/Shaun Murphy Snooker - In The Frame - Episode 18.html",
+          "path": "Channel/Shaun Murphy Snooker/Shaun Murphy Snooker - In The Frame - Episode 18.html",
+          "title": "《In The Frame》第 18 期：落后 27 分，彩球翻盘 53 比 47 — Shaun Murphy 精读报告",
+          "sha256": "efc833394804088d7277aaf2148e794e6d586a2039306bb026ed457654dd54c3",
+          "modified": "2026-11-19T02:32:09",
+          "date": "2026.11.19",
+          "channel": "Shaun Murphy Snooker"
+        },
+        {
+          "id": "Channel/Shaun Murphy Snooker/Shaun Murphy Snooker - Snookered - Episode 1.html",
+          "path": "Channel/Shaun Murphy Snooker/Shaun Murphy Snooker - Snookered - Episode 1.html",
+          "title": "《被斯诺克》第一期：十五分钟，能做进多少斯诺克就做多少 — Shaun Murphy 精读报告",
+          "sha256": "69997948d4f12d24661006b153051e61fdfa2f33c335d07865766d2e39091d34",
+          "modified": "2026-11-19T02:04:27",
+          "date": "2026.11.19",
+          "channel": "Shaun Murphy Snooker"
+        },
+        {
+          "id": "Channel/Shaun Murphy Snooker/Shaun Murphy Snooker - In the Frame - Episode 19.html",
+          "path": "Channel/Shaun Murphy Snooker/Shaun Murphy Snooker - In the Frame - Episode 19.html",
+          "title": "《In The Frame》第 19 期：一杆 137 分的清台 — Shaun Murphy 精读报告",
+          "sha256": "c7201f415371b3787880f94c5085f5877ecf59457c89dcd6f69498e9666b9589",
+          "modified": "2026-11-19T01:46:01",
+          "date": "2026.11.19",
+          "channel": "Shaun Murphy Snooker"
+        },
+        {
+          "id": "Channel/Shaun Murphy Snooker/Shaun Murphy Snooker - Snookered - Episode 3.html",
+          "path": "Channel/Shaun Murphy Snooker/Shaun Murphy Snooker - Snookered - Episode 3.html",
+          "title": "《被斯诺克》第三期：十五分钟，铃响之后的一杆“绕台” — Shaun Murphy 精读报告",
+          "sha256": "02526662e62e4745f0ada9d88e41802f7f6396118f77ec81594c4f9e8dbbdfb7",
+          "modified": "2026-11-19T01:24:05",
+          "date": "2026.11.19",
+          "channel": "Shaun Murphy Snooker"
+        },
+        {
+          "id": "Channel/Shaun Murphy Snooker/Shaun Murphy Snooker - In The Frame - Episode 20.html",
+          "path": "Channel/Shaun Murphy Snooker/Shaun Murphy Snooker - In The Frame - Episode 20.html",
+          "title": "《In The Frame》第 20 期：磕磕绊绊的一局，错漏也是斯诺克 — Shaun Murphy 精读报告",
+          "sha256": "6e7186d870cb2ad2acf38c534f2a30ab96bd8e39dae46b84b794ca35e0632e77",
+          "modified": "2026-11-19T01:02:54",
+          "date": "2026.11.19",
+          "channel": "Shaun Murphy Snooker"
+        },
+        {
+          "id": "Channel/Shaun Murphy Snooker/Shaun Murphy Snooker - In The Frame - Episode 21.html",
+          "path": "Channel/Shaun Murphy Snooker/Shaun Murphy Snooker - In The Frame - Episode 21.html",
+          "title": "《In The Frame》第 21 期：29 分领先之后，还有自由球要打 — Shaun Murphy 精读报告",
+          "sha256": "ff5246a5388e5932a7cd4cb5a7a750cc1cd79b2d9b633ba52ddbaa47d00e6d82",
+          "modified": "2026-11-19T00:38:38",
+          "date": "2026.11.19",
+          "channel": "Shaun Murphy Snooker"
+        },
+        {
+          "id": "Channel/Shaun Murphy Snooker/Shaun Murphy Snooker - Snookered - Episode 2.html",
+          "path": "Channel/Shaun Murphy Snooker/Shaun Murphy Snooker - Snookered - Episode 2.html",
+          "title": "《被斯诺克》第二期：十五分钟，解球的三个办法与最后的花活 — Shaun Murphy 精读报告",
+          "sha256": "c4e8e602f6fbb87a9eeac67aeed47f3cb5ae230de6e670e392b59a8c778b6177",
+          "modified": "2026-11-19T00:38:34",
+          "date": "2026.11.19",
+          "channel": "Shaun Murphy Snooker"
+        },
+        {
+          "id": "Channel/Shaun Murphy Snooker/Shaun Murphy Snooker - Snookered - Episode 4.html",
+          "path": "Channel/Shaun Murphy Snooker/Shaun Murphy Snooker - Snookered - Episode 4.html",
+          "title": "《被斯诺克》第四期：十五分钟，蒙进的比打进的多 — Shaun Murphy 精读报告",
+          "sha256": "c466fec8b31b9f260312bc33a824e32d37c330ccae86b1a10b3b15ed462f4330",
+          "modified": "2026-11-18T23:57:44",
+          "date": "2026.11.18",
+          "channel": "Shaun Murphy Snooker"
+        },
+        {
+          "id": "Channel/Shaun Murphy Snooker/Shaun Murphy Snooker - In The Frame - Episode 22.html",
+          "path": "Channel/Shaun Murphy Snooker/Shaun Murphy Snooker - In The Frame - Episode 22.html",
+          "title": "《In The Frame》第 22 期：安全球开路，一局 77 分 — Shaun Murphy 精读报告",
+          "sha256": "c3101493518b20b87e6d53d0fbdbeb70effb9185101ecc52bc5c364a2312f127",
+          "modified": "2026-11-18T23:30:46",
+          "date": "2026.11.18",
+          "channel": "Shaun Murphy Snooker"
+        },
+        {
+          "id": "Channel/Shaun Murphy Snooker/Shaun Murphy Snooker - Trick shot against Ronnie O'Sullivan - Recreation!.html",
+          "path": "Channel/Shaun Murphy Snooker/Shaun Murphy Snooker - Trick shot against Ronnie O'Sullivan - Recreation!.html",
+          "title": "复刻对奥沙利文那杆神球：三库解球，一次打成 — Shaun Murphy 精读报告",
+          "sha256": "66d5c34f397674dfbf03cf1441701a64bc7876a8434f4197924baa044fca2889",
+          "modified": "2026-11-18T23:30:42",
+          "date": "2026.11.18",
+          "channel": "Shaun Murphy Snooker"
+        },
+        {
+          "id": "Channel/Shaun Murphy Snooker/Shaun Murphy Snooker - In The Frame - Episode 23.html",
+          "path": "Channel/Shaun Murphy Snooker/Shaun Murphy Snooker - In The Frame - Episode 23.html",
+          "title": "《In The Frame》最后一期：一杆 111 分的暂别 — Shaun Murphy 精读报告",
+          "sha256": "a34c32da658ce0d0c44dfe40afc201fa5bcf4a6c35a46843575a45039a93e012",
+          "modified": "2026-11-18T23:30:36",
+          "date": "2026.11.18",
+          "channel": "Shaun Murphy Snooker"
+        },
+        {
+          "id": "Channel/Shaun Murphy Snooker/Shaun Murphy Snooker - Ask Me Anything.html",
+          "path": "Channel/Shaun Murphy Snooker/Shaun Murphy Snooker - Ask Me Anything.html",
+          "title": "有问必答：世锦赛的秘密与带斑点的白球 — Shaun Murphy 精读报告",
+          "sha256": "2a12cbb63f1e4482c2a7f1c72399c26680cd57c2ca15dece88271c37caaec492",
+          "modified": "2026-11-18T22:16:51",
+          "date": "2026.11.18",
+          "channel": "Shaun Murphy Snooker"
+        },
+        {
+          "id": "Channel/Shaun Murphy Snooker/Shaun Murphy Snooker - Snookered - Episode 5.html",
+          "path": "Channel/Shaun Murphy Snooker/Shaun Murphy Snooker - Snookered - Episode 5.html",
+          "title": "《被斯诺克》第五期：一人分饰两角的十五分钟 — Shaun Murphy 精读报告",
+          "sha256": "5dad7c7561a9a9ab5a1af000f3a3e43ecab5ead015cfd8ad2e2f5cff380cd41e",
+          "modified": "2026-11-18T21:58:55",
+          "date": "2026.11.18",
+          "channel": "Shaun Murphy Snooker"
+        },
+        {
+          "id": "Channel/Shaun Murphy Snooker/Shaun Murphy Snooker - THAT shot recreated.html",
+          "path": "Channel/Shaun Murphy Snooker/Shaun Murphy Snooker - THAT shot recreated.html",
+          "title": "复刻威尔士那杆逃球 — Shaun Murphy 精读报告",
+          "sha256": "b5ee1780f0b04097a0360bf38d74973299c14f4bde55d1af500716984647b716",
+          "modified": "2026-11-18T21:44:37",
+          "date": "2026.11.18",
+          "channel": "Shaun Murphy Snooker"
+        },
+        {
+          "id": "Channel/Shaun Murphy Snooker/Shaun Murphy Snooker - Asking my girlfriend snooker questions.html",
+          "path": "Channel/Shaun Murphy Snooker/Shaun Murphy Snooker - Asking my girlfriend snooker questions.html",
+          "title": "考考女友：十一道斯诺克行话题 — Shaun Murphy 精读报告",
+          "sha256": "fa5c16087600894b0b66e42d0a68f6584f11f8fb79c01ad4752321cbbe74313e",
+          "modified": "2026-11-18T21:33:35",
+          "date": "2026.11.18",
+          "channel": "Shaun Murphy Snooker"
+        },
+        {
+          "id": "Channel/Shaun Murphy Snooker/Shaun Murphy Snooker - Want to learn how to deep screw.html",
+          "path": "Channel/Shaun Murphy Snooker/Shaun Murphy Snooker - Want to learn how to deep screw.html",
+          "title": "深拉杆：白球一路退回开球区 — Shaun Murphy 精读报告",
+          "sha256": "5d8498db778cd81995bbb379975ac79d2b1da2ea43825c9042a2fa54b133d8d1",
+          "modified": "2026-11-18T21:11:15",
+          "date": "2026.11.18",
+          "channel": "Shaun Murphy Snooker"
+        },
+        {
+          "id": "Channel/Shaun Murphy Snooker/Shaun Murphy Snooker - What are plants and how to play them.html",
+          "path": "Channel/Shaun Murphy Snooker/Shaun Murphy Snooker - What are plants and how to play them.html",
+          "title": "「组合球」：借一颗球，打进另一颗球 — Shaun Murphy 精读报告",
+          "sha256": "baf2cd60d87fbe528a513dc4713ebe2f5abe6ff18706eeb95880aaaa8139da70",
+          "modified": "2026-11-18T20:52:55",
+          "date": "2026.11.18",
+          "channel": "Shaun Murphy Snooker"
+        },
+        {
+          "id": "Channel/Shaun Murphy Snooker/Shaun Murphy Snooker - Snooker ASMR.html",
+          "path": "Channel/Shaun Murphy Snooker/Shaun Murphy Snooker - Snooker ASMR.html",
+          "title": "斯诺克 ASMR：没有台词的两分二十五秒 — Shaun Murphy 精读报告",
+          "sha256": "dccdc645ab620943ce96fba4ce54b9e7c7bc04e11a4b5578e4d4d1be5e50eb15",
+          "modified": "2026-11-18T20:22:21",
+          "date": "2026.11.18",
+          "channel": "Shaun Murphy Snooker"
+        },
+        {
+          "id": "Channel/Shaun Murphy Snooker/Shaun Murphy Snooker - What do we mean when we say Square and Slide.html",
+          "path": "Channel/Shaun Murphy Snooker/Shaun Murphy Snooker - What do we mean when we say Square and Slide.html",
+          "title": "“方”与“滑”：白球撞库之后的两条路 — Shaun Murphy 精读报告",
+          "sha256": "2f129604c9b57fd6aaf58680101f3930c7d774f5272bd1ca29db4699706ce8dc",
+          "modified": "2026-11-18T20:11:56",
+          "date": "2026.11.18",
+          "channel": "Shaun Murphy Snooker"
+        },
+        {
+          "id": "Channel/Shaun Murphy Snooker/Shaun Murphy Snooker - Recreating THAT Judd Trump shot on the green.html",
+          "path": "Channel/Shaun Murphy Snooker/Shaun Murphy Snooker - Recreating THAT Judd Trump shot on the green.html",
+          "title": "复刻特鲁姆普那杆绿球 — Shaun Murphy 精读报告",
+          "sha256": "7b006e54ce139bb194d7eb7a1b37794d4db00bf4365ac348cafdc5012dab70d9",
+          "modified": "2026-11-18T20:05:44",
+          "date": "2026.11.18",
+          "channel": "Shaun Murphy Snooker"
+        },
+        {
+          "id": "Channel/Shaun Murphy Snooker/Shaun Murphy Snooker - The One Four Seven Podcast - Episode 2.html",
+          "path": "Channel/Shaun Murphy Snooker/Shaun Murphy Snooker - The One Four Seven Podcast - Episode 2.html",
+          "title": "两杆满分、两场告别与香肠比赛 — Shaun Murphy 精读报告",
+          "sha256": "7c9ccdad167e6ea3d115eb452fec8550e61c20816b67afd64bc8ea7c1042d427",
+          "modified": "2026-11-18T19:57:40",
+          "date": "2026.11.18",
+          "channel": "Shaun Murphy Snooker"
+        },
+        {
+          "id": "Channel/Shaun Murphy Snooker/Shaun Murphy Snooker - How to utilise a Shot To Nothing.html",
+          "path": "Channel/Shaun Murphy Snooker/Shaun Murphy Snooker - How to utilise a Shot To Nothing.html",
+          "title": "“无所得”击球：进可攻、退可守的一杆 — Shaun Murphy 精读报告",
+          "sha256": "445888fbdfe8a8c186d5ceedde969077b8851806cb04e70ece85eb1bdd36d551",
+          "modified": "2026-11-18T19:37:09",
+          "date": "2026.11.18",
+          "channel": "Shaun Murphy Snooker"
+        },
+        {
+          "id": "Channel/Shaun Murphy Snooker/Shaun Murphy Snooker - Clearing the Table - Episode 1.html",
+          "path": "Channel/Shaun Murphy Snooker/Shaun Murphy Snooker - Clearing the Table - Episode 1.html",
+          "title": "试播、世锦赛之痛与五十件毛衣 — Shaun Murphy 精读报告",
+          "sha256": "968fe70dab9821113c72b8943c3427b0d22100b4c428a8993c0bfb990b475409",
+          "modified": "2026-11-18T19:31:24",
+          "date": "2026.11.18",
+          "channel": "Shaun Murphy Snooker"
+        },
+        {
+          "id": "Channel/Shaun Murphy Snooker/Shaun Murphy Snooker - Episode 3 - Travel Horror Stories.html",
+          "path": "Channel/Shaun Murphy Snooker/Shaun Murphy Snooker - Episode 3 - Travel Horror Stories.html",
+          "title": "旅行灾难、婴儿禁令与新恐惧解锁 — Shaun Murphy 精读报告",
+          "sha256": "947ad5439a130f4d6f949d5bb6498beeb40a9a50563b5936acad10d54617146d",
+          "modified": "2026-11-18T19:20:15",
+          "date": "2026.11.18",
+          "channel": "Shaun Murphy Snooker"
+        },
+        {
+          "id": "Channel/Shaun Murphy Snooker/Shaun Murphy Snooker - Episode 4 - The World Cup.html",
+          "path": "Channel/Shaun Murphy Snooker/Shaun Murphy Snooker - Episode 4 - The World Cup.html",
+          "title": "世界杯、卷纸之战与上班喝酒 — Shaun Murphy 精读报告",
+          "sha256": "9e800c7c2bbd48a89938177f78c146dce9e5b409a6b9cad6dfb426d2087a07a4",
+          "modified": "2026-11-18T19:20:09",
+          "date": "2026.11.18",
+          "channel": "Shaun Murphy Snooker"
+        },
+        {
+          "id": "Channel/Shaun Murphy Snooker/Shaun Murphy Snooker - Episode 2 - The OBE, Social Media and a Man on a Camel.html",
+          "path": "Channel/Shaun Murphy Snooker/Shaun Murphy Snooker - Episode 2 - The OBE, Social Media and a Man on a Camel.html",
+          "title": "授勋、社媒与骑骆驼的男人 — Shaun Murphy 精读报告",
+          "sha256": "231f5cac7516775e605249caddf7eba09d87153cb2b78bc37e4d1b517ebed293",
+          "modified": "2026-11-18T19:20:02",
+          "date": "2026.11.18",
+          "channel": "Shaun Murphy Snooker"
+        }
+      ]
+    },
+    {
+      "id": "Soft White Underbelly",
+      "name": "Soft White Underbelly",
+      "documents": [
+        {
+          "id": "Channel/Soft White Underbelly/Catherine - A Childhood Not Worth Remembering.html",
+          "path": "Channel/Soft White Underbelly/Catherine - A Childhood Not Worth Remembering.html",
+          "title": "不值得记住的童年 — Catherine 精读报告",
+          "sha256": "51ff2622f58df57ff5af03de4e03d920029c4a3c2dbf2230773830f462cd0c71",
+          "modified": "2026-11-20T23:50:36",
+          "date": "2026.11.20",
+          "channel": "Soft White Underbelly"
+        },
+        {
+          "id": "Channel/Soft White Underbelly/Cane - The Functionable Addict.html",
+          "path": "Channel/Soft White Underbelly/Cane - The Functionable Addict.html",
+          "title": "能正常生活的瘾君子 — Cane 精读报告",
+          "sha256": "6083e4ebe241054e7df69abb2f0bb77c6fa21c2598726d349343d550286d7b13",
+          "modified": "2026-11-20T23:50:34",
+          "date": "2026.11.20",
+          "channel": "Soft White Underbelly"
+        },
+        {
+          "id": "Channel/Soft White Underbelly/Bernice - Fentanyl Addict.html",
+          "path": "Channel/Soft White Underbelly/Bernice - Fentanyl Addict.html",
+          "title": "六十岁，还在 Skid Row — Bernice 精读报告",
+          "sha256": "aa5dc3edcf5b8a3d81fbec903a3f300d9a1b24d13f5cafd392fc8bf268b3e887",
+          "modified": "2026-11-20T23:50:31",
+          "date": "2026.11.20",
+          "channel": "Soft White Underbelly"
+        },
+        {
+          "id": "Channel/Soft White Underbelly/我知道我会找到出路 — Jada 精读报告.html",
+          "path": "Channel/Soft White Underbelly/我知道我会找到出路 — Jada 精读报告.html",
+          "title": "我知道我会找到出路 — Jada 精读报告",
+          "sha256": "17678519b5ef1ee2c9099ad682387efb5e272f06411c93a4d874a9db750a23b4",
+          "modified": "2026-11-20T22:56:05",
+          "date": "2026.11.20",
+          "channel": "Soft White Underbelly"
+        },
+        {
+          "id": "Channel/Soft White Underbelly/Carrie - I Used Men For Money Until I Found Love.html",
+          "path": "Channel/Soft White Underbelly/Carrie - I Used Men For Money Until I Found Love.html",
+          "title": "拿男人的钱，直到遇见爱 — Carrie 精读报告",
+          "sha256": "ff3f86ec35d9ef5a7d503cc42a763b6973147ab217bec9bdffa3c350d7521a1a",
+          "modified": "2026-11-19T21:14:52",
+          "date": "2026.11.19",
+          "channel": "Soft White Underbelly"
+        }
+      ]
+    },
+    {
+      "id": "Stanford Online",
+      "name": "Stanford Online",
+      "documents": [
+        {
+          "id": "Channel/Stanford Online/Philip Guo - 一位开发者，二十年，三千万用户之后.html",
+          "path": "Channel/Stanford Online/Philip Guo - 一位开发者，二十年，三千万用户之后.html",
+          "title": "一位开发者，二十年，三千万用户之后 — Philip Guo 精读报告",
+          "sha256": "99140c32e8e95206448d7bdba237c6f7c3fde96488ef12bf94749f32ce95704c",
+          "modified": "2026-11-21T14:19:40",
+          "date": "2026.11.21",
+          "channel": "Stanford Online"
+        },
+        {
+          "id": "Channel/Stanford Online/Afshine Amidi & Shervine Amidi - LLM Evaluation.html",
+          "path": "Channel/Stanford Online/Afshine Amidi & Shervine Amidi - LLM Evaluation.html",
+          "title": "分数会说谎，评测才是方向 — Afshine Amidi & Shervine Amidi 精读报告",
+          "sha256": "2798f8f65904fea5d1e3f30a300c774d069ae001bb6038290ed3c4efb1026055",
+          "modified": "2026-11-21T11:17:42",
+          "date": "2026.11.21",
+          "channel": "Stanford Online"
+        },
+        {
+          "id": "Channel/Stanford Online/Terminal-Bench - Evaluating AI Agents, Alex Shaw & Ryan Marten.html",
+          "path": "Channel/Stanford Online/Terminal-Bench - Evaluating AI Agents, Alex Shaw & Ryan Marten.html",
+          "title": "评测即真理 — Alex Shaw & Ryan Marten 精读报告",
+          "sha256": "1424f076756753d52d11c114b189a4985b9179d1ae9e48f0a644b6db18a59ce7",
+          "modified": "2026-11-20T23:50:38",
+          "date": "2026.11.20",
+          "channel": "Stanford Online"
+        },
+        {
+          "id": "Channel/Stanford Online/Stanford Online Graduate Information Session.html",
+          "path": "Channel/Stanford Online/Stanford Online Graduate Information Session.html",
+          "title": "先试一门课：斯坦福研究生的三条路 — Pax Heymeyer、Jonathan Nottman 精读报告",
+          "sha256": "66209788423cc4031a4c48b39c8b0f16da35871ad42c729e8aa92e7a52ba3bef",
+          "modified": "2026-11-20T16:45:51",
+          "date": "2026.11.20",
+          "channel": "Stanford Online"
+        },
+        {
+          "id": "Channel/Stanford Online/Cynthia Bailey - AI Costs： Tokens, Energy, Model Choice & API Keys.html",
+          "path": "Channel/Stanford Online/Cynthia Bailey - AI Costs： Tokens, Energy, Model Choice & API Keys.html",
+          "title": "数清每一枚 Token 的代价 — Cynthia Bailey 精读报告",
+          "sha256": "65b2f0f4e89531d391124d4168926f66716e0c0c668b96cce5dbbeba7c3e645d",
+          "modified": "2026-11-19T10:38:46",
+          "date": "2026.11.19",
+          "channel": "Stanford Online"
+        }
+      ]
+    },
+    {
+      "id": "StarTalk",
+      "name": "StarTalk",
+      "documents": [
+        {
+          "id": "Channel/StarTalk/Janna Levin - Black Holes, In Theory….html",
+          "path": "Channel/StarTalk/Janna Levin - Black Holes, In Theory….html",
+          "title": "黑洞，理论上 — Janna Levin（StarTalk）精读报告",
+          "sha256": "affb2b19e20bd699a6ad210e9d8c55ead0b880b283216917d60f3b5dc120e43c",
+          "modified": "2026-11-20T13:48:24",
+          "date": "2026.11.20",
+          "channel": "StarTalk"
+        }
+      ]
+    },
+    {
+      "id": "Talking Tokens",
+      "name": "Talking Tokens",
+      "documents": [
+        {
+          "id": "Channel/Talking Tokens/七位领袖 - 代币化只是开始，真实世界资产的下一站.html",
+          "path": "Channel/Talking Tokens/七位领袖 - 代币化只是开始，真实世界资产的下一站.html",
+          "title": "代币化只是开始，真实世界资产的下一站 — 七位领袖（Talking Tokens · RockawayX）精读报告",
+          "sha256": "c4fdaaafa5fa06da96fadf54eca9f23160302d0a76f74476bfa42701cb094d7d",
+          "modified": "2026-11-21T11:34:42",
+          "date": "2026.11.21",
+          "channel": "Talking Tokens"
+        },
+        {
+          "id": "Channel/Talking Tokens/Scott Shay - What Banks Actually Do With Your Money.html",
+          "path": "Channel/Talking Tokens/Scott Shay - What Banks Actually Do With Your Money.html",
+          "title": "银行拿你的钱到底干了什么 — Scott Shay（Signature Bank / N3XT）精读报告",
+          "sha256": "e87272b2c466be3a42025329d25467b4471a3c4f5fa14072ba932a0ee600d79f",
+          "modified": "2026-11-20T14:41:30",
+          "date": "2026.11.20",
+          "channel": "Talking Tokens"
+        }
+      ]
+    },
+    {
+      "id": "TBPN",
+      "name": "TBPN",
+      "documents": [
+        {
+          "id": "Channel/TBPN/Jordi Hays 与 John Coogan - AI 证明黎曼猜想，股市大跌，豪宅栏目精读报告.html",
+          "path": "Channel/TBPN/Jordi Hays 与 John Coogan - AI 证明黎曼猜想，股市大跌，豪宅栏目精读报告.html",
+          "title": "AI 证明黎曼猜想，股市大跌，豪宅栏目 — Jordi Hays 与 John Coogan 精读报告",
+          "sha256": "ca5f88d3fc411d65d45d5f4460cb1a3ed1b62b948cca82f85ca734a3260a545a",
+          "modified": "2026-11-21T11:17:49",
+          "date": "2026.11.21",
+          "channel": "TBPN"
+        },
+        {
+          "id": "Channel/TBPN/做艺术，不卖杂货：GTA VI 背后的 CEO — Strauss Zelnick 精读报告.html",
+          "path": "Channel/TBPN/做艺术，不卖杂货：GTA VI 背后的 CEO — Strauss Zelnick 精读报告.html",
+          "title": "做艺术，不卖杂货：GTA VI 背后的 CEO — Strauss Zelnick 精读报告",
+          "sha256": "2dbb61469970638c496fbc8be0523adefb172894bcbd2124bc9a186525988ed0",
+          "modified": "2026-11-20T20:23:03",
+          "date": "2026.11.20",
+          "channel": "TBPN"
+        },
+        {
+          "id": "Channel/TBPN/Travis Kalanick - If I Were Jensen, Here's What I'd Do.html",
+          "path": "Channel/TBPN/Travis Kalanick - If I Were Jensen, Here's What I'd Do.html",
+          "title": "如果我是 Jensen，我会这么做 — Travis Kalanick 精读报告",
+          "sha256": "6b807b0f02a26b9586d5c2e1776cec7d373de81ec8ff8a9de60340e4b7f503f3",
+          "modified": "2026-11-19T21:15:55",
+          "date": "2026.11.19",
+          "channel": "TBPN"
+        }
+      ]
+    },
+    {
+      "id": "TED",
+      "name": "TED",
+      "documents": [
+        {
+          "id": "Channel/TED/想让人改变？先换一个问题 — Philip Jameson 精读报告.html",
+          "path": "Channel/TED/想让人改变？先换一个问题 — Philip Jameson 精读报告.html",
+          "title": "想让人改变？先换一个问题 — Philip Jameson 精读报告",
+          "sha256": "6b0309f2eaf2d585692ba415fa3cde7d158e14c5eeb22c2a818697aa30f0d188",
+          "modified": "2026-11-21T11:59:15",
+          "date": "2026.11.21",
+          "channel": "TED"
+        },
+        {
+          "id": "Channel/TED/不用禁令，数字会挤掉化石燃料 — Michael Liebreich 精读报告.html",
+          "path": "Channel/TED/不用禁令，数字会挤掉化石燃料 — Michael Liebreich 精读报告.html",
+          "title": "不用禁令，数字会挤掉化石燃料 — Michael Liebreich 精读报告",
+          "sha256": "86bb2d58b72013dc029d220d68aab3655e57e7a0f6028611d93c6525d1851050",
+          "modified": "2026-11-20T20:22:49",
+          "date": "2026.11.20",
+          "channel": "TED"
+        }
+      ]
+    },
+    {
+      "id": "Tessl",
+      "name": "Tessl",
+      "documents": [
+        {
+          "id": "Channel/Tessl/daniel-meppiel-bill-of-materials.html",
+          "path": "Channel/Tessl/daniel-meppiel-bill-of-materials.html",
+          "title": "软件工厂也得有物料清单 — Daniel Meppiel（Microsoft）精读报告",
+          "sha256": "665b2144a5747c085f2a834fe8c7a48e549c441e4948f46cd6bf6d285b040cdb",
+          "modified": "2026-11-20T20:22:21",
+          "date": "2026.11.20",
+          "channel": "Tessl"
+        }
+      ]
+    },
+    {
+      "id": "Tetragrammaton",
+      "name": "Tetragrammaton",
+      "documents": [
+        {
+          "id": "Channel/Tetragrammaton/steven-pressfield.html",
+          "path": "Channel/Tetragrammaton/steven-pressfield.html",
+          "title": "自我怀疑是好兆头 — Steven Pressfield 精读报告",
+          "sha256": "ec47c11333a2f4b5680902850ea5647f52ecf3136091aba4ba48c88c0d49e241",
+          "modified": "2026-11-20T23:50:43",
+          "date": "2026.11.20",
+          "channel": "Tetragrammaton"
+        },
+        {
+          "id": "Channel/Tetragrammaton/rick-rubin-michael-meade.html",
+          "path": "Channel/Tetragrammaton/rick-rubin-michael-meade.html",
+          "title": "末世不是终点，是揭幕 — Michael Meade 精读报告",
+          "sha256": "e8ecc699814437c7f97b384364db45482908212cdfeae5c47f9a134347bea24d",
+          "modified": "2026-11-20T23:50:41",
+          "date": "2026.11.20",
+          "channel": "Tetragrammaton"
+        },
+        {
+          "id": "Channel/Tetragrammaton/Tetragrammaton - Rupi Kaur.html",
+          "path": "Channel/Tetragrammaton/Tetragrammaton - Rupi Kaur.html",
+          "title": "魔法正在回来 — Rupi Kaur 精读报告",
+          "sha256": "60481a90c99ed02dafab2a2810c3924760ea2bb9a65439939b4b691bf8a01ba9",
+          "modified": "2026-11-18T19:20:20",
+          "date": "2026.11.18",
+          "channel": "Tetragrammaton"
+        },
+        {
+          "id": "Channel/Tetragrammaton/Tetragrammaton - Jimmy Iovine.html",
+          "path": "Channel/Tetragrammaton/Tetragrammaton - Jimmy Iovine.html",
+          "title": "一切都是一件事 — Jimmy Iovine 精读报告",
+          "sha256": "997e23f53e081d85412bf1b9a121890be18e269e374e91ffe2a997a4a260c2f7",
+          "modified": "2026-11-18T18:31:50",
+          "date": "2026.11.18",
+          "channel": "Tetragrammaton"
+        },
+        {
+          "id": "Channel/Tetragrammaton/Tetragrammaton - Nick Broomfield.html",
+          "path": "Channel/Tetragrammaton/Tetragrammaton - Nick Broomfield.html",
+          "title": "电影是拍电影的过程 — Nick Broomfield 精读报告",
+          "sha256": "257b8d89d1674d846c8302784a42aab219970d3cba3c02501e9bc8c61f1b4be0",
+          "modified": "2026-11-18T17:50:53",
+          "date": "2026.11.18",
+          "channel": "Tetragrammaton"
+        },
+        {
+          "id": "Channel/Tetragrammaton/Tetragrammaton - Dan Brown.html",
+          "path": "Channel/Tetragrammaton/Tetragrammaton - Dan Brown.html",
+          "title": "意识不在脑子里 — Dan Brown 精读报告",
+          "sha256": "b9252900aca1d9a939a8db2741e57c587dcb4172038b750cab951924103e9fbe",
+          "modified": "2026-11-18T17:29:15",
+          "date": "2026.11.18",
+          "channel": "Tetragrammaton"
+        },
+        {
+          "id": "Channel/Tetragrammaton/Tetragrammaton - Mike Cessario.html",
+          "path": "Channel/Tetragrammaton/Tetragrammaton - Mike Cessario.html",
+          "title": "像垃圾食品一样卖水 — Mike Cessario 精读报告",
+          "sha256": "2dbac2bffcdddb32acb29b7e27d6467e48f36222780d3f5e8fb46bdfde69a82e",
+          "modified": "2026-11-18T17:08:03",
+          "date": "2026.11.18",
+          "channel": "Tetragrammaton"
+        },
+        {
+          "id": "Channel/Tetragrammaton/Tetragrammaton - Brian Armstrong.html",
+          "path": "Channel/Tetragrammaton/Tetragrammaton - Brian Armstrong.html",
+          "title": "行动产生信息 — Brian Armstrong 精读报告",
+          "sha256": "9b95164c032f2ff56ae79bc643716dc97e5ff765e1c274f4d8636fa8e59a6ad2",
+          "modified": "2026-11-18T16:53:29",
+          "date": "2026.11.18",
+          "channel": "Tetragrammaton"
+        },
+        {
+          "id": "Channel/Tetragrammaton/Tetragrammaton - Daron Malakian Pt.1.html",
+          "path": "Channel/Tetragrammaton/Tetragrammaton - Daron Malakian Pt.1.html",
+          "title": "从迷幻到鞭挞 — Daron Malakian 精读报告",
+          "sha256": "c300837df28c5c0cd08a1afd730a767b03ddd01ae9af25375c43f83aa6d8ffa2",
+          "modified": "2026-11-18T16:24:16",
+          "date": "2026.11.18",
+          "channel": "Tetragrammaton"
+        },
+        {
+          "id": "Channel/Tetragrammaton/Tetragrammaton - Daron Malakian Pt.2.html",
+          "path": "Channel/Tetragrammaton/Tetragrammaton - Daron Malakian Pt.2.html",
+          "title": "从迷幻到数学金属 — Daron Malakian 精读报告",
+          "sha256": "e7caef8681e1db334cd8da2877073faf460a139e18e90f54cd5c1367e667600c",
+          "modified": "2026-11-18T16:09:17",
+          "date": "2026.11.18",
+          "channel": "Tetragrammaton"
+        },
+        {
+          "id": "Channel/Tetragrammaton/Tetragrammaton - Mike White.html",
+          "path": "Channel/Tetragrammaton/Tetragrammaton - Mike White.html",
+          "title": "我们都建造自己的天堂 — Mike White 精读报告",
+          "sha256": "1ce07d82e0ff246b038244638b19ee774eadabe1d458ae5741f90468f815fe20",
+          "modified": "2026-11-18T15:53:13",
+          "date": "2026.11.18",
+          "channel": "Tetragrammaton"
+        },
+        {
+          "id": "Channel/Tetragrammaton/Tetragrammaton - Joseph Nguyen.html",
+          "path": "Channel/Tetragrammaton/Tetragrammaton - Joseph Nguyen.html",
+          "title": "别相信你的每一个念头 — Joseph Nguyen 精读报告",
+          "sha256": "b03cc7bf34479ed983ccd9a7909811a99ec7cd3896e06fc9e8ce9ee24e67de3f",
+          "modified": "2026-11-18T15:27:11",
+          "date": "2026.11.18",
+          "channel": "Tetragrammaton"
+        },
+        {
+          "id": "Channel/Tetragrammaton/Tetragrammaton - Barry Diller.html",
+          "path": "Channel/Tetragrammaton/Tetragrammaton - Barry Diller.html",
+          "title": "人人都以为他会失败 — Barry Diller 精读报告",
+          "sha256": "470314886edd1c430d9e93ed84b6e976094971886f918031bf3886bd03af05f8",
+          "modified": "2026-11-18T15:27:08",
+          "date": "2026.11.18",
+          "channel": "Tetragrammaton"
+        },
+        {
+          "id": "Channel/Tetragrammaton/Tetragrammaton - Dr. Mary Bowden.html",
+          "path": "Channel/Tetragrammaton/Tetragrammaton - Dr. Mary Bowden.html",
+          "title": "责任到我为止 — Dr. Mary Bowden 精读报告",
+          "sha256": "3b1f16bb3ec8fdcc5b4b03523053c8efec60bdeb9ff088d4720e3dfcbe22e73a",
+          "modified": "2026-11-18T14:56:29",
+          "date": "2026.11.18",
+          "channel": "Tetragrammaton"
+        },
+        {
+          "id": "Channel/Tetragrammaton/Tetragrammaton - George Saunders.html",
+          "path": "Channel/Tetragrammaton/Tetragrammaton - George Saunders.html",
+          "title": "故事说了算 — George Saunders 精读报告",
+          "sha256": "5db6dff52c5c57e3f535be7ab03f358976bc1987d35ce4961c9d505717be32fd",
+          "modified": "2026-11-18T14:38:44",
+          "date": "2026.11.18",
+          "channel": "Tetragrammaton"
+        },
+        {
+          "id": "Channel/Tetragrammaton/Tetragrammaton - Bill Gurley.html",
+          "path": "Channel/Tetragrammaton/Tetragrammaton - Bill Gurley.html",
+          "title": "别半途而废 — Bill Gurley 精读报告",
+          "sha256": "2fbc11d816478b17f05f1898c3491f638f786eb387677c457dad4749a90e226e",
+          "modified": "2026-11-18T14:19:54",
+          "date": "2026.11.18",
+          "channel": "Tetragrammaton"
+        },
+        {
+          "id": "Channel/Tetragrammaton/Tetragrammaton - David Whyte.html",
+          "path": "Channel/Tetragrammaton/Tetragrammaton - David Whyte.html",
+          "title": "爱，是向自己之外走半步 — David Whyte 精读报告",
+          "sha256": "06bdf9b0565323143af506b73f1560803e6179a8177a304e6ca7448985a98a49",
+          "modified": "2026-11-18T14:00:10",
+          "date": "2026.11.18",
+          "channel": "Tetragrammaton"
+        },
+        {
+          "id": "Channel/Tetragrammaton/Tetragrammaton - Chris Pavlovski.html",
+          "path": "Channel/Tetragrammaton/Tetragrammaton - Chris Pavlovski.html",
+          "title": "我们没有挪过球门柱 — Chris Pavlovski 精读报告",
+          "sha256": "26eb47ad2ec3aaeec6aa27c4e00bbf5da380bf2ba1a940b925c9317187e1b862",
+          "modified": "2026-11-18T14:00:04",
+          "date": "2026.11.18",
+          "channel": "Tetragrammaton"
+        },
+        {
+          "id": "Channel/Tetragrammaton/Tetragrammaton - Greg Brockman.html",
+          "path": "Channel/Tetragrammaton/Tetragrammaton - Greg Brockman.html",
+          "title": "假如它能成 — Greg Brockman 精读报告",
+          "sha256": "496c890b6153900230f36a3880ef77ad0d77cc562daf71e6e6de25ede7d44470",
+          "modified": "2026-11-18T13:59:58",
+          "date": "2026.11.18",
+          "channel": "Tetragrammaton"
+        },
+        {
+          "id": "Channel/Tetragrammaton/Tetragrammaton - Eric Roth.html",
+          "path": "Channel/Tetragrammaton/Tetragrammaton - Eric Roth.html",
+          "title": "每个故事都是爱情故事 — Eric Roth 精读报告",
+          "sha256": "450387131edfe31a3766ae877e08cd4b431ae1117013648b45b0fceaa7a7f863",
+          "modified": "2026-11-18T13:59:56",
+          "date": "2026.11.18",
+          "channel": "Tetragrammaton"
+        },
+        {
+          "id": "Channel/Tetragrammaton/Tetragrammaton - Kelly Wearstler.html",
+          "path": "Channel/Tetragrammaton/Tetragrammaton - Kelly Wearstler.html",
+          "title": "房间是活的 — Kelly Wearstler 精读报告",
+          "sha256": "9b3fea5eaa84c56896cd3958a30b4ce1abd9ccfb55996dd64b1463021fe4b7ef",
+          "modified": "2026-11-18T13:59:54",
+          "date": "2026.11.18",
+          "channel": "Tetragrammaton"
+        },
+        {
+          "id": "Channel/Tetragrammaton/Tetragrammaton - Adam Neumann.html",
+          "path": "Channel/Tetragrammaton/Tetragrammaton - Adam Neumann.html",
+          "title": "如果一切都顺利呢 — Adam Neumann 精读报告",
+          "sha256": "740d7a65237d030ed892afb53b7afae2c470a55f5ea86b7ca462d3ab5cd36258",
+          "modified": "2026-11-18T13:59:51",
+          "date": "2026.11.18",
+          "channel": "Tetragrammaton"
+        },
+        {
+          "id": "Channel/Tetragrammaton/Tetragrammaton - Anne Lamott & Neal Allen.html",
+          "path": "Channel/Tetragrammaton/Tetragrammaton - Anne Lamott & Neal Allen.html",
+          "title": "写好，是可以学的 — Anne Lamott & Neal Allen 精读报告",
+          "sha256": "5307e6be8e94a671b24759a25d0831ad028c300f917e6b98598dbbcccddd694a",
+          "modified": "2026-11-18T12:02:07",
+          "date": "2026.11.18",
+          "channel": "Tetragrammaton"
+        },
+        {
+          "id": "Channel/Tetragrammaton/Tetragrammaton - Jonah Hill.html",
+          "path": "Channel/Tetragrammaton/Tetragrammaton - Jonah Hill.html",
+          "title": "不是每件事都只有一面 — Jonah Hill 精读报告",
+          "sha256": "d18caab7867007ed3a554c4f07a4930553beacc2102dfccd03f67fe30c5a9598",
+          "modified": "2026-11-18T11:43:28",
+          "date": "2026.11.18",
+          "channel": "Tetragrammaton"
+        },
+        {
+          "id": "Channel/Tetragrammaton/Tetragrammaton - Jeff Harmon.html",
+          "path": "Channel/Tetragrammaton/Tetragrammaton - Jeff Harmon.html",
+          "title": "观众说了算 — Jeff Harmon 精读报告",
+          "sha256": "7d671f651b0dca3d6ea68b08b1abe79f6098e97c015132964874a8dfe30036fa",
+          "modified": "2026-11-18T11:26:23",
+          "date": "2026.11.18",
+          "channel": "Tetragrammaton"
+        },
+        {
+          "id": "Channel/Tetragrammaton/Tetragrammaton - GT Dave.html",
+          "path": "Channel/Tetragrammaton/Tetragrammaton - GT Dave.html",
+          "title": "不朽之饮 — GT Dave 精读报告",
+          "sha256": "79c27594ed626cae96ed41fa57ae0bf7d57203a5fed8d9e917c8ff3e15a30f68",
+          "modified": "2026-11-18T11:12:58",
+          "date": "2026.11.18",
+          "channel": "Tetragrammaton"
+        },
+        {
+          "id": "Channel/Tetragrammaton/Tetragrammaton - Brian Hoyer.html",
+          "path": "Channel/Tetragrammaton/Tetragrammaton - Brian Hoyer.html",
+          "title": "让技术尊重你的生物学 — Brian Hoyer 精读报告",
+          "sha256": "b22a6a90583e5ce913ff54f895aeaafc499903bb82b0aca1236a6a1242c7378a",
+          "modified": "2026-11-18T11:12:52",
+          "date": "2026.11.18",
+          "channel": "Tetragrammaton"
+        },
+        {
+          "id": "Channel/Tetragrammaton/Tetragrammaton - Chris Best.html",
+          "path": "Channel/Tetragrammaton/Tetragrammaton - Chris Best.html",
+          "title": "写作者是英雄 — Chris Best 精读报告",
+          "sha256": "7da87311e3cfaaf5084f802fde9e62d50d9e9f1b7c4ac94d70d650c6dac948e8",
+          "modified": "2026-11-18T10:39:28",
+          "date": "2026.11.18",
+          "channel": "Tetragrammaton"
+        },
+        {
+          "id": "Channel/Tetragrammaton/Tetragrammaton - Clown of Slipknot.html",
+          "path": "Channel/Tetragrammaton/Tetragrammaton - Clown of Slipknot.html",
+          "title": "我讨厌它让我活着 — Clown of Slipknot 精读报告",
+          "sha256": "363dd081e13397aa33cdad231609556ba502dad15b1bb34e61582dfba9f2cfc3",
+          "modified": "2026-11-18T10:29:05",
+          "date": "2026.11.18",
+          "channel": "Tetragrammaton"
+        },
+        {
+          "id": "Channel/Tetragrammaton/Tetragrammaton - Garry Tan.html",
+          "path": "Channel/Tetragrammaton/Tetragrammaton - Garry Tan.html",
+          "title": "从代码洞穴到硅谷守门人 — Garry Tan 精读报告",
+          "sha256": "8b2db305e98ef82749b1dee7035f7e67b6b9d5cb41bda31cefc9c6d8861a657c",
+          "modified": "2026-11-18T10:10:53",
+          "date": "2026.11.18",
+          "channel": "Tetragrammaton"
+        },
+        {
+          "id": "Channel/Tetragrammaton/Tetragrammaton - Bob Roth on Transcendental Meditation.html",
+          "path": "Channel/Tetragrammaton/Tetragrammaton - Bob Roth on Transcendental Meditation.html",
+          "title": "笔落下，不必相信重力 — Bob Roth 精读报告",
+          "sha256": "71549a7fbd87f970a9f3ce6412507680867883723d7982a566ed59c57dc818e4",
+          "modified": "2026-11-18T09:54:47",
+          "date": "2026.11.18",
+          "channel": "Tetragrammaton"
+        },
+        {
+          "id": "Channel/Tetragrammaton/Tetragrammaton - Vlad Tenev Pt. 1.html",
+          "path": "Channel/Tetragrammaton/Tetragrammaton - Vlad Tenev Pt. 1.html",
+          "title": "为什么我不能用它？ — Vlad Tenev Pt. 1 精读报告",
+          "sha256": "64821b97b83363c6389e93a26c5e485f5887e1c6748c613774e47b00c3728eae",
+          "modified": "2026-11-18T09:41:22",
+          "date": "2026.11.18",
+          "channel": "Tetragrammaton"
+        },
+        {
+          "id": "Channel/Tetragrammaton/Tetragrammaton - Vlad Tenev Pt. 2.html",
+          "path": "Channel/Tetragrammaton/Tetragrammaton - Vlad Tenev Pt. 2.html",
+          "title": "数学是艺术，宇宙在偷懒 — Vlad Tenev Pt. 2 精读报告",
+          "sha256": "792a737c141761a8b62e694a1691f99b5a7924b8c430c211840a3382d78bd71e",
+          "modified": "2026-11-18T09:41:18",
+          "date": "2026.11.18",
+          "channel": "Tetragrammaton"
+        },
+        {
+          "id": "Channel/Tetragrammaton/Tetragrammaton - Bryce Crawford.html",
+          "path": "Channel/Tetragrammaton/Tetragrammaton - Bryce Crawford.html",
+          "title": "头与心之间的十八英寸 — Bryce Crawford 精读报告",
+          "sha256": "a52c4349186afc19ad65f9e6ce464d841293a1bb36ba783075911e6f80d2deb6",
+          "modified": "2026-11-18T09:41:11",
+          "date": "2026.11.18",
+          "channel": "Tetragrammaton"
+        },
+        {
+          "id": "Channel/Tetragrammaton/Tetragrammaton - Kenny Chesney.html",
+          "path": "Channel/Tetragrammaton/Tetragrammaton - Kenny Chesney.html",
+          "title": "歌是从活过的日子里来的 — Kenny Chesney 精读报告",
+          "sha256": "6dc7ad506fe5da7e0baffb5a8df753d2bbf5cb5e8416f027fba5abac9c58aa4a",
+          "modified": "2026-11-18T09:41:08",
+          "date": "2026.11.18",
+          "channel": "Tetragrammaton"
+        },
+        {
+          "id": "Channel/Tetragrammaton/Tetragrammaton - Dave Eggers.html",
+          "path": "Channel/Tetragrammaton/Tetragrammaton - Dave Eggers.html",
+          "title": "几乎总是先知道结局 — Dave Eggers 精读报告",
+          "sha256": "feb6e4643a3518bbbc800b331f6d6201ec65ba0cde404b08762ba9ab973e3ca8",
+          "modified": "2026-11-18T09:41:06",
+          "date": "2026.11.18",
+          "channel": "Tetragrammaton"
+        },
+        {
+          "id": "Channel/Tetragrammaton/Tetragrammaton - Peter McGrath.html",
+          "path": "Channel/Tetragrammaton/Tetragrammaton - Peter McGrath.html",
+          "title": "房间就是乐器 — Peter McGrath 精读报告",
+          "sha256": "8fc64bd1144d4426e382265da5e14ff91a10f126cba74e328600bf5bb8fd22d6",
+          "modified": "2026-11-18T08:51:43",
+          "date": "2026.11.18",
+          "channel": "Tetragrammaton"
+        },
+        {
+          "id": "Channel/Tetragrammaton/Tetragrammaton - Louis C.K..html",
+          "path": "Channel/Tetragrammaton/Tetragrammaton - Louis C.K..html",
+          "title": "笑话是种子 — Louis C.K. 精读报告",
+          "sha256": "775b8ead6718b726c142dae4814c7a859438e7f6ab79afa4da8e32892bff8fa6",
+          "modified": "2026-11-18T04:02:43",
+          "date": "2026.11.18",
+          "channel": "Tetragrammaton"
+        },
+        {
+          "id": "Channel/Tetragrammaton/Tetragrammaton - Angus Fletcher.html",
+          "path": "Channel/Tetragrammaton/Tetragrammaton - Angus Fletcher.html",
+          "title": "原始智能：被遗忘的四种力量 — Angus Fletcher 精读报告",
+          "sha256": "a4ad18d851f72a9c2388ef7f08fef3fce201074998f4db78335c7bedbcbbc958",
+          "modified": "2026-11-18T03:51:00",
+          "date": "2026.11.18",
+          "channel": "Tetragrammaton"
+        },
+        {
+          "id": "Channel/Tetragrammaton/Tetragrammaton - Anthony Metivier.html",
+          "path": "Channel/Tetragrammaton/Tetragrammaton - Anthony Metivier.html",
+          "title": "记忆宫殿里没有警察 — Anthony Metivier 精读报告",
+          "sha256": "a7d162ed7cd4905bedc3da391058bfbed03531b05afff220a3b5ce97d0c9bef7",
+          "modified": "2026-11-18T03:27:24",
+          "date": "2026.11.18",
+          "channel": "Tetragrammaton"
+        },
+        {
+          "id": "Channel/Tetragrammaton/Tetragrammaton - Sri Sri Ravi Shankar.html",
+          "path": "Channel/Tetragrammaton/Tetragrammaton - Sri Sri Ravi Shankar.html",
+          "title": "沉默是创造之母 — Sri Sri Ravi Shankar 精读报告",
+          "sha256": "a018707fd9a43c6a7e53526e3b350d7ce36cae13be49cdbbc95758e43bbaf3ef",
+          "modified": "2026-11-18T03:17:39",
+          "date": "2026.11.18",
+          "channel": "Tetragrammaton"
+        },
+        {
+          "id": "Channel/Tetragrammaton/Tetragrammaton - Did The Strokes Go Too Far with Reality Awaits with Albert Hammond, Jr..html",
+          "path": "Channel/Tetragrammaton/Tetragrammaton - Did The Strokes Go Too Far with Reality Awaits with Albert Hammond, Jr..html",
+          "title": "二十八年，他们还在写最好的歌 — Albert Hammond Jr. 精读报告",
+          "sha256": "efeccb8099257fd7a49688b592f7a4a1f8700e4f8764bda1980a2714633ca5b9",
+          "modified": "2026-11-18T03:06:40",
+          "date": "2026.11.18",
+          "channel": "Tetragrammaton"
+        },
+        {
+          "id": "Channel/Tetragrammaton/Tetragrammaton - What Did Jeff Bridges Learn at Death's Door.html",
+          "path": "Channel/Tetragrammaton/Tetragrammaton - What Did Jeff Bridges Learn at Death's Door.html",
+          "title": "在死神门口，他学到了什么 — Jeff Bridges 精读报告",
+          "sha256": "8cc238433be4c6562efe45127d3d5ba932c4d6d50720c5e080b5f445b751f55b",
+          "modified": "2026-11-18T02:57:08",
+          "date": "2026.11.18",
+          "channel": "Tetragrammaton"
+        },
+        {
+          "id": "Channel/Tetragrammaton/Tetragrammaton - Does Steven Pressfield Think Self-Doubt Is a Good Sign.html",
+          "path": "Channel/Tetragrammaton/Tetragrammaton - Does Steven Pressfield Think Self-Doubt Is a Good Sign.html",
+          "title": "自我怀疑是好兆头 — Steven Pressfield 精读报告",
+          "sha256": "668dc7d10218de2e3379aab317c3d57ba12c0f9491b16ae1d6d273bca740d6a9",
+          "modified": "2026-11-18T02:39:00",
+          "date": "2026.11.18",
+          "channel": "Tetragrammaton"
+        },
+        {
+          "id": "Channel/Tetragrammaton/Tetragrammaton - Why Is Tyler Cowen Optimistic About AI.html",
+          "path": "Channel/Tetragrammaton/Tetragrammaton - Why Is Tyler Cowen Optimistic About AI.html",
+          "title": "一剂额外的智能 — Tyler Cowen 谈 AI 精读报告",
+          "sha256": "6fdb95730412f77b9e9f8ecb703b4167405d8f10e62fd8bcc69cee3e79eaea05",
+          "modified": "2026-11-18T02:31:51",
+          "date": "2026.11.18",
+          "channel": "Tetragrammaton"
+        },
+        {
+          "id": "Channel/Tetragrammaton/Tetragrammaton - How Did Roger Avary Write Pulp Fiction.html",
+          "path": "Channel/Tetragrammaton/Tetragrammaton - How Did Roger Avary Write Pulp Fiction.html",
+          "title": "《低俗小说》是怎么写出来的 — Roger Avary 精读报告",
+          "sha256": "bd640720b2e04adf06cf3239f91fe63613da7e2a6a1d9f34e3d6d6271c3f7156",
+          "modified": "2026-11-18T02:20:38",
+          "date": "2026.11.18",
+          "channel": "Tetragrammaton"
+        },
+        {
+          "id": "Channel/Tetragrammaton/Tetragrammaton - How Did Tom Freston Turn MTV Into a Cultural Revolution?.html",
+          "path": "Channel/Tetragrammaton/Tetragrammaton - How Did Tom Freston Turn MTV Into a Cultural Revolution?.html",
+          "title": "没有电视经验的人，如何把 MTV 做成一场文化革命 — Tom Freston 精读报告",
+          "sha256": "cd6ba6f91d8c496095800fa4367239ce2972666fbaa5afa39864cee6ab8d5912",
+          "modified": "2026-11-18T02:13:05",
+          "date": "2026.11.18",
+          "channel": "Tetragrammaton"
+        },
+        {
+          "id": "Channel/Tetragrammaton/Tetragrammaton - Max Richter Are There Any Rules in Music 200th Episode.html",
+          "path": "Channel/Tetragrammaton/Tetragrammaton - Max Richter Are There Any Rules in Music 200th Episode.html",
+          "title": "音乐里没有打不破的规则——马克斯·里希特谈作曲、睡眠与美 — Max Richter 精读报告",
+          "sha256": "3738404c471ed14f02f1e6fb110bec67e0b58dde9ccb06c99883468adbb4580b",
+          "modified": "2026-11-18T02:03:08",
+          "date": "2026.11.18",
+          "channel": "Tetragrammaton"
+        },
+        {
+          "id": "Channel/Tetragrammaton/Tetragrammaton - Why Didn't JAY-Z Want to Be Famous.html",
+          "path": "Channel/Tetragrammaton/Tetragrammaton - Why Didn't JAY-Z Want to Be Famous.html",
+          "title": "他从来没想过要出名——JAY-Z 纪录片《JAŸ-Z IN 8》幕后 — JAY-Z 精读报告",
+          "sha256": "d762dd49a5dd937ee66e8119bf72c32d7534c92bbc5db70a4bc85e372ef203bf",
+          "modified": "2026-11-18T01:54:56",
+          "date": "2026.11.18",
+          "channel": "Tetragrammaton"
+        },
+        {
+          "id": "Channel/Tetragrammaton/Tetragrammaton - Rick Rubin and Neil Young A Conversation on Music, Memory and the Art of Listening.html",
+          "path": "Channel/Tetragrammaton/Tetragrammaton - Rick Rubin and Neil Young A Conversation on Music, Memory and the Art of Listening.html",
+          "title": "等了六十年才写完的歌——尼尔·杨谈新专辑、档案馆与记忆 — Neil Young 精读报告",
+          "sha256": "ee36b9bfd495d0117a17e034b751880e37da06d05a6e1d94fbc07bf7adb50424",
+          "modified": "2026-11-18T01:48:48",
+          "date": "2026.11.18",
+          "channel": "Tetragrammaton"
+        },
+        {
+          "id": "Channel/Tetragrammaton/Tetragrammaton - Rick Rubin Discusses The Secret History of Comics With Frank Miller.html",
+          "path": "Channel/Tetragrammaton/Tetragrammaton - Rick Rubin Discusses The Secret History of Comics With Frank Miller.html",
+          "title": "漫画是象形文字，不是插图小说——弗兰克·米勒谈漫画秘史 — Frank Miller 精读报告",
+          "sha256": "1da0649ca20751b5004dbd83748437bd1a0a6b990d257e8f8c4ca49068ae1aba",
+          "modified": "2026-11-18T01:37:53",
+          "date": "2026.11.18",
+          "channel": "Tetragrammaton"
+        },
+        {
+          "id": "Channel/Tetragrammaton/Tetragrammaton - Rick Rubin Discusses Faith, Jesus and the Meaning of Life With Greg Laurie.html",
+          "path": "Channel/Tetragrammaton/Tetragrammaton - Rick Rubin Discusses Faith, Jesus and the Meaning of Life With Greg Laurie.html",
+          "title": "信仰、耶稣与生命的意义——格雷格·劳里谈失落中的盼望 — Greg Laurie 精读报告",
+          "sha256": "439ee3a1a3f8eb38bd9b59206d7eb25738e90a2cbb290c04e33d135087d87d7c",
+          "modified": "2026-11-18T01:27:24",
+          "date": "2026.11.18",
+          "channel": "Tetragrammaton"
+        },
+        {
+          "id": "Channel/Tetragrammaton/Tetragrammaton - Rick Rubin Explores the Mysteries of Consciousness With Mark Booth.html",
+          "path": "Channel/Tetragrammaton/Tetragrammaton - Rick Rubin Explores the Mysteries of Consciousness With Mark Booth.html",
+          "title": "我们只是宇宙智能的局部凸起——马克·布斯谈意识、秘史与量子物理 — Mark Booth 精读报告",
+          "sha256": "e72ae1429eb7529f8c5b657aed9767e4112a7509c8c995bbc701899b2f9925d4",
+          "modified": "2026-11-18T01:14:14",
+          "date": "2026.11.18",
+          "channel": "Tetragrammaton"
+        },
+        {
+          "id": "Channel/Tetragrammaton/Tetragrammaton - Rick Rubin and Dr. Paul Conti Discuss Why Modern Therapy Isn't Working.html",
+          "path": "Channel/Tetragrammaton/Tetragrammaton - Rick Rubin and Dr. Paul Conti Discuss Why Modern Therapy Isn't Working.html",
+          "title": "现代疗法为什么不管用——保罗·康蒂谈创伤、自我叙事与生成驱力 — Dr. Paul Conti 精读报告",
+          "sha256": "3daa00cc19dae0b044bbbd5c8adcb254d7e462961c92460ae55b83e04de47c8f",
+          "modified": "2026-11-18T01:05:52",
+          "date": "2026.11.18",
+          "channel": "Tetragrammaton"
+        },
+        {
+          "id": "Channel/Tetragrammaton/Tetragrammaton - Rick Rubin and Jack Kruse Are We Missing the Most Important Force in Nature.html",
+          "path": "Channel/Tetragrammaton/Tetragrammaton - Rick Rubin and Jack Kruse Are We Missing the Most Important Force in Nature.html",
+          "title": "地磁减弱：被遗忘的自然界最重要力量 — Jack Kruse 精读报告",
+          "sha256": "738ddeab07b32067d18e91c8c2a191190dc48ff8037d96b5b87d068a5dbc7262",
+          "modified": "2026-11-18T01:00:01",
+          "date": "2026.11.18",
+          "channel": "Tetragrammaton"
+        },
+        {
+          "id": "Channel/Tetragrammaton/Tetragrammaton - Rick Rubin Explores the Connection Between Poker and Creativity with Chamath Palihapitiya.html",
+          "path": "Channel/Tetragrammaton/Tetragrammaton - Rick Rubin Explores the Connection Between Poker and Creativity with Chamath Palihapitiya.html",
+          "title": "扑克桌上的创造力 — Chamath Palihapitiya 精读报告",
+          "sha256": "5bab4b2120bd0b81849472f8b385ca60deea9a95e90d385f47330ac16c2c6f13",
+          "modified": "2026-11-18T00:47:28",
+          "date": "2026.11.18",
+          "channel": "Tetragrammaton"
+        },
+        {
+          "id": "Channel/Tetragrammaton/Tetragrammaton - Rick Rubin and Alain de Botton on Discovering the Unconscious Self.html",
+          "path": "Channel/Tetragrammaton/Tetragrammaton - Rick Rubin and Alain de Botton on Discovering the Unconscious Self.html",
+          "title": "发现无意识的自我 — Alain de Botton 精读报告",
+          "sha256": "c2cab99765ff0f2a3d1208b3d3aeac2a382c7a29e0ac5d92f57353053c65234c",
+          "modified": "2026-11-18T00:30:05",
+          "date": "2026.11.18",
+          "channel": "Tetragrammaton"
+        }
+      ]
+    },
+    {
+      "id": "The Diary Of A CEO",
+      "name": "The Diary Of A CEO",
+      "documents": [
+        {
+          "id": "Channel/The Diary Of A CEO/美国民主、金钱与战争——伯尼·桑德斯九十分钟对谈 — Bernie Sanders 精读报告.html",
+          "path": "Channel/The Diary Of A CEO/美国民主、金钱与战争——伯尼·桑德斯九十分钟对谈 — Bernie Sanders 精读报告.html",
+          "title": "美国民主、金钱与战争——伯尼·桑德斯九十分钟对谈 — Bernie Sanders 精读报告",
+          "sha256": "b17b1ea54eea6da6096383f0d82bb97fcffab91e52cdcdcf5db0ab1b103cfe5e",
+          "modified": "2026-11-19T21:17:36",
+          "date": "2026.11.19",
+          "channel": "The Diary Of A CEO"
+        }
+      ]
+    },
+    {
+      "id": "The Economist",
+      "name": "The Economist",
+      "documents": [
+        {
+          "id": "Channel/The Economist/trump-putin-xi-unprepared.html",
+          "path": "Channel/The Economist/trump-putin-xi-unprepared.html",
+          "title": "“毫无准备”：深圳三方会晤没谈出什么 — Zanny Minton Beddoes 精读报告",
+          "sha256": "1af63973abeaa48d018df1433a89fcbd2fc4aaaa7a609997c96595a48529623f",
+          "modified": "2026-11-20T20:22:37",
+          "date": "2026.11.20",
+          "channel": "The Economist"
+        },
+        {
+          "id": "Channel/The Economist/ai-engineers-scared-self-building-ai.html",
+          "path": "Channel/The Economist/ai-engineers-scared-self-building-ai.html",
+          "title": "当 AI 开始造更好的 AI — Alex Hern 精读报告",
+          "sha256": "c9d6936267c809a8e8214e85c1a08dbf76d67f956ec9c2ddcc5a9b54c5db6518",
+          "modified": "2026-11-20T12:02:35",
+          "date": "2026.11.20",
+          "channel": "The Economist"
+        }
+      ]
+    },
+    {
+      "id": "The Pragmatic Engineer",
+      "name": "The Pragmatic Engineer",
+      "documents": [
+        {
+          "id": "Channel/The Pragmatic Engineer/软件工厂：五千个 PR 背后 — Harjot Gill 精读报告.html",
+          "path": "Channel/The Pragmatic Engineer/软件工厂：五千个 PR 背后 — Harjot Gill 精读报告.html",
+          "title": "软件工厂：五千个 PR 背后 — Harjot Gill 精读报告",
+          "sha256": "6cd20b5a6edf6953a2f7bb034dbf029da3cc8f67ec5a7cff155f8e36db197bd8",
+          "modified": "2026-11-19T21:16:54",
+          "date": "2026.11.19",
+          "channel": "The Pragmatic Engineer"
+        }
+      ]
+    },
+    {
+      "id": "The Tonight Show Starring Jimmy Fallon",
+      "name": "The Tonight Show Starring Jimmy Fallon",
+      "documents": [
+        {
+          "id": "Channel/The Tonight Show Starring Jimmy Fallon/pete-davidson-mob-wives.html",
+          "path": "Channel/The Tonight Show Starring Jimmy Fallon/pete-davidson-mob-wives.html",
+          "title": "十七岁开逃逸车上了电视——皮特·戴维森谈《Mob Wives》首秀、芝士牛排与两部新片 — Jimmy Fallon 精读报告",
+          "sha256": "426d0ae24363bf1e353cdd3cb5723939349c120ad9a66f5b1c4d9596e363a002",
+          "modified": "2026-11-20T23:50:18",
+          "date": "2026.11.20",
+          "channel": "The Tonight Show Starring Jimmy Fallon"
+        },
+        {
+          "id": "Channel/The Tonight Show Starring Jimmy Fallon/Trump Claims Midterms Were Rigged, Mystery Woman Interrupts Trump's C-SPAN Call with Giggles.html",
+          "path": "Channel/The Tonight Show Starring Jimmy Fallon/Trump Claims Midterms Were Rigged, Mystery Woman Interrupts Trump's C-SPAN Call with Giggles.html",
+          "title": "神秘女子的笑声与被操纵的中期选举 — Jimmy Fallon 精读报告",
+          "sha256": "fcc1789844e8a79555b911b5862731da456e9a05d5b2a3f9bd5082abe6d6162d",
+          "modified": "2026-11-18T19:20:25",
+          "date": "2026.11.18",
+          "channel": "The Tonight Show Starring Jimmy Fallon"
+        },
+        {
+          "id": "Channel/The Tonight Show Starring Jimmy Fallon/Sam Rockwell Makes Another Iconic Tonight Show Entrance, Does His Best SNL Impression with Jimmy.html",
+          "path": "Channel/The Tonight Show Starring Jimmy Fallon/Sam Rockwell Makes Another Iconic Tonight Show Entrance, Does His Best SNL Impression with Jimmy.html",
+          "title": "两次登场与橡皮鸡之舞——萨姆·洛克威尔谈入场舞、试镜与《Wild Horse Nine》 — Sam Rockwell 精读报告",
+          "sha256": "e78d0bc1aee597a9c6d22041fada9247d052692087039dc7d1f14e676016adcc",
+          "modified": "2026-11-18T00:11:43",
+          "date": "2026.11.18",
+          "channel": "The Tonight Show Starring Jimmy Fallon"
+        },
+        {
+          "id": "Channel/The Tonight Show Starring Jimmy Fallon/Trump's Cabinet Distances Themselves from Him After Midterms.html",
+          "path": "Channel/The Tonight Show Starring Jimmy Fallon/Trump's Cabinet Distances Themselves from Him After Midterms.html",
+          "title": "内阁纷纷与他保持距离：特朗普的中期选举余波 — Jimmy Fallon 精读报告",
+          "sha256": "e4288628dd7ea0f1174f37b959c9ec3082796466ab7d46f5f0db05cb597e0208",
+          "modified": "2026-11-18T00:06:17",
+          "date": "2026.11.18",
+          "channel": "The Tonight Show Starring Jimmy Fallon"
+        },
+        {
+          "id": "Channel/The Tonight Show Starring Jimmy Fallon/Ethan Hawke Talks Attending Maya Hawke's Wedding and Filming Training Day with Denzel Washington.html",
+          "path": "Channel/The Tonight Show Starring Jimmy Fallon/Ethan Hawke Talks Attending Maya Hawke's Wedding and Filming Training Day with Denzel Washington.html",
+          "title": "女儿出嫁、丹泽尔与午夜电台——伊桑·霍克谈婚礼、《训练日》与新剧 — Ethan Hawke 精读报告",
+          "sha256": "a266aaecdaac45fae00c44c7e100aaa41167608d45429e67da29dae640ed38cd",
+          "modified": "2026-11-17T23:59:48",
+          "date": "2026.11.17",
+          "channel": "The Tonight Show Starring Jimmy Fallon"
+        },
+        {
+          "id": "Channel/The Tonight Show Starring Jimmy Fallon/Sarah Paulson Talks Harryween and Her All's Fair Season 2 Rotten Tomatoes Prediction.html",
+          "path": "Channel/The Tonight Show Starring Jimmy Fallon/Sarah Paulson Talks Harryween and Her All's Fair Season 2 Rotten Tomatoes Prediction.html",
+          "title": "我讨厌万圣节，但我爱 Harryween——莎拉·保尔森谈 Harryween、星光大道与《All's Fair》第二季 — Jimmy Fallon 精读报告",
+          "sha256": "a3d2e5661bad5666528a5d04f53759e65566521bcc9d9e507d1987c0c8bdea8f",
+          "modified": "2026-11-17T23:51:25",
+          "date": "2026.11.17",
+          "channel": "The Tonight Show Starring Jimmy Fallon"
+        },
+        {
+          "id": "Channel/The Tonight Show Starring Jimmy Fallon/True Confessions with Robert De Niro, Ben Stiller and Ariana Grande.html",
+          "path": "Channel/The Tonight Show Starring Jimmy Fallon/True Confessions with Robert De Niro, Ben Stiller and Ariana Grande.html",
+          "title": "三明治、痘痘、水族馆与卢·格拉姆 — 德尼罗、斯蒂勒与格兰德的真心话四轮 — Jimmy Fallon 精读报告",
+          "sha256": "a2c0cf115692303308107354c7e4720e22981404906b08d935e226d3a9292a21",
+          "modified": "2026-11-17T23:45:46",
+          "date": "2026.11.17",
+          "channel": "The Tonight Show Starring Jimmy Fallon"
+        },
+        {
+          "id": "Channel/The Tonight Show Starring Jimmy Fallon/Trump Blames Midterm Losses on \"Bad Messaging,\" Says Dana White Press Secretary Offer Was a Joke.html",
+          "path": "Channel/The Tonight Show Starring Jimmy Fallon/Trump Blames Midterm Losses on \"Bad Messaging,\" Says Dana White Press Secretary Offer Was a Joke.html",
+          "title": "都怪“传达不好”：特朗普谈中期选举失利 — Jimmy Fallon 精读报告",
+          "sha256": "070e6ea31687805d4bb51a2c799afb98d4cb6cca8ced709362a2c44d53175ca4",
+          "modified": "2026-11-17T23:34:38",
+          "date": "2026.11.17",
+          "channel": "The Tonight Show Starring Jimmy Fallon"
+        },
+        {
+          "id": "Channel/The Tonight Show Starring Jimmy Fallon/Pete Davidson Reacts to Footage from His Dramatic Mob Wives Television Debut.html",
+          "path": "Channel/The Tonight Show Starring Jimmy Fallon/Pete Davidson Reacts to Footage from His Dramatic Mob Wives Television Debut.html",
+          "title": "十七岁开逃逸车上了电视——皮特·戴维森谈《Mob Wives》首秀、芝士牛排与两部新片 — Jimmy Fallon 精读报告",
+          "sha256": "24931f4a5a387f836990cd1d0b64f9844a0bfd25d3409b3f2353a42ac2c1c2c6",
+          "modified": "2026-11-17T23:34:35",
+          "date": "2026.11.17",
+          "channel": "The Tonight Show Starring Jimmy Fallon"
+        },
+        {
+          "id": "Channel/The Tonight Show Starring Jimmy Fallon/Skyler Gisondo Reacts to Becoming a Viral Meme, Confirms He Radiates Peanut Allergy Energy.html",
+          "path": "Channel/The Tonight Show Starring Jimmy Fallon/Skyler Gisondo Reacts to Becoming a Viral Meme, Confirms He Radiates Peanut Allergy Energy.html",
+          "title": "气质里自带花生过敏 — 斯凯勒·吉桑多谈梗图、舞会邀请与《Focker-In-Law》 — Jimmy Fallon 精读报告",
+          "sha256": "bf4634688c5c22e9085a5ba36b3af785807acd12ddb9a02f55ee55175ef78fac",
+          "modified": "2026-11-17T23:34:23",
+          "date": "2026.11.17",
+          "channel": "The Tonight Show Starring Jimmy Fallon"
+        },
+        {
+          "id": "Channel/The Tonight Show Starring Jimmy Fallon/Robert De Niro, Ben Stiller and Ariana Grande Talk Focker In-Law, Play True Confessions and More.html",
+          "path": "Channel/The Tonight Show Starring Jimmy Fallon/Robert De Niro, Ben Stiller and Ariana Grande Talk Focker In-Law, Play True Confessions and More.html",
+          "title": "真心话、海姆立克与一部肥皂剧 — 德尼罗、斯蒂勒与格兰德谈《Focker-In-Law》 — Jimmy Fallon 精读报告",
+          "sha256": "2ef145712b3b3be980a717c279c2cbbf3dd65a5f3a724e71f45a782760b63023",
+          "modified": "2026-11-17T23:34:19",
+          "date": "2026.11.17",
+          "channel": "The Tonight Show Starring Jimmy Fallon"
+        },
+        {
+          "id": "Channel/The Tonight Show Starring Jimmy Fallon/FAA Equipment Failure Grounds Flights Nationwide, Trump Breaks Silence on Air Traffic Control System.html",
+          "path": "Channel/The Tonight Show Starring Jimmy Fallon/FAA Equipment Failure Grounds Flights Nationwide, Trump Breaks Silence on Air Traffic Control System.html",
+          "title": "全国停飞四小时：老交换机、啸叫的话筒与 32 支球队 — Jimmy Fallon 精读报告",
+          "sha256": "d9a86b9f71eb8eaf39a50783e24e92a52cae86a683366f258eae22114f065caf",
+          "modified": "2026-11-17T23:34:15",
+          "date": "2026.11.17",
+          "channel": "The Tonight Show Starring Jimmy Fallon"
+        },
+        {
+          "id": "Channel/The Tonight Show Starring Jimmy Fallon/Anthony Mackie Clears Up Avengers Doomsday Spoilers, Tackles Doctor Doom and Talks 12 12 12.html",
+          "path": "Channel/The Tonight Show Starring Jimmy Fallon/Anthony Mackie Clears Up Avengers Doomsday Spoilers, Tackles Doctor Doom and Talks 12 12 12.html",
+          "title": "安东尼·麦基：剧透、莎士比亚与《12 12 12》— 精读报告",
+          "sha256": "532c0d856802c045c428a70b2d0c4ff9427877653655446a8bc9ac08946d25f8",
+          "modified": "2026-11-17T23:34:10",
+          "date": "2026.11.17",
+          "channel": "The Tonight Show Starring Jimmy Fallon"
+        }
+      ]
+    },
+    {
+      "id": "Unprompted",
+      "name": "Unprompted",
+      "documents": [
+        {
+          "id": "Channel/Unprompted/Saurabh Shintre - Realm Labs, unprompted 2 offstage.html",
+          "path": "Channel/Unprompted/Saurabh Shintre - Realm Labs, unprompted 2 offstage.html",
+          "title": "问它为什么，而不只是它做了什么 — Saurabh Shintre 精读报告",
+          "sha256": "0f4127735b5c3ae14e53f011f33983e047948a8d001afd51e96d479b398114f8",
+          "modified": "2026-11-19T21:16:33",
+          "date": "2026.11.19",
+          "channel": "Unprompted"
+        },
+        {
+          "id": "Channel/Unprompted/Tobias Heldt - XOR, unprompted 2 offstage.html",
+          "path": "Channel/Unprompted/Tobias Heldt - XOR, unprompted 2 offstage.html",
+          "title": "零日漏洞正在变成大宗商品 — Tobias Heldt 精读报告",
+          "sha256": "413ee0224df11ccf65d4f9e786d306713d4889ba3862fa19c01b6bfaf593f130",
+          "modified": "2026-11-19T21:16:28",
+          "date": "2026.11.19",
+          "channel": "Unprompted"
+        },
+        {
+          "id": "Channel/Unprompted/Chenxi Wang - Rain Capital, unprompted 2 offstage.html",
+          "path": "Channel/Unprompted/Chenxi Wang - Rain Capital, unprompted 2 offstage.html",
+          "title": "教 Agent 对齐，而不是把它关起来 — Chenxi Wang 精读报告",
+          "sha256": "ef634575c8d6aa18b9fc4232140124a97052ace559ea7e68d3eeb9e8c79a602a",
+          "modified": "2026-11-19T21:15:38",
+          "date": "2026.11.19",
+          "channel": "Unprompted"
+        },
+        {
+          "id": "Channel/Unprompted/Kayla Williams & Olivia Rose - unprompted 2 offstage.html",
+          "path": "Channel/Unprompted/Kayla Williams & Olivia Rose - unprompted 2 offstage.html",
+          "title": "先把基础打牢，再谈 Agent — Kayla Williams & Olivia Rose 精读报告",
+          "sha256": "4464fb021b90e45e534d849bef4c76dd2b88d4a912758a66066c70faa4ebfc24",
+          "modified": "2026-11-19T21:15:15",
+          "date": "2026.11.19",
+          "channel": "Unprompted"
+        },
+        {
+          "id": "Channel/Unprompted/Aaron Mog - ZeroSum, unprompted 2 offstage.html",
+          "path": "Channel/Unprompted/Aaron Mog - ZeroSum, unprompted 2 offstage.html",
+          "title": "从前沿模型走向本地模型 — Aaron Mog 精读报告",
+          "sha256": "efc30759037814bf75f89bc02346c292664f30f48834c4ce48d0e9d52bf4196d",
+          "modified": "2026-11-19T21:15:10",
+          "date": "2026.11.19",
+          "channel": "Unprompted"
+        },
+        {
+          "id": "Channel/Unprompted/Matt Suiche - Tolmo, unprompted 2 offstage.html",
+          "path": "Channel/Unprompted/Matt Suiche - Tolmo, unprompted 2 offstage.html",
+          "title": "十八个月后，安全长什么样 — Matt Suiche 精读报告",
+          "sha256": "5c519dacdfa247a0f5fdc0dce5ab06c2f3f0fb70521848516c10145f8205ce8c",
+          "modified": "2026-11-19T21:14:39",
+          "date": "2026.11.19",
+          "channel": "Unprompted"
+        },
+        {
+          "id": "Channel/Unprompted/Vince Ovando - unprompted 2 offstage.html",
+          "path": "Channel/Unprompted/Vince Ovando - unprompted 2 offstage.html",
+          "title": "提示注入不是漏洞 — Vince Ovando 精读报告",
+          "sha256": "ec4f85c40b98b333eedbcdd2661f98df7fbcdbb643d91796b5101681a24162fa",
+          "modified": "2026-11-19T21:14:34",
+          "date": "2026.11.19",
+          "channel": "Unprompted"
+        },
+        {
+          "id": "Channel/Unprompted/Evelina Gabasova - AISLE, unprompted 2 offstage.html",
+          "path": "Channel/Unprompted/Evelina Gabasova - AISLE, unprompted 2 offstage.html",
+          "title": "小模型也能守住开源世界 — Evelina Gabasova 精读报告",
+          "sha256": "cafc3591c3dc2090018c9bc60c8369e2bfcccad10b3198572b6ff35ca03da871",
+          "modified": "2026-11-19T21:14:14",
+          "date": "2026.11.19",
+          "channel": "Unprompted"
+        },
+        {
+          "id": "Channel/Unprompted/Damian Finol - Felix, unprompted 2 offstage.html",
+          "path": "Channel/Unprompted/Damian Finol - Felix, unprompted 2 offstage.html",
+          "title": "五百个网关与一把凿子 — Damian Finol 精读报告",
+          "sha256": "beb5dd1df20ee21c39c12295658f6dc62ae632a1f5654c6655233d7ebbd024b3",
+          "modified": "2026-11-19T11:11:41",
+          "date": "2026.11.19",
+          "channel": "Unprompted"
+        },
+        {
+          "id": "Channel/Unprompted/Paul Price - CodeWall, unprompted 2 offstage.html",
+          "path": "Channel/Unprompted/Paul Price - CodeWall, unprompted 2 offstage.html",
+          "title": "机器自己选了目标 — Paul Price 精读报告",
+          "sha256": "fd0278aada238d5b3b93b7de3ccd429199c7a6d6cc819ab7fc5636b5bb39aee4",
+          "modified": "2026-11-19T10:59:38",
+          "date": "2026.11.19",
+          "channel": "Unprompted"
+        }
+      ]
+    },
+    {
+      "id": "Vogue",
+      "name": "Vogue",
+      "documents": [
+        {
+          "id": "Channel/Vogue/Hunter Schafer - 18 Looks, From The Hunger Games to Euphoria.html",
+          "path": "Channel/Vogue/Hunter Schafer - 18 Looks, From The Hunger Games to Euphoria.html",
+          "title": "十八个造型里的九年 — Hunter Schafer（Vogue）精读报告",
+          "sha256": "3d466512a9a42a49f4012d14124fb5b27a4135e31edaacb97e8884608c010304",
+          "modified": "2026-11-20T14:03:53",
+          "date": "2026.11.20",
+          "channel": "Vogue"
+        }
+      ]
+    },
+    {
+      "id": "When Shift Happens",
+      "name": "When Shift Happens",
+      "documents": [
+        {
+          "id": "Channel/When Shift Happens/cryptobanter-last-big-chance.html",
+          "path": "Channel/When Shift Happens/cryptobanter-last-big-chance.html",
+          "title": "最后一次暴富的机会 — Ran Neuner（CryptoBanter）精读报告",
+          "sha256": "a66bc9bc72ca38d183c9f5250d9b8145c5838ae903dec23ca1dd769bfec9935e",
+          "modified": "2026-11-20T23:50:47",
+          "date": "2026.11.20",
+          "channel": "When Shift Happens"
+        }
+      ]
+    },
+    {
+      "id": "Y Combinator",
+      "name": "Y Combinator",
+      "documents": [
+        {
+          "id": "Channel/Y Combinator/我们该让 AI 慢下来吗 — Jacob Coxon 对 Robin Hanson 精读报告.html",
+          "path": "Channel/Y Combinator/我们该让 AI 慢下来吗 — Jacob Coxon 对 Robin Hanson 精读报告.html",
+          "title": "我们该让 AI 慢下来吗 — Jacob Coxon 对 Robin Hanson 精读报告",
+          "sha256": "94d5303ed1eab1496921eae00142fcce7abee4c61801db9b72ed463d96e4e228",
+          "modified": "2026-11-20T13:41:03",
+          "date": "2026.11.20",
+          "channel": "Y Combinator"
+        },
+        {
+          "id": "Channel/Y Combinator/第一章的终结：Ramp 的 600 亿美元答卷 — Eric Glyman 精读报告.html",
+          "path": "Channel/Y Combinator/第一章的终结：Ramp 的 600 亿美元答卷 — Eric Glyman 精读报告.html",
+          "title": "第一章的终结：Ramp 的 600 亿美元答卷 — Eric Glyman 精读报告",
+          "sha256": "426997cb1a0d04e15cf9cec1f325e218a8bdbe42ceaf9d59cb72ef11c88a271a",
+          "modified": "2026-11-19T21:17:02",
+          "date": "2026.11.19",
+          "channel": "Y Combinator"
+        }
+      ]
+    }
+  ]
+}
