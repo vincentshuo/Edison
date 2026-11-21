@@ -49,23 +49,30 @@ function action(label, pressed, activate) {
   button.onclick = activate;
   return button;
 }
-function row(doc) {
+function row(doc, index) {
   const item = document.createElement("li");
-  const text = document.createElement("div");
+  const number = element("span", String(index + 1).padStart(2, "0"), "number");
   const path = doc.path.split("/").map(encodeURIComponent).join("/");
   const title = element("a", doc.title, "title");
   title.href = new URL(path, reportRoot).href;
   title.target = "_blank";
   title.rel = "noopener";
-  text.append(element("div", doc.channel + " · " + doc.date, "meta"), title);
+  title.title = doc.channel + " · " + doc.title;
+  const date = element("time", doc.date, "date");
+  date.dateTime = doc.modified;
   const actions = element("div", "", "actions");
-  const share = element("a", "公开链接 ↗");
+  const share = element("a", "↗", "share");
+  share.title = "公开链接";
+  share.setAttribute("aria-label", "公开链接");
   share.href = new URL(path, publicRoot).href;
   share.target = "_blank";
   share.rel = "noopener";
+  const star = action(featured.has(doc.id) ? "★" : "☆", featured.has(doc.id), () => toggleFeatured(doc.id));
+  star.title = featured.has(doc.id) ? "取消精选" : "设为精选";
+  star.setAttribute("aria-label", "精选");
   actions.append(action(read.has(doc.id) ? "已读" : "未读", read.has(doc.id), () => toggleRead(doc.id)),
-    action("精选", featured.has(doc.id), () => toggleFeatured(doc.id)), share);
-  item.append(text, actions);
+    star, share);
+  item.append(number, title, date, actions);
   return item;
 }
 function render() {
