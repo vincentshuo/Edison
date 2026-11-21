@@ -3,6 +3,7 @@ const channels = document.querySelector("#channels");
 const bulk = document.querySelector("#mark-all");
 const message = document.querySelector("#message");
 const publicRoot = new URL("https://vincentshuo.github.io/Edison/youtube/");
+let reportRoot = new URL(".", location.href);
 let reports = [];
 let filter = "all";
 
@@ -53,7 +54,7 @@ function row(doc) {
   const text = document.createElement("div");
   const path = doc.path.split("/").map(encodeURIComponent).join("/");
   const title = element("a", doc.title, "title");
-  title.href = path;
+  title.href = new URL(path, reportRoot).href;
   title.target = "_blank";
   title.rel = "noopener";
   text.append(element("div", doc.channel + " · " + doc.date, "meta"), title);
@@ -91,10 +92,24 @@ applyTheme(matchMedia("(prefers-color-scheme:dark)").matches ? "dark" : "light")
 window.addEventListener("message", event => {
   if (event.source === window.parent && event.data?.type === "edison-theme") applyTheme(event.data.theme);
 });
-fetch("manifest.json").then(response => {
+async function loadManifest(root) {
+  const response = await fetch(new URL("manifest.json", root));
   if (!response.ok) throw new Error(String(response.status));
   return response.json();
-}).then(manifest => {
+}
+async function loadReports() {
+  if (new URLSearchParams(location.search).has("published")) {
+    try {
+      const manifest = await loadManifest(publicRoot);
+      reportRoot = publicRoot;
+      return manifest;
+    } catch {
+      // A packaged Edison build carries a matching offline snapshot.
+    }
+  }
+  return loadManifest(reportRoot);
+}
+loadReports().then(manifest => {
   for (const channel of manifest.channels) channels.add(new Option(channel.name, channel.id));
   reports = manifest.channels.flatMap(channel => channel.documents)
     .sort((a,b) => b.modified.localeCompare(a.modified) || b.path.localeCompare(a.path));
