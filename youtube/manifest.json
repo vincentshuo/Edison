@@ -500,6 +500,15 @@
       "name": "Fashion Neurosis",
       "documents": [
         {
+          "id": "Channel/Fashion Neurosis/Simone Rocha - Simone Rocha on the Power of Women Designers, Chloë Sevigny, Art and Fashion.html",
+          "path": "Channel/Fashion Neurosis/Simone Rocha - Simone Rocha on the Power of Women Designers, Chloë Sevigny, Art and Fashion.html",
+          "title": "女人设计女装的力量 — Simone Rocha 精读报告",
+          "sha256": "1206f4e957f477bd7af0c0e66ed0a8da615be52841d68549a17bed067d5ef124",
+          "modified": "2026-11-21T21:46:50",
+          "date": "2026.11.21",
+          "channel": "Fashion Neurosis"
+        },
+        {
           "id": "Channel/Fashion Neurosis/Petra Collins - Petra Collins on Horror Movies, Sheer Clothing, and Capturing Femininity.html",
           "path": "Channel/Fashion Neurosis/Petra Collins - Petra Collins on Horror Movies, Sheer Clothing, and Capturing Femininity.html",
           "title": "恐怖片、薄纱与捕捉女性气质 — Petra Collins 精读报告",
@@ -532,15 +541,6 @@
           "title": "艺术、爱与自律 — Celia Paul 精读报告",
           "sha256": "d858b7f7538a1d6d09ab1307f5a131f9bc6dd077331e5704ca5cf3933aa9337c",
           "modified": "2026-11-17T21:35:09",
-          "date": "2026.11.17",
-          "channel": "Fashion Neurosis"
-        },
-        {
-          "id": "Channel/Fashion Neurosis/Simone Rocha - Simone Rocha on the Power of Women Designers, Chloë Sevigny, Art and Fashion.html",
-          "path": "Channel/Fashion Neurosis/Simone Rocha - Simone Rocha on the Power of Women Designers, Chloë Sevigny, Art and Fashion.html",
-          "title": "女人设计女装的力量 — Simone Rocha 精读报告",
-          "sha256": "1206f4e957f477bd7af0c0e66ed0a8da615be52841d68549a17bed067d5ef124",
-          "modified": "2026-11-17T21:34:01",
           "date": "2026.11.17",
           "channel": "Fashion Neurosis"
         }
@@ -710,12 +710,12 @@
       "name": "New Scientist",
       "documents": [
         {
-          "id": "Channel/New Scientist/This El Niño Could Be The Strongest In 1,000 Years.html",
-          "path": "Channel/New Scientist/This El Niño Could Be The Strongest In 1,000 Years.html",
+          "id": "Channel/New Scientist/This El Niño Could Be The Strongest In 1,000 Years.html",
+          "path": "Channel/New Scientist/This El Niño Could Be The Strongest In 1,000 Years.html",
           "title": "千年最强的厄尔尼诺？ — New Scientist 精读报告",
           "sha256": "5a3a979b440b33dec232a753a9b3666f825f56db660a1710c4633e06523b0206",
-          "modified": "2026-11-19T21:14:27",
-          "date": "2026.11.19",
+          "modified": "2026-11-21T21:46:50",
+          "date": "2026.11.21",
           "channel": "New Scientist"
         }
       ]
