@@ -1,0 +1,28 @@
+:root { color-scheme: light; --paper:#fafbfc; --ink:#17191c; --muted:#545b64; --line:#d8dce1; --accent:#2563eb; }
+:root[data-theme=dark] { color-scheme:dark; --paper:#17191c; --ink:#edf0f3; --muted:#aeb6be; --line:#363b42; --accent:#9bbcff; }
+* {box-sizing:border-box}
+body {margin:0;background:var(--paper);color:var(--ink);font:15px/1.55 Inter,-apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif;}
+main {max-width:1160px;margin:auto;padding:0 clamp(18px,4vw,60px) 64px}
+header,nav,.tools,.actions {display:flex;align-items:center}
+header {justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:32px}
+h1,nav button,.title {font-family:Palatino,Georgia,"Songti SC",serif}
+h1 {margin:17px 0;font-style:italic;font-size:30px;font-weight:500}
+nav {gap:clamp(16px,3vw,32px)}
+button,select {color:inherit;font:inherit;cursor:pointer}
+button {background:none;border:0;padding:4px;color:var(--muted)}
+nav button {position:relative;min-height:76px;padding:18px 0 20px;font-style:italic;font-size:20px;white-space:nowrap}
+nav button[aria-current=page] {color:var(--ink)}
+nav button[aria-current=page]::before {content:"";position:absolute;top:0;left:-6px;right:-6px;height:6px;border-radius:0 0 50% 50% / 0 0 100% 100%;background:#ff5a1f}
+.tools {gap:12px;flex-wrap:wrap;padding-bottom:14px;border-bottom:1px solid var(--line);font-size:13px;color:var(--muted)}
+select {max-width:min(55vw,330px);margin-left:6px;border:0;background:var(--paper);padding:6px;color:var(--ink)}
+#count {margin-left:auto}
+ul {margin:0;padding:0;list-style:none}
+li {display:flex;align-items:center;gap:20px;justify-content:space-between;padding:20px 0;border-bottom:1px solid var(--line)}
+.meta,.actions,#message {color:var(--muted);font-size:12px}
+.title {display:block;margin:4px 0;font-size:clamp(18px,2vw,23px);line-height:1.45;overflow-wrap:anywhere}
+a {color:inherit;text-decoration:none}
+a:hover,button:hover {color:var(--accent)}
+.actions {gap:12px;flex-shrink:0}
+button[aria-pressed=true] {color:var(--accent)}
+:focus-visible {outline:2px solid var(--accent);outline-offset:3px}
+@media(max-width:600px){header{margin-bottom:18px}h1{font-size:23px}nav button{min-height:62px;font-size:16px}li{display:block}.actions{justify-content:flex-end}.tools{gap:6px}}
